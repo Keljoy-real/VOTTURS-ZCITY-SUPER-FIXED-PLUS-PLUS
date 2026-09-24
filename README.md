@@ -1,2 +1,1 @@
-# vottursshitcityfixed
-REMOVED UNNECESSARY CODE
+i am simply the better vibecoder
