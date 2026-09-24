@@ -1,0 +1,1503 @@
+local plymeta = FindMetaTable("Player")
+hg.ConVars = hg.ConVars or {}
+--\\ AimVector fix
+	hg.GetAimVector = hg.GetAimVector or plymeta.GetAimVector
+
+	function plymeta:GetAimVector()
+		if self == LocalPlayer() then
+			return hg.GetAimVector(self)
+		elseif self:InVehicle() then
+			local ang = self:EyeAngles()
+			--ang:Add(-self:GetVehicle():GetAngles())
+			return ang:Forward()
+		end
+		return hg.GetAimVector(self)
+	end
+--
+
+--\\ Check if player is seeing local perspective for himself
+	function plymeta:IsLocal()
+		local lply = LocalPlayer()
+		return ((self ~= lply) or (lply ~= GetViewEntity()))
+	end
+--
+
+--\\ Debug useful commands
+	if CLIENT then
+		local throatCutSoundWhitelist = {
+			["neck_slit_female1.wav"] = true,
+			["neck_slit_female2.wav"] = true,
+			["neck_slit_male1.wav"] = true,
+			["neck_slit_male2.wav"] = true,
+		}
+
+		net.Receive("HG_ThroatCutSound", function()
+			local snd = net.ReadString()
+			local pos = net.ReadVector()
+			local level = net.ReadUInt(8)
+			local pitch = net.ReadUInt(8)
+			local volume = net.ReadFloat()
+
+			if not throatCutSoundWhitelist[snd] then return end
+			if not isvector(pos) then return end
+
+			sound.Play(snd, pos, math.Clamp(level, 1, 255), math.Clamp(pitch, 1, 255), math.Clamp(volume, 0, 1))
+		end)
+
+		function PrintPosParameters(ent)
+			for i = 0, ent:GetNumPoseParameters() - 1 do
+				local min, max = ent:GetPoseParameterRange( i )
+				print( ent:GetPoseParameterName( i ) .. ' ' .. min .. " / " .. max )
+			end
+		end
+
+		function PrintBones( entity )
+			for i = 0, entity:GetBoneCount() - 1 do
+				print( i, entity:GetBoneName( i ) )
+			end
+		end
+
+		function PrintBodygroups( entity )
+			PrintTable(entity:GetBodyGroups())
+		end
+
+		function PrintAnims( entity )
+			PrintTable(entity:GetSequenceList())
+		end
+
+		concommand.Add("printanims", function(ply)
+			PrintAnims(ply)
+		end)
+
+		concommand.Add("printbones", function(ply)
+			PrintBones(ply)
+		end)
+
+		concommand.Add("printbodygroups", function(ply)
+			PrintBodygroups(ply)
+		end)
+
+		concommand.Add("printanimswm", function(ply)
+			PrintAnims(ply:GetActiveWeapon():GetWM())
+		end)
+
+		concommand.Add("printanimszmodel", function(ply)
+			PrintAnims(ply.zmodel)
+		end)
+
+		concommand.Add("printboneswm", function(ply)
+			PrintBones(ply:GetActiveWeapon():GetWM())
+		end)
+
+		concommand.Add("printbodygroupswm", function(ply)
+			PrintBodygroups(ply:GetActiveWeapon():GetWM())
+		end)
+	end
+--
+
+--\\ Holster think for weapons & automatic attack stuff
+	if CLIENT then
+		hook.Add("Player Think", "fucking bullshit", function(ply)
+			local wep = ply:GetActiveWeapon()
+
+			if IsValid(wep) and wep.ismelee and ply != LocalPlayer() then
+				if wep.Think and not wep.HomicideSWEP then
+					wep:Think()
+				end
+
+				if hg.KeyDown(ply, IN_ATTACK) and wep:CanPrimaryAttack() and not wep.HomicideSWEP then
+					if not wep.Primary.Automatic then
+						if not ply.keypress1 then
+							wep:PrimaryAttack()
+							ply.keypress1 = true
+						end
+					else
+						wep:PrimaryAttack()
+					end
+				else
+					ply.keypress1 = false
+				end
+
+				if hg.KeyDown(ply, IN_ATTACK2) and wep:CanSecondaryAttack() and not wep.HomicideSWEP then
+					if not wep.Primary.Automatic then
+						if not ply.keypress2 then
+							wep:SecondaryAttack()
+							ply.keypress2 = true
+						end
+					else
+						wep:SecondaryAttack()
+					end
+				else
+					ply.keypress2 = false
+				end
+			end
+		end)
+	end
+--
+
+--\\ Remove cl models on cleanup
+	hg.oldClientsideModel = hg.oldClientsideModel or ClientsideModel
+	hg.ClientsideModels = hg.ClientsideModels or {}
+	local EntityMeta = FindMetaTable("Entity")
+
+	if hg.ZCClientsideModelGuardsInstalled then
+		if hg.oldEntitySetModel then
+			EntityMeta.SetModel = hg.oldEntitySetModel
+		end
+		if hg.oldEntitySetSequence then
+			EntityMeta.SetSequence = hg.oldEntitySetSequence
+		end
+		if hg.oldEntitySetCycle then
+			EntityMeta.SetCycle = hg.oldEntitySetCycle
+		end
+		hg.ZCClientsideModelGuardsInstalled = nil
+	end
+
+	function ClientsideModel(...)
+		local model = hg.oldClientsideModel(...)
+		table.insert(hg.ClientsideModels,model)
+		--print(model)
+		return model
+	end
+
+	function hg.PrintModels()
+		for i,mdl in ipairs(hg.ClientsideModels) do
+			if not IsValid(mdl) then continue end
+			print(mdl,mdl:GetModel())
+		end
+	end
+
+	function hg.ClearClientsideModels()
+		for i,mdl in pairs(hg.ClientsideModels) do
+			if not IsValid(mdl) then continue end
+			mdl:Remove()
+		end
+		hg.ClientsideModels = {}
+	end
+
+	hook.Add("PostCleanupMap","fuckclientsidemodels",hg.ClearClientsideModels)
+	hook.Add("PostCleanupMap","remove_this_stupid_clside_ragdolls",function()
+		for k,v in ipairs(ents.FindByClass('class C_ClientRagdoll')) do v:Remove() end
+	end)
+--
+
+--\\ Fake status info for scare mode
+	local keys = {
+		[KEY_S] = "s",
+		[KEY_T] = "t",
+		[KEY_A] = "a",
+		[KEY_U] = "u",
+		[KEY_ENTER] = "\n",
+		[KEY_SPACE] = " ",
+		[KEY_SEMICOLON] = ";",
+	}
+	local status = {
+		[KEY_S] = false,
+		[KEY_T] = false,
+		[KEY_A] = false,
+		[KEY_U] = false,
+		[KEY_ENTER] = false,
+		[KEY_SPACE] = false,
+		[KEY_SEMICOLON] = false,
+		[KEY_BACKSPACE] = false,
+	}
+	local strstatus = ""
+	hook.Add("Move", "fakestatus", function(ply, mv)
+		if !CurrentRound then return end
+		local rnd = CurrentRound()
+		if rnd.name != "fear" then return end
+		local alive = zb:CheckAlive()
+		if (#alive != 1) or (alive[1] != ply) then return end
+		for v, val in pairs(status) do
+			if input.IsKeyDown(v) then
+				if !val then
+					status[v] = true
+					if v == KEY_BACKSPACE then
+						strstatus = string.sub(strstatus, 1, string.len(strstatus) - 1)
+					else
+						strstatus = strstatus .. keys[v]
+					end
+					--print(strstatus)
+				end
+			else
+				if val then
+					status[v] = false
+				end
+			end
+		end
+		local st, en = string.find(strstatus, "status")
+		local st2, en2 = string.find(strstatus, "\n")
+		if st2 then
+			strstatus = ""
+		end
+		if st and st2 and st2 > st then
+			timer.Simple(0, function()
+				local bignum = math.pow(2, 20)
+				for i = 1, 20 do 
+					print(("\n"):rep(bignum))
+				end
+				MsgC(color_white, string.format([[
+hostname: %s
+version : 2025.03.26/24 9748 secure
+udp/ip  : %s:27015  (public ip: %s)
+steamid : [A-1:%s(63621)] (%s)
+map     : %s at: 0 x, 0 y, 0 z
+uptime  : %s, %s server
+players : 1 humans, 0 bots (20 max)
+# userid name                uniqueid            connected ping loss state
+#      2 "%s"           %s   %s    %s    0 active
+]], GetHostName(), game.GetIPAddress(), game.GetIPAddress(), lply:AccountID(), lply:SteamID64(), game.GetMap(), string.FormattedTime(CurTime(), "%02i h %02i m"), string.FormattedTime(CurTime(), "%02i h %02i m"), lply:Name(), lply:SteamID(), string.FormattedTime(CurTime(), "%02i:%02i:%02i"), lply:Ping()))
+			end)
+		end
+	end)
+--
+
+--\\ Network created ragdolls
+	hook.Add("NetworkEntityCreated", "network_ragdoll_created", function(ent)
+		local index = ent:EntIndex()
+		if IsValid(ent) and zb.net and zb.net[index] and zb.net[index].waiting then
+			zb.net[index].waiting = nil
+			for key,var in pairs(zb.net[index]) do
+				hook.Run("OnNetVarSet", index, key, var)
+			end
+		end
+	end)
+--
+
+--\\ Supression
+	if CLIENT then
+		suppressionVec = Vector(0, 0, 0)
+		suppressionDist = 0
+		suppressionDistAdd = 0
+		net.Receive("add_supression", function()
+			if not IsValid(lply) or not lply:IsPlayer() then return end
+			if !lply:Alive() or !lply.organism or lply.organism.otrub then return end
+
+			local pos = net.ReadVector()
+			local eyePos = LocalPlayer():EyePos()
+			local dist = pos:Distance(eyePos)
+			if dist > 500 then return end
+			local isVisible = not util.TraceLine({
+				start = pos,
+				endpos = eyePos,
+				filter = {lply},
+				mask = MASK_SHOT
+			}).Hit
+			if not isVisible then dist = dist * 2 end
+
+			Suppress(dist * 25)
+			ViewPunch(AngleRand(-1,1) * dist / 100)
+			ViewPunch2(AngleRand(-1,1) * dist / 100)
+		end)
+
+		local anguse = Angle(0,0,0)
+		s_suppression = s_suppression or 0
+		hook.Add("PostEntityFireBullets","bulletsuppression2",function(ent,bullet)
+			if not lply:Alive() then return end
+			if not IsValid(lply) or not lply:IsPlayer() then return end
+			if !lply:Alive() or !lply.organism or lply.organism.otrub then return end
+			local CustomAmmoType = false
+			if hg.ammotypeshuy[bullet.AmmoType] then
+				CustomAmmoType = hg.ammotypeshuy[bullet.AmmoType]
+			end
+			local subsonic = !(CustomAmmoType and CustomAmmoType.BulletSettings and CustomAmmoType.BulletSettings.Speed and CustomAmmoType.BulletSettings.Speed > 340)
+			
+			local tr = bullet.Trace
+			local mr = math.random(17)
+			local view = render.GetViewSetup(true)
+			if tr.StartPos:Distance( tr.HitPos ) > 5000 and !subsonic then
+				local time = view.origin:Distance(tr.StartPos+tr.HitPos/2) / 17836
+				timer.Simple(time,function()
+					EmitSound("cracks/distant/dist_crack_" .. ( mr < 10 and "0" or "") .. mr .. ".ogg", tr.StartPos+tr.HitPos*0.35, 0, CHAN_AUTO, 1,SNDLVL_140dB)
+				end)
+			end
+
+			local self = ent
+			if tr.Entity == hg.GetCurrentCharacter(lply) then
+
+				Suppress( 10 )
+				return
+			end
+
+			if not IsValid(self) or self:GetOwner() == lply:GetViewEntity() then return end
+			local eyePos = view.origin
+			local dis, pos = util.DistanceToLine(tr.StartPos, tr.HitPos, eyePos)
+			local isVisible = not util.TraceLine({
+				start = pos,
+				endpos = eyePos,
+				filter = {self, lply, lply:GetViewEntity(), self:GetOwner(), hg.GetCurrentCharacter(lply)},
+				mask = MASK_SHOT
+			}).Hit
+
+			if not isVisible then return end
+
+			local dist = pos:Distance(eyePos)
+			local shooterdist = tr.StartPos:Distance(eyePos)
+			local mr = math.random(9)
+
+			if not IsLookingAt(self:GetOwner(),eyePos) then return end
+			local SND = subsonic and "weapons/bullets/fx/subsonic_0" .. mr .. ".wav"
+				or bullet.Damage >= 50 and "cracks/" .. "heavy/heav" .. "_crack_0" .. mr .. ".ogg"
+				or bullet.Damage >= 30 and "cracks/" .. "medium/med" .. "_crack_0" .. mr .. ".ogg"
+				or "cracks/" .. "light/light" .. "_crack_0" .. mr .. ".ogg"
+
+			if dist < 180 then
+				timer.Simple(0.02,function()
+					EmitSound("weapons/bullets/fx/subsonic_0" .. mr .. ".wav", pos - tr.Normal * 25, 0, CHAN_ITEM, 1, 155)
+				end)
+				if !subsonic then
+					EmitSound(SND, pos - tr.Normal * 25, 0, CHAN_ITEM, 1, 155)
+					EmitSound(SND, pos - tr.Normal * 25, 0, CHAN_WEAPON, 1, 155)
+					EmitSound(SND, pos - tr.Normal * 25, 0, CHAN_REPLACE, 1, 155)
+					EmitSound(SND, pos - tr.Normal * 25, 0, CHAN_BODY, 1, 155)
+				end
+			else return end
+			-- if dist > 120 then return end
+			-- if !subsonic then
+			-- 	EmitSound(SND, pos - tr.Normal * 25, 0, CHAN_AUTO, 1, 75)
+			-- end
+
+			dist = dist / math.abs((tr.HitPos - tr.StartPos):GetNormalized():Dot((tr.StartPos - eyePos):GetNormalized()))
+			dist = math.Clamp(1 / dist, 0.05,0.25)
+			local localpos = (eyePos - pos):GetNormalized()
+
+			local ang_yaw = localpos:Dot(lply:EyeAngles():Right())
+			local ang_pitch = localpos:Dot(lply:EyeAngles():Up())
+
+			anguse[2] = -ang_yaw / (dist * 30)
+			anguse[1] = -ang_pitch / (dist * 30)
+
+			local badass = lply.organism and lply.organism.recoilmul or 1
+			local bulletdmg = math.max(bullet.Damage / 15,1)
+			if hg_suppression_viewpunch and hg_suppression_viewpunch:GetBool() then
+				ViewPunch(anguse * badass * bulletdmg)
+				ViewPunch2((anguse * badass * bulletdmg)/-2)
+			end
+			Suppress((dist * 45) * badass * bulletdmg)
+		end)
+		-- SIB - Salatis Imersive Base
+		SIB_suppress = SIB_suppress or {}
+		SIB_suppress.Force = 0
+
+		function Suppress(force)
+			SIB_suppress.Force = math.Clamp(SIB_suppress.Force + force / 1, 0, 10)
+		end
+
+		local pain_mat = Material("sprites/mat_jack_hmcd_narrow")
+
+		local colormodify = {
+			[ "$pp_colour_addr" ] = 0,
+			[ "$pp_colour_addg" ] = 0,
+			[ "$pp_colour_addb" ] = 0,
+			[ "$pp_colour_brightness" ] = 0,
+			[ "$pp_colour_contrast" ] = 1,
+			[ "$pp_colour_colour" ] = 0,
+			[ "$pp_colour_mulr" ] = 0,
+			[ "$pp_colour_mulg" ] = 0,
+			[ "$pp_colour_mulb" ] = 0
+		}
+
+		local hg_potatopc = GetConVar("hg_potatopc") or CreateClientConVar("hg_potatopc", "0", true, false, "Skip extra Homigrad effects (blur, shells). Does not change Source engine graphics", 0, 1)
+
+		hg.ConVars.potatopc = hg_potatopc
+
+		local vignetteMat = Material( "effects/shaders/zb_vignette" )
+		hook.Add("RenderScreenspaceEffects","SIB_Suppresss",function()
+			if not LocalPlayer():Alive() then return end
+
+			local fraction = math.Clamp(SIB_suppress.Force / 5, 0, 1)
+
+			local force = SIB_suppress.Force - 1
+
+			if force > 0 then
+				render.UpdateScreenEffectTexture()
+
+				vignetteMat:SetFloat("$c2_x", CurTime() + 10000) --Time
+				vignetteMat:SetFloat("$c0_z", force / 3 ) --ColorIntensity
+				vignetteMat:SetFloat("$c1_y", force / 12 ) --Vignette
+
+				render.SetMaterial(vignetteMat)
+				render.DrawScreenQuad()
+			end
+
+			if force > 6 then
+				colormodify["$pp_colour_colour"] = math.max(2 - force / 6, .4)
+				DrawColorModify(colormodify)
+			end
+
+			if !hg_potatopc:GetBool() and fraction > 0.1 then DrawToyTown(2,math.min(math.ease.InBack(fraction),0.85) * ScrH() * force / 10) end
+
+		end)
+
+		hook.Add("Think","SIB_Suppresss_Think",function()
+			SIB_suppress.Force = Lerp(0.25 * FrameTime(), SIB_suppress.Force,0)
+		end)
+
+		hook.Add("PlayerDeath","huyDeathRemoveSuppression",function()
+			SIB_suppress.Force = 0
+		end)
+	end
+--
+
+--\\ CL Custom player think
+	local hook_Run = hook.Run
+	local CurTime = CurTime
+
+	lastcall = SysTime() - 0.01
+
+	hg.ragdolls = hg.ragdolls or {}
+
+	hook.Add("EntityRemoved", "huyasdowo", function(ent)
+		table.RemoveByValue(hg.ragdolls, ent)
+	end)
+
+	hook.Add("Think", "hg-playerthink", function()
+		local time = CurTime()
+		local dtime = SysTime() - lastcall
+		lastcall = SysTime()
+
+		if CLIENT then
+			lply = IsValid(lply) and lply or LocalPlayer()
+			local entities = hg.seenents
+			
+			for i = 1, #entities do
+				ent = entities[i]
+				
+				if not IsValid(ent) or (ent:IsPlayer() and not ent:Alive()) or IsValid(ent.FakeRagdoll) then continue end
+				--print(ent, CurTime())
+				local ply = ent:IsPlayer() and ent or IsValid(ent.ply) and ent.ply
+				-- limiter
+				--if (ent.lasttimethink or 0) > CurTime() then continue end
+				--ent.lasttimethink = CurTime() + (ply and ply == lply and 0 or 0.1)
+
+				if ply and ply:IsPlayer() and ply:Alive() then
+					hook_Run("Player Think", ply, time, dtime)
+				end
+
+				hook_Run("Player-Ragdoll think", ply or ent, ent, time, dtime)
+			end
+		end
+	end)
+--
+--\\ Custom emitsound
+	local vectorZero = Vector(0,0,0)
+	oldEmitSound = oldEmitSound or EmitSound
+	local entMeta = FindMetaTable("Entity")
+
+	function EmitSound( soundName, position, entity, channel, volume, soundLevel, soundFlags, pitch, dsp, filter )
+		soundName = soundName or ""
+		position = position or vectorZero
+		entity = entity or 0
+		volume = volume or 1
+		soundLevel = soundLevel or 75
+		soundFlags = soundFlags or 0
+		pitch = pitch or 100
+		pitch = changePitch(pitch)
+		dsp = dsp or 0
+		filter = filter or nil
+		local sndparms
+		local sndBool = false
+		if IsValid(lply) then
+			local Ears = lply:GetNetVar("Armor",{})["ears"]
+			sndparms = hg.armor.ears[Ears] or false
+			sndBool = sndparms and true or false
+		end
+		oldEmitSound(soundName, position, entity, channel, sndBool and volume > sndparms.NormalizeSnd[1] and sndparms.NormalizeSnd[2] or volume + (sndBool and sndparms.VolumeAdd or 0) , soundLevel + (sndBool and sndparms.SoundlevelAdd or 0), soundFlags, pitch, dsp, filter)
+	end
+
+	hg.EmitSound = EmitSound
+
+	oldEntEmitSound = oldEntEmitSound or entMeta.EmitSound
+
+	function entMeta.EmitSound(self,soundName,soundLevel,pitch,volume,channel,soundFlags,dsp,filter)
+		soundName = soundName or ""
+		position = position or vectorZero
+		entity = entity or 0
+		volume = volume or 1
+		soundLevel = soundLevel or 75
+		soundFlags = soundFlags or 0
+		pitch = pitch or 100
+		--pitch = changePitch(pitch) or 1
+		dsp = dsp or 0
+		filter = filter or nil
+		local sndparms
+		if IsValid(lply) then
+			local Ears = lply:GetNetVar("Armor",{})["ears"]
+			sndparms = hg.armor.ears[Ears] or false
+			sndBool = sndparms and true or false
+		end
+		oldEntEmitSound(self, soundName, soundLevel + (sndBool and sndparms.SoundlevelAdd or 0), pitch, sndparms and volume > sndparms.NormalizeSnd[1] and sndparms.NormalizeSnd[2] or volume + (sndBool and sndparms.VolumeAdd or 0), channel, soundFlags, dsp, filter)
+	end
+--
+
+--\\ custom sens
+	local hg_zoomsensitivity = ConVarExists("hg_zoomsensitivity") and GetConVar("hg_zoomsensitivity") or CreateConVar("hg_zoomsensitivity", 1, FCVAR_ARCHIVE, "Multiply aiming zoom sensivity", 0, 3)
+
+	hook.Add("AdjustMouseSensitivity", "AdjustRunSensivityHUY", function(defaultSensitivity)
+		if not lply:Alive() then return end--kakoy sencivity NOOB
+		local org = lply.organism or {}
+		if not org or not org.brain then return end
+
+		local vel = lply:GetVelocity()
+		local isrunning = lply:KeyDown(IN_SPEED) and vel:Length() >= 10 and not lply:Crouching() and not IsValid(lply:GetNWEntity("FakeRagdoll"))
+		local eyeAngles = lply:EyeAngles()
+		local self = lply:GetActiveWeapon()
+		self = IsValid(self) and self
+		local wepMul = self and self.IsZoom and self:IsZoom() and ((self:HasAttachment("sight", "optic")) and not self.viewmode1 and math.min(self.ZoomFOV / 60, 0.5) or 0.4) * hg_zoomsensitivity:GetFloat() or 1
+		local weaponAdjust = 1
+
+		if IsValid(self) and self.AdjustMouseSensitivity then
+			weaponAdjust = self:AdjustMouseSensitivity() or 1
+		end
+
+		local hookResult = hook.Run("hg_AdjustMouseSensitivity",lply)
+		if hookResult ~= nil then
+			return hookResult
+		end
+		eyeAngles[1] = 0
+
+		local forwardMoving = math.max(vel:GetNormalized():Dot(eyeAngles:Forward()), 0.6)
+		local brainadjust = org.brain > 0.05 and math.Clamp(((org.brain - 0.05) * math.sin(CurTime()) * 20), -2, 2) or 0
+		local stunmul = math.max((1 - math.max(LocalPlayer():GetLocalVar("stun", CurTime()) - CurTime(), 0) / 3), 0)
+		if lply:KeyDown(IN_SPEED) and lply:KeyDown(IN_WALK) and vel:LengthSqr() >= 10000 and IsValid(self) and self:GetClass() == "weapon_hands_sh" then
+			return (math.max((lply.PlayerClassName == "furry" and 0.2 or 0.25) / ((org.immobilization or 0) / 30 + 1),0.2) * wepMul) * weaponAdjust * stunmul + brainadjust
+		end
+		if isrunning and lply:GetMoveType() ~= MOVETYPE_NOCLIP then
+			return 0.5 * math.max(1 / ((org.immobilization or 0) / 30 + 1),0.4) * wepMul * weaponAdjust * stunmul + brainadjust
+		end
+
+		return (math.max(1 / ((org.immobilization or 0) / 30 + 1),0.4) * wepMul) * weaponAdjust * stunmul + brainadjust
+	end)
+--
+
+--\\ flashlighs move to CL util
+	local flashlightPos,flashlightAng = Vector(3, -2, -1),Angle(0, 0, 0)
+
+	function hg.FlashlightTransform(ply)
+		local lh = ply:LookupBone("ValveBiped.Bip01_L_Hand")
+		local ent = IsValid(ply.FakeRagdoll) and ply.FakeRagdoll or ply
+		local lhmat = ent:GetBoneMatrix(lh)
+		local pos = lhmat:GetTranslation()
+		local ang = lhmat:GetAngles()
+		pos, ang = LocalToWorld(flashlightPos,flashlightAng,pos,ang)
+		ply.flmodel = IsValid(ply.flmodel) and ply.flmodel or ClientsideModel("models/runaway911/props/item/flashlight.mdl")
+		ply.flmodel:SetNoDraw(true)
+		ply.flmodel:SetModelScale(0.75)
+		if IsValid(ply.flmodel) then
+			ply.flmodel:SetRenderOrigin(pos)
+			ply.flmodel:SetRenderAngles(ply:EyeAngles())
+		end
+	end
+
+	hook.Add("Player_Death","removeflashlight",function(ply)
+		if ply.flashlight and ply.flashlight:IsValid() then
+			ply.flashlight:Remove()
+		end
+	end)
+--
+
+--\\ Can see or not
+	local render_GetViewSetup = render.GetViewSetup
+	LocalPlayerSeen = true
+	hg.seenents = {}
+	hg.seenents2 = {}
+	local hg_fov = GetConVar("hg_fov")
+	local math_cos = math.cos
+	local math_rad = math.rad
+	local util_DistanceToLine = util.DistanceToLine
+	local trackedVisibilityEntities = {}
+	local trackedVisibilityIndices = {}
+	local nextVisibilityRefresh = 0
+	local visibilityRefreshInterval = 0.1
+
+	local function shouldTrackVisibilityEntity(ent)
+		if not IsValid(ent) then return false end
+		return ent:IsPlayer() or ent:GetClass() == "prop_ragdoll"
+	end
+
+	local function trackVisibilityEntity(ent)
+		if not shouldTrackVisibilityEntity(ent) or trackedVisibilityIndices[ent] then return end
+
+		local index = #trackedVisibilityEntities + 1
+		trackedVisibilityEntities[index] = ent
+		trackedVisibilityIndices[ent] = index
+	end
+
+	local function untrackVisibilityEntity(ent)
+		local index = trackedVisibilityIndices[ent]
+		if not index then return end
+
+		local lastIndex = #trackedVisibilityEntities
+		local lastEnt = trackedVisibilityEntities[lastIndex]
+		trackedVisibilityEntities[index] = lastEnt
+		trackedVisibilityEntities[lastIndex] = nil
+		trackedVisibilityIndices[ent] = nil
+
+		if lastEnt ~= ent then
+			trackedVisibilityIndices[lastEnt] = index
+		end
+	end
+
+	local function seedVisibilityEntities()
+		table.Empty(trackedVisibilityEntities)
+		table.Empty(trackedVisibilityIndices)
+
+		for _, ent in ipairs(ents.GetAll()) do
+			trackVisibilityEntity(ent)
+		end
+
+		nextVisibilityRefresh = 0
+	end
+
+	hook.Add("OnEntityCreated", "ZC_VisibilityRegistryCreated", trackVisibilityEntity)
+	hook.Add("EntityRemoved", "ZC_VisibilityRegistryRemoved", untrackVisibilityEntity)
+	hook.Add("NotifyShouldTransmit", "ZC_VisibilityRegistryTransmit", function(ent)
+		trackVisibilityEntity(ent)
+	end)
+	hook.Add("InitPostEntity", "ZC_VisibilityRegistrySeed", seedVisibilityEntities)
+	timer.Simple(0, seedVisibilityEntities)
+
+	local function updateEntityVisibility(v, origin, lineEnd, viewForward, fovDot)
+		if v.shouldTransmit then
+			hg.seenents2[#hg.seenents2 + 1] = v
+		end
+
+		local nochange = (v == lply.FakeRagdoll) or (lply:Alive() and v == lply) or (not lply:Alive() and v == lply:GetNWEntity("spect"))
+
+		if nochange then
+			v.NotSeen = false
+			hg.seenents[#hg.seenents + 1] = v
+			return
+		end
+
+		local min, max = v:GetModelBounds()
+		local len = (max - min):Length()
+		local vPos = v:GetPos()
+		local _, point = util_DistanceToLine(origin, lineEnd, vPos)
+		local vSize = (point - vPos):GetNormalized() * len
+		local diff = (vPos + vSize - origin):GetNormalized()
+
+		if not v.shouldTransmit or viewForward:Dot(diff) <= fovDot then
+			v.NotSeen = true
+			if v == lply then LocalPlayerSeen = false end
+		else
+			v.NotSeen = false
+			if v == lply then LocalPlayerSeen = true end
+			hook.Run("HG.OverrideNotSeen", v)
+			hg.seenents[#hg.seenents + 1] = v
+		end
+	end
+
+	hook.Add("Think", "CanBeSeenOrNot", function()
+		local time = CurTime()
+		if nextVisibilityRefresh > time then return end
+		nextVisibilityRefresh = time + visibilityRefreshInterval
+
+		table.Empty(hg.seenents)
+		table.Empty(hg.seenents2)
+
+		if g_VR and g_VR.active then return end
+
+		local view = render_GetViewSetup()
+		local origin = view.origin
+		local viewForward = view.angles:Forward()
+		local lineEnd = origin + viewForward * 9999
+		local fovDot = math_cos(math_rad(hg_fov:GetInt()))
+
+		local index = 1
+		while index <= #trackedVisibilityEntities do
+			local ent = trackedVisibilityEntities[index]
+			if not IsValid(ent) then
+				untrackVisibilityEntity(ent)
+			else
+				updateEntityVisibility(ent, origin, lineEnd, viewForward, fovDot)
+				index = index + 1
+			end
+		end
+
+		for ent in pairs(hg.organism_ents) do
+			if not IsValid(ent) then
+				hg.organism_ents[ent] = nil
+			else
+				updateEntityVisibility(ent, origin, lineEnd, viewForward, fovDot)
+			end
+		end
+	end)
+--
+
+--\\ move it to CL util
+		local meta = FindMetaTable( "Panel" )
+
+		function meta:SlideDown( length, delay )
+
+			local height = self:GetTall()
+			self:SetVisible( true )
+			self:SetTall( 0 )
+
+			local anim = self:SizeTo( -1, height, length, delay or 0, 0.2 )
+
+		end
+	
+		local hull = 10
+		local HullMaxs = Vector(hull, hull, 72)
+		local HullMins = -Vector(hull, hull, 0)
+		local HullDuckMaxs = Vector(hull, hull, 36)
+		local HullDuckMins = -Vector(hull, hull, 0)
+		local ViewOffset = Vector(0, 0, 64)
+		local ViewOffsetDucked = Vector(0, 0, 38)
+
+		gameevent.Listen( "OnRequestFullUpdate" )
+		hook.Add("OnRequestFullUpdate","SetHull",function()
+			local ply = LocalPlayer()
+			if not IsValid(ply) then return end
+			if hg.ApplyScaledPlayerHull then
+				hg.ApplyScaledPlayerHull(ply, true)
+			else
+				ply:SetHull(HullMins, HullMaxs)
+				ply:SetHullDuck(HullDuckMins, HullDuckMaxs)
+				ply:SetViewOffset(ViewOffset)
+				ply:SetViewOffsetDucked(ViewOffsetDucked)
+			end
+		end)
+
+		local activeVoiceSpeakers = setmetatable({}, {__mode = "k"})
+		local voiceOcclusionMemory = setmetatable({}, {__mode = "k"})
+		local playerVoiceBaseVolume
+		local throatCutVoiceMul
+
+		local function isVoicePlayerMuted(ply)
+			if not IsValid(ply) then return true end
+
+			local info = hg.playerInfo and hg.playerInfo[ply:SteamID()]
+			if istable(info) and info[1] == true then return true end
+
+			return ply.IsMuted and ply:IsMuted() or false
+		end
+
+		local function isVoicePlaybackEnabled(ply)
+			if not IsValid(ply) or hg.muteall then return false end
+			if hg.mutespect and not ply:Alive() then return false end
+			if isVoicePlayerMuted(ply) then return false end
+
+			return true
+		end
+
+		local function applyVoiceVolume(ply, occlusionScale)
+			if not IsValid(ply) then return end
+
+			local baseVolume = playerVoiceBaseVolume and playerVoiceBaseVolume(ply) or 1
+			local injuryVolume = throatCutVoiceMul and throatCutVoiceMul(ply) or 1
+			local externalVolume = hook.Run("HG_PlayerVoiceVolumeMultiplier", ply)
+			externalVolume = isnumber(externalVolume) and math.Clamp(externalVolume, 0, 1) or 1
+			local enabled = isVoicePlaybackEnabled(ply)
+			local volume = baseVolume * injuryVolume * externalVolume * math.Clamp(tonumber(occlusionScale) or 1, 0, 1)
+			ply:SetVoiceVolumeScale(enabled and volume or 0)
+		end
+
+		function hg.RefreshPlayerVoiceVolume(ply)
+			local state = activeVoiceSpeakers[ply]
+			applyVoiceVolume(ply, state and state.scale or 1)
+		end
+
+		local function trackVoiceSpeaker(ply)
+			if not IsValid(ply) or ply == LocalPlayer() or activeVoiceSpeakers[ply] then return end
+
+			local previous = voiceOcclusionMemory[ply]
+			if previous and previous.expires <= CurTime() then previous = nil end
+
+			activeVoiceSpeakers[ply] = {
+				scale = previous and previous.scale or 1,
+				target = previous and previous.target or 1,
+				occlusion = previous and previous.occlusion or nil,
+				nextTrace = 0
+			}
+
+			if previous and playerVoiceBaseVolume and throatCutVoiceMul then
+				applyVoiceVolume(ply, previous.scale)
+			end
+		end
+
+		hook.Add("PlayerStartVoice","huy_CheckVoice",function(ply)
+			if not IsValid(ply) then return end
+
+			ply.IsSpeak = true
+			trackVoiceSpeaker(ply)
+		end)
+
+		hook.Add("PlayerEndVoice","huy_CheckVoice",function(ply)
+			if not IsValid(ply) then return end
+			
+			local state = activeVoiceSpeakers[ply]
+			if state then
+				voiceOcclusionMemory[ply] = {
+					scale = state.scale,
+					target = state.target,
+					occlusion = state.occlusion,
+					expires = CurTime() + 1
+				}
+			end
+
+			ply.IsSpeak = false
+			activeVoiceSpeakers[ply] = nil
+			applyVoiceVolume(ply)
+		end)
+
+		local nextVoiceStaleCheck = 0
+		hook.Add("Think", "huy_CheckVoiceStale", function()
+			local time = CurTime()
+			if nextVoiceStaleCheck > time then return end
+			nextVoiceStaleCheck = time + 0.25
+
+			local listener = LocalPlayer()
+			for _, ply in player.Iterator() do
+				if ply ~= listener and ply:IsSpeaking() and not activeVoiceSpeakers[ply] then
+					ply.IsSpeak = true
+					trackVoiceSpeaker(ply)
+				end
+			end
+
+			for ply, state in pairs(activeVoiceSpeakers) do
+				if not IsValid(ply) then
+					activeVoiceSpeakers[ply] = nil
+					continue
+				end
+
+				if not ply.IsSpeak then
+					activeVoiceSpeakers[ply] = nil
+					continue
+				end
+
+				if hg.IsAdminVoicePanelActive and hg.IsAdminVoicePanelActive(ply) then continue end
+				if ply:IsSpeaking() then continue end
+
+				voiceOcclusionMemory[ply] = {
+					scale = state.scale,
+					target = state.target,
+					occlusion = state.occlusion,
+					expires = time + 1
+				}
+				ply.IsSpeak = false
+				activeVoiceSpeakers[ply] = nil
+				applyVoiceVolume(ply)
+
+				if GAMEMODE and GAMEMODE.PlayerEndVoice then
+					GAMEMODE:PlayerEndVoice(ply)
+				end
+			end
+		end)
+
+		hg.playerInfo = hg.playerInfo or {}
+
+		local throatVoiceSounds = {
+			female = {
+				"neck_slit_female1.wav",
+				"neck_slit_female2.wav",
+			},
+			male = {
+				"neck_slit_male1.wav",
+				"neck_slit_male2.wav",
+			}
+		}
+
+		local function getThroatVoiceSound(talker)
+			local gender = (ThatPlyIsFemale and ThatPlyIsFemale(talker)) and "female" or "male"
+			local sounds = throatVoiceSounds[gender] or throatVoiceSounds.male
+			local last = IsValid(talker) and talker.HG_LastThroatVoiceSound or nil
+			local snd = sounds[math.random(#sounds)]
+
+			if #sounds > 1 and snd == last then
+				for _, candidate in ipairs(sounds) do
+					if candidate ~= last then
+						snd = candidate
+						break
+					end
+				end
+			end
+
+			if IsValid(talker) then
+				talker.HG_LastThroatVoiceSound = snd
+			end
+
+			return snd
+		end
+
+		throatCutVoiceMul = function(talker)
+			if not IsValid(talker) then return 1 end
+
+			local time = CurTime()
+			local org = talker.organism
+			local active = (org and org.throatcut and not org.otrub) or talker:GetNWFloat("HG_ThroatCutUntil", 0) > time
+			if not active then return 1 end
+
+			local voice = math.Clamp(talker:VoiceVolume(), 0, 1)
+			local choke = 0.38 + math.abs(math.sin(time * 13 + talker:EntIndex())) * 0.18
+
+			if voice > 0.04 and (talker.NextThroatVoiceGurgle or 0) < time then
+				talker.NextThroatVoiceGurgle = time + math.Rand(0.65, 1.2)
+				talker:EmitSound(getThroatVoiceSound(talker), 52, math.random(86, 104), math.Clamp(0.22 + voice * 0.22, 0.22, 0.42))
+			end
+
+			return choke
+		end
+
+		playerVoiceBaseVolume = function(ply)
+			local info = hg.playerInfo[ply:SteamID()]
+			return istable(info) and tonumber(info[2]) or 1
+		end
+
+		local voiceOcclusionVolume = {
+			clear = 1,
+			partial = 1,
+			indirect = 0.55,
+			wall = 0.42,
+			floor = 0.24,
+			multiple = 0.12
+		}
+		local voiceOcclusionDistance = {
+			partial = 1700,
+			indirect = 1400,
+			wall = 850,
+			floor = 500,
+			multiple = 350
+		}
+		local voiceUp = Vector(0, 0, 1)
+		local voiceChestOffset = Vector(0, 0, 12)
+
+		local function voiceTraceFilter(ent)
+			if ent:IsPlayer() or ent:IsRagdoll() then return false end
+
+			local owner = ent:GetOwner()
+			if IsValid(owner) and owner:IsPlayer() then return false end
+
+			local parent = ent:GetParent()
+			if IsValid(parent) and parent:IsPlayer() then return false end
+
+			return true
+		end
+
+		local function matchingVoiceRadio(listener, talker)
+			if not listener:Alive() or not talker:Alive() then return false end
+
+			local speakerRadio = talker:GetWeapon("weapon_walkie_talkie")
+			local listenerRadio = listener:GetWeapon("weapon_walkie_talkie")
+			if not IsValid(speakerRadio) or not IsValid(listenerRadio) then return false end
+			if talker:GetActiveWeapon() ~= speakerRadio then return false end
+			if not speakerRadio:GetIsOn() or not listenerRadio:GetIsOn() then return false end
+
+			local speakerOrg = talker.organism
+			local listenerOrg = listener.organism
+			if (speakerOrg and speakerOrg.otrub) or (listenerOrg and listenerOrg.otrub) then return false end
+
+			local speakerFrequency = math.Round(speakerRadio:GetHudFrequency(), 1)
+			local listenerFrequency = math.Round(listenerRadio:GetHudFrequency(), 1)
+			if speakerRadio.FMStations and speakerRadio.FMStations[speakerFrequency] then return false end
+
+			return speakerFrequency == listenerFrequency or talker:Team() == 1002
+		end
+
+		local function bypassVoiceOcclusion(listener, talker)
+			local result = hook.Run("HG_BypassVoiceOcclusion", listener, talker)
+			if result ~= nil then return result end
+
+			if zb and (zb.ROUND_STATE == 0 or zb.ROUND_STATE == 3) then return true end
+			if not listener:Alive() and not talker:Alive() then return true end
+			if listener:GetNetVar("disappearance") or talker:GetNetVar("disappearance") then return true end
+			if listener.PlayerClassName == "Combine" and talker.PlayerClassName == "Combine" and talker:Alive() then return true end
+
+			return matchingVoiceRadio(listener, talker)
+		end
+
+		local function traceVoicePath(traceData, startPos, endPos)
+			traceData.start = startPos
+			traceData.endpos = endPos
+
+			return util.TraceLine(traceData)
+		end
+
+		local function classifyVoiceOcclusion(listener, talker)
+			local listenerHead = listener:EyePos()
+			local talkerHead = talker:EyePos()
+			local listenerChest = listener:WorldSpaceCenter() + voiceChestOffset
+			local talkerChest = talker:WorldSpaceCenter() + voiceChestOffset
+			local directDistance = talkerHead:Distance(listenerHead)
+			local traceData = {
+				mask = MASK_SOLID,
+				filter = voiceTraceFilter
+			}
+			local directTrace = traceVoicePath(traceData, talkerHead, listenerHead)
+			local clearSamples = directTrace.Hit and 0 or 1
+
+			if not traceVoicePath(traceData, talkerChest, listenerHead).Hit then clearSamples = clearSamples + 1 end
+			if not traceVoicePath(traceData, talkerHead, listenerChest).Hit then clearSamples = clearSamples + 1 end
+
+			if clearSamples > 0 then
+				return clearSamples == 3 and "clear" or "partial", directDistance, clearSamples / 3
+			end
+
+			local hitNormal = directTrace.HitNormal
+			local tangent = hitNormal:Cross(voiceUp)
+			if tangent:LengthSqr() < 0.01 then
+				local path = listenerHead - talkerHead
+				tangent = Vector(-path.y, path.x, 0)
+				if tangent:LengthSqr() < 0.01 then
+					tangent = talker:GetRight()
+					tangent.z = 0
+				end
+			end
+
+			if tangent:LengthSqr() >= 0.01 then
+				tangent:Normalize()
+				local bendOffset = math.Clamp(directDistance * 0.18, 72, 180)
+				local shortestPath
+
+				for direction = -1, 1, 2 do
+					local bend = directTrace.HitPos + tangent * bendOffset * direction + hitNormal * 6
+					if not traceVoicePath(traceData, talkerHead, bend).Hit and not traceVoicePath(traceData, bend, listenerHead).Hit then
+						local pathDistance = talkerHead:Distance(bend) + bend:Distance(listenerHead)
+						if pathDistance <= directDistance * 1.35 and (not shortestPath or pathDistance < shortestPath) then
+							shortestPath = pathDistance
+						end
+					end
+				end
+
+				if shortestPath then return "indirect", shortestPath, math.Clamp(directDistance / shortestPath, 0, 1) end
+			end
+
+			local reverse = traceVoicePath(traceData, listenerHead, talkerHead)
+			local path = listenerHead - talkerHead
+			local verticalRatio = directDistance > 0 and math.abs(path.z) / directDistance or 0
+			local blockedSpan = reverse.Hit and directTrace.HitPos:Distance(reverse.HitPos) or 0
+			local sameBlocker = reverse.Hit and directTrace.Entity == reverse.Entity
+
+			if verticalRatio >= 0.4 then return "floor", directDistance, 1 end
+			if reverse.Hit and (blockedSpan > 96 or not sameBlocker) then return "multiple", directDistance, 1 end
+
+			return "wall", directDistance, 1
+		end
+
+		local function setVoiceOcclusionCandidate(state, candidate, pathDistance, exposure)
+			if not state.occlusion then
+				state.occlusion = candidate
+				state.pathDistance = pathDistance
+				state.exposure = exposure
+				state.pendingOcclusion = nil
+				state.pendingSamples = 0
+				return
+			end
+
+			if candidate == state.occlusion then
+				state.pathDistance = pathDistance
+				state.exposure = exposure
+				state.pendingOcclusion = nil
+				state.pendingSamples = 0
+				return
+			end
+
+			if state.pendingOcclusion ~= candidate then
+				state.pendingOcclusion = candidate
+				state.pendingSamples = 1
+				return
+			end
+
+			state.pendingSamples = state.pendingSamples + 1
+			local requiredSamples = candidate == "clear" and 3 or 2
+			if state.pendingSamples < requiredSamples then return end
+
+			state.occlusion = candidate
+			state.pathDistance = pathDistance
+			state.exposure = exposure
+			state.pendingOcclusion = nil
+			state.pendingSamples = 0
+		end
+
+		local function voiceOcclusionTarget(occlusion, acousticDistance, exposure)
+			local volume = voiceOcclusionVolume[occlusion] or 1
+			if occlusion == "partial" then
+				volume = Lerp(math.Clamp(exposure or 0, 0, 1), 0.55, 1)
+			elseif occlusion == "indirect" then
+				volume = volume * math.Clamp(exposure or 1, 0.7, 1)
+			end
+
+			local maxDistance = voiceOcclusionDistance[occlusion]
+			if not maxDistance then return volume end
+
+			local fadeStart = maxDistance * 0.4
+			local fraction = math.Clamp(((acousticDistance or 0) - fadeStart) / (maxDistance - fadeStart), 0, 1)
+			local smoothFraction = fraction * fraction * (3 - 2 * fraction)
+
+			return volume * (1 - smoothFraction)
+		end
+
+		hook.Add("Think", "HG_SmoothVoiceOcclusion", function()
+			local listener = LocalPlayer()
+			if not IsValid(listener) then return end
+
+			local time = CurTime()
+			local frameTime = FrameTime()
+			for talker, state in pairs(activeVoiceSpeakers) do
+				if not IsValid(talker) then
+					activeVoiceSpeakers[talker] = nil
+					continue
+				end
+
+				if state.nextTrace <= time then
+					state.nextTrace = time + 0.2
+					if bypassVoiceOcclusion(listener, talker) then
+						state.occlusion = "clear"
+						state.pathDistance = listener:EyePos():Distance(talker:EyePos())
+						state.exposure = 1
+						state.pendingOcclusion = nil
+						state.pendingSamples = 0
+					else
+						local classification, pathDistance, exposure = classifyVoiceOcclusion(listener, talker)
+						setVoiceOcclusionCandidate(state, classification, pathDistance, exposure)
+					end
+
+					state.target = voiceOcclusionTarget(state.occlusion, state.pathDistance, state.exposure)
+					if talker:WaterLevel() == 3 then state.target = math.min(state.target, 0.25) end
+				end
+
+				local fadeRate = state.target < state.scale and 7 or 4
+				state.scale = Lerp(math.Clamp(frameTime * fadeRate, 0, 1), state.scale, state.target)
+
+				applyVoiceVolume(talker, state.scale)
+			end
+		end)
+
+		local cachedLerp = Lerp
+
+		local function mouthmove(ply)
+			if not ply:Alive() then return end
+			local ent = IsValid(ply.FakeRagdoll) and ply.FakeRagdoll or ply
+
+			if lply:GetPos():DistToSqr(ent:GetPos()) > 1500 * 1500 then return end
+			
+			local flexes = {
+				[1] = ent:GetFlexIDByName( "jaw_drop" ),
+				[2] = ent:GetFlexIDByName( "left_part" ),
+				[3] = ent:GetFlexIDByName( "right_part" ),
+				[4] = ent:GetFlexIDByName( "left_mouth_drop" ),
+				[5] = ent:GetFlexIDByName( "right_mouth_drop" ),
+				[6] = ent:GetFlexIDByName( "lower_lip" )
+			}
+
+			local weight = (ply:IsSpeaking() and math.Clamp( ply:VoiceVolume() * 5, 0, 2 )) or 0
+
+			for k = 1, #flexes do
+				v = flexes[ k ]
+				ent:SetFlexWeight( v, weight )
+			end
+
+			local org = ent.organism
+			if not org then return end
+
+			if ply:IsPlayer() and ply:Alive() and not org.otrub then
+				ent.Blink = ent.Blink or 0
+				ent.Blink = ent.Blink + 0.25
+				ent.LastBlinking = ent.Blinking or 0
+				if ent.Blink > 940 then
+					ent.Blinking = cachedLerp(FrameTime() * 65,ent.Blinking or 0,1)
+					if ent.Blink > 951 then
+						ent.Blink = 0
+					end
+				else
+					ent.Blinking = cachedLerp(FrameTime() * 65,ent.Blinking or 0,0)
+				end
+			elseif (ent.Blinking or 0) < 0.95 then
+				ent.Blinking = cachedLerp(FrameTime() * 5,ent.Blinking or 0,1)
+			end
+
+			if ply.suiciding then
+				ent.Blinking = 1
+			end
+			
+			if ent:GetFlexIDByName("blink") then
+				ent:SetFlexWeight(ent:GetFlexIDByName("blink"), ent.Blinking or 0)
+			end
+
+			if ent:GetFlexIDByName("wrinkler") then
+				ent:SetFlexWeight(ent:GetFlexIDByName("wrinkler"), ent.Blinking or 0)
+			end
+
+			if ent:GetFlexIDByName("half_closed") then
+				ent:SetFlexWeight(ent:GetFlexIDByName("half_closed"), ent.Blinking or 0)
+			end
+		end
+
+		hook.Add("Player Think", "MouthThink", function(ply) if IsValid(ply.FakeRagdoll) then mouthmove(ply) end end)
+
+		hg.mouthmove = mouthmove
+--
+
+--\\ Falling effects like in mirror's edge
+	local fallsnd = false
+	local windsnd = false
+
+	local fallSndStation
+	local fallSnd_Volume = 0
+
+	local windSndStation
+	local windSnd_Volume = 0
+	local windSnd_VolumeSpeed = 0
+
+	local function createSnd()
+		if IsValid(fallSndStation) then
+			fallSndStation:Stop()
+			fallSndStation = nil
+		end
+		sound.PlayFile( "sound/zcity/other/fallstatic.wav", "noplay noblock", function(station, _, _)
+			if IsValid(station) then
+				station:EnableLooping( true )
+				station:SetVolume( 0 )
+				fallSndStation = station
+			end
+		end)
+
+		if IsValid(windSndStation) then
+			windSndStation:Stop()
+			windSndStation = nil
+		end
+		sound.PlayFile( "sound/zcity/other/runwind.wav", "noplay noblock", function(station, _, _)
+			if IsValid(station) then
+				station:EnableLooping( true )
+				station:SetVolume( 0 )
+				windSndStation = station
+			end
+		end)
+	end
+
+	hook.Add("SetupMove","hg_FallSound",function()
+		local ply = LocalPlayer()
+		if not ply:Alive() or not ply.organism or ply.organism.otrub then
+			if fallsnd and IsValid(fallSndStation) then
+				fallSndStation:SetVolume(0)
+				fallSnd_Volume = 0
+				fallsnd = false
+			end
+			if windsnd and IsValid(windSndStation) then
+				windSndStation:SetVolume(0)
+				windSndStation:Pause()
+				windSnd_Volume = 0
+				windSnd_VolumeSpeed = 0
+				windsnd = false
+			end
+
+			return
+		end
+
+		local ent = hg.GetCurrentCharacter(ply)
+		if not IsValid(ent) then 
+			if fallsnd then 
+				fallsnd = false 
+			end 
+			return 
+		end
+		local vel = ent:GetVelocity():Length()
+		if -ent:GetVelocity().z > 700 and (ent:IsRagdoll() or !ply:OnGround()) and (ent:IsRagdoll() and !ent:IsConstrained() or ply:GetMoveType() == MOVETYPE_WALK) and ply:Alive() then
+			if not fallsnd then
+				fallsnd = true
+			end
+			local value = 1 - vel / 500
+			local ang = AngleRand(-value, value)
+
+			Suppress(0.05)
+
+			if hg.GetCurrentCharacter(ply):IsRagdoll() then
+				ang.r = 0
+				ply:SetEyeAngles(ply:EyeAngles() + ang)
+			else
+				SetViewPunchAngles(ang)
+			end
+		elseif fallsnd then
+			fallsnd = false
+		end
+
+		if vel > 250 and ply:Alive() and IsValid(windSndStation) and (ent:IsRagdoll() or ply:GetMoveType() == MOVETYPE_WALK) then
+			if not windsnd then
+				windsnd = true
+			end
+
+			windSnd_VolumeSpeed = vel/1400
+			windSndStation:SetPlaybackRate(math.min(math.max(vel/700,1),3))
+		elseif windsnd then
+			windsnd = false
+		end
+	end)
+
+	hook.Add("Think","hg_FallSnd",function()
+		if not IsValid(fallSndStation) or not IsValid(windSndStation) then
+			createSnd()
+			return 
+		end
+		-- Fall
+		if fallSndStation:GetState() != GMOD_CHANNEL_PLAYING and fallSnd_Volume > 0.01 then
+			fallSndStation:Play()
+		end
+
+		fallSnd_Volume = LerpFT(0.05, fallSnd_Volume, fallsnd and 1 or 0)
+		fallSndStation:SetVolume(fallSnd_Volume)
+
+		if fallSnd_Volume < 0.01 then
+			fallSndStation:Pause()
+			fallSndStation:SetTime(0)
+		end
+		-- Wind
+		if windSndStation:GetState() != GMOD_CHANNEL_PLAYING and windSnd_Volume > 0.01 then
+			windSndStation:Play()
+		end
+
+		windSnd_Volume = LerpFT(0.05, windSnd_Volume, windsnd and windSnd_VolumeSpeed or 0)
+		windSndStation:SetVolume(windSnd_Volume)
+
+		if windSnd_Volume < 0.01 then
+			windSndStation:Pause()
+			windSndStation:SetTime(0)
+		end
+	end)
+--
+
+--\\ CL Utils setting adjustments
+	if CLIENT then
+		RunConsoleCommand("mp_decals", "4096")  -- "4194304" - if you set this value you will get crashed :3
+		
+		hook.Add("Think","RemoveMe_001",function()
+			hook.Remove("PostPlayerDraw","BA2_GasmaskDraw")
+			hook.Remove("Think","RemoveMe_001")
+		end)
+	end
+--
+
+--\\ Tinnitus function
+	if CLIENT then
+		local lply = LocalPlayer()
+		local function AddTinnitus(time, needSound)
+			lply = LocalPlayer()
+			lply.tinnitus = CurTime() + time * 4
+			lply:SetDSP(32)
+		end
+
+		local plymeta = FindMetaTable("Player")
+		function plymeta:AddTinnitus(time,needSound)
+			needSound = needSound or false
+			AddTinnitus(time,needSound)
+		end
+
+		net.Receive("send_tinnitus",function()
+			local time = net.ReadFloat()
+			local bool = net.ReadBool()
+			AddTinnitus(time,bool)
+		end)
+	end
+--
+
+--\\ Remove CLIENT side hit particles
+	hook.Add("ScalePlayerDamage","remove_cl_hit_particles",function()
+		return !game.SinglePlayer() -- i hate singleplayer in gmod. WHY I SHOULD DO THIS STUPID IDIOTIC SHIT, i hate it.
+	end)
+--
+
+--\\ Remove sfbreath effect
+	hook.Add("Think","RemoveSF2_breath",function()
+		hook.Remove("PostPlayerDraw", "StormFox2.Effect.Breath")
+		timer.Remove("StormFox2.Effect.BreathT")
+
+		hook.Remove("Think","RemoveSF2_breath")
+	end)
+--
+
+--\\ Flash effect
+	hook.Add("Player_Death","fixEyeAngles",function(ply)
+		timer.Simple(0.1,function()
+			if IsValid(ply) then
+				local ang = ply:EyeAngles()
+				ang[3] = 0
+				ply:SetEyeAngles(ang)
+			end
+		end)
+	end)
+
+	hg.flashes = {}
+	local tab = {}
+
+	local blackout_mat = Material("sprites/mat_jack_hmcd_narrow")
+
+	function hg.AddFlash(eyepos, dot, pos, time, size)
+		time = time or 20
+		size = size or 1000--pixels
+		size = size / math.max(pos:Distance(eyepos) / 64,0.01) * (dot^2)
+		local taint = math.max(200 - size,0) / 200 * time * 0.9
+		local scr = pos:ToScreen()
+
+		table.insert(hg.flashes,{x = scr.x, y = scr.y, time = CurTime() + time - taint, lentime = time, size = size})
+	end
+
+	local flash
+	local mat = Material("sprites/orangeflare1_gmod")
+	local mat2 = Material("sprites/glow04_noz")
+
+	amtflashed = 0
+	amtflashed2 = 0
+	
+	hook.Add("Player_Death","huyhuyhuy",function(ply)
+		if ply == LocalPlayer() then
+			hg.flashes = {}
+			amtflashed = 0
+			amtflashed2 = 0
+		end
+	end)
+
+	hook.Add("PreCleanupMap", "noflashesforyouMreowe", function()
+		hg.flashes = {}
+		amtflashed = 0
+		amtflashed2 = 0
+	end)
+
+	hook.Add("Post Post Pre Post Processing","flasheseffect",function()
+		if !lply:Alive() then
+			if !next(hg.flashes) then
+				hg.flashes = {}
+			end
+
+			amtflashed = 0
+			amtflashed2 = 0
+		end
+		if (#hg.flashes <= 0) and (amtflashed2 <= 0) then return end
+		amtflashed = 0
+		for i = 1,#hg.flashes do
+			flash = hg.flashes[i]
+
+			if (flash.time or 0) < CurTime() then table.remove(hg.flashes[i]) continue end
+
+			local animpos = (flash.time - CurTime()) / flash.lentime
+			local size = flash.size
+
+			flash.animpos = animpos
+
+			amtflashed = amtflashed + animpos * size / 5000
+		end
+		
+		amtflashed = amtflashed + amtflashed2
+		amtflashed2 = math.min(math.Approach(amtflashed2, 0, FrameTime() / 20),2)
+		
+		if amtflashed < 0.8 then
+			tab["$pp_colour_brightness"] = 0 - math.max(amtflashed - 0.1,0)
+			DrawColorModify(tab)
+		end
+
+		--amtflashed = math.max(amtflashed - math.ease.InOutCubic(math.max(0, math.sin(CurTime() * 1) - 0.6) / 0.4),0)
+
+		for i = 1, #hg.flashes do
+			flash = hg.flashes[i]
+			
+			local animpos = flash.animpos
+			local size = flash.size
+
+			local huy = (1 - animpos) * -100
+			surface.SetMaterial(mat)
+			surface.SetDrawColor(255, 255, 255, (animpos * 255 + math.Rand(-10,10) * animpos) * (0.5 / #hg.flashes) * (amtflashed < 0.8 and 1.5 or 1))
+			surface.DrawTexturedRect(flash.x - size / 2 + huy, flash.y - size / 2 + huy, size, size)
+			surface.SetMaterial(mat2)
+			surface.DrawTexturedRect(flash.x - size / 2 + huy, flash.y - size / 2 + huy, size, size)
+		end
+	end)
+--
