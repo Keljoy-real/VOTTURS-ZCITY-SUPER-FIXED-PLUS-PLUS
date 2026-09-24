@@ -101,9 +101,10 @@ function SWEP:PrimaryAttack()
             return -- 🛑 Jammed. --
         end
     end
-    -- 🎯 Spread: aim tightens, broken arms + movement widen. --
+    -- 🎯 Spread: aim tightens, broken arms + movement widen, gunner skill tightens. --
     local spread = self:GetVC_Aim() and self.VC_SpreadAim or self.VC_SpreadHip -- 🎯 Base. --
     spread = spread * VCity.Config.SpreadScale -- 🎚️ Global scale. --
+    if VCity.Skills_SpreadScale then spread = spread * VCity.Skills_SpreadScale(owner) end -- 🔫 Gunner bonus (both realms, pure math). --
     if SERVER then -- 🖥️ Server adds injury spread (authoritative). --
         local arms = 0 -- 💪 Broken arms. --
         if owner.VCity_Limbs then -- 🦴 Have limbs. --
@@ -114,6 +115,7 @@ function SWEP:PrimaryAttack()
     end
     -- 🔫 Fire bullets (server does damage; client does FX). --
     if SERVER then -- 🖥️ Damage. --
+        local dmgScale = VCity.Skills_DamageScale and VCity.Skills_DamageScale(owner) or 1 -- 🔫 Gunner bonus. --
         local bullet = {} -- 📦 Bullet info. --
         bullet.Num = self.VC_Pellets or 1 -- 🔢 Pellets. --
         bullet.Src = owner:GetShootPos() -- 📍 Origin. --
@@ -121,7 +123,7 @@ function SWEP:PrimaryAttack()
         bullet.Spread = Vector(spread, spread, 0) -- 🎯 Spread. --
         bullet.Tracer = 1 -- ✨ Tracer. --
         bullet.Force = 5 -- 💪 Force. --
-        bullet.Damage = (self.VC_Damage or 20) -- 🩸 Damage. --
+        bullet.Damage = (self.VC_Damage or 20) * dmgScale -- 🩸 Damage (skilled). --
         bullet.Attacker = owner -- 👤 Attacker. --
         bullet.Callback = function(atk, tr, dmg) -- 🩸 Callback tweaks. --
             dmg:SetDamageType(DMG_BULLET) -- 🔫 Mark bullet (for classifier). --
@@ -133,8 +135,9 @@ function SWEP:PrimaryAttack()
         self:SetClip1(self:Clip1() - 1) -- 📉 Consume. --
         -- 🔊 Gunshot (server emits so everyone hears). --
         self:EmitSound(self.Primary.Sound or "weapons/pistol/pistol_fire2.wav", 75, 100) -- 🔊 Bang. --
-        -- 🎯 Recoil kick (view punch scaled by config). --
+        -- 🎯 Recoil kick (view punch scaled by config + gunner skill). --
         local punch = (self.VC_Recoil or 1) * VCity.Config.RecoilScale -- 🎯 Amount. --
+        if VCity.Skills_RecoilScale then punch = punch * VCity.Skills_RecoilScale(owner) end -- 🔫 Gunner steadiness. --
         owner:ViewPunch(Angle(-punch * 0.4, math.Rand(-punch * 0.1, punch * 0.1), 0)) -- 📷 Kick. --
     else -- 💻 Client FX: muzzle flash light (cheap, no dynamic light spam). --
         -- ✨ Muzzle FX handled by engine; nothing expensive here. --

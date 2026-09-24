@@ -2,30 +2,52 @@
 -- ⏱️ One periodic sweep keeps world stocked without entity spam. --
 
 -- 🎲 Loot tables: weighted {item, count range, weight}. --
+-- 🆕 Extended with food, crafting mats, gear, new guns (all registered items!). --
 VCity.LootTables = {
-    common = { -- 🟢 Frequent: ammo + basic meds. --
-        { v = { id = "ammo_9mm", min = 6, max = 18 }, w = 20 }, -- 🔫 9mm. --
-        { v = { id = "ammo_rifle", min = 6, max = 18 }, w = 15 }, -- 🔫 Rifle. --
-        { v = { id = "ammo_shell", min = 3, max = 8 }, w = 12 }, -- 🔫 Shells. --
-        { v = { id = "bandage", min = 1, max = 2 }, w = 18 }, -- 🩹 Bandage. --
-        { v = { id = "painkillers", min = 1, max = 2 }, w = 12 }, -- 💊 Pills. --
-        { v = { id = "scrap", min = 1, max = 3 }, w = 15 }, -- ⚙️ Scrap. --
+    common = { -- 🟢 Frequent: ammo + basic meds + food + mats. --
+        { v = { id = "ammo_9mm", min = 6, max = 18 }, w = 16 }, -- 🔫 9mm. --
+        { v = { id = "ammo_rifle", min = 6, max = 18 }, w = 12 }, -- 🔫 Rifle. --
+        { v = { id = "ammo_shell", min = 3, max = 8 }, w = 10 }, -- 🔫 Shells. --
+        { v = { id = "ammo_44", min = 3, max = 8 }, w = 6 }, -- 🔫 .44. --
+        { v = { id = "bandage", min = 1, max = 2 }, w = 14 }, -- 🩹 Bandage. --
+        { v = { id = "painkillers", min = 1, max = 2 }, w = 10 }, -- 💊 Pills. --
+        { v = { id = "scrap", min = 1, max = 3 }, w = 14 }, -- ⚙️ Scrap. --
+        { v = { id = "cloth", min = 1, max = 3 }, w = 12 }, -- 🧵 Cloth. --
+        { v = { id = "stick", min = 1, max = 2 }, w = 10 }, -- 🪵 Stick. --
+        { v = { id = "canned_beans", min = 1, max = 2 }, w = 10 }, -- 🥫 Beans. --
+        { v = { id = "water_bottle", min = 1, max = 2 }, w = 10 }, -- 💧 Water. --
+        { v = { id = "granola", min = 1, max = 2 }, w = 8 }, -- 🍫 Snack. --
+        { v = { id = "charcoal", min = 1, max = 2 }, w = 6 }, -- ⚫ Charcoal. --
+        { v = { id = "herb", min = 1, max = 2 }, w = 6 }, -- 🌿 Herb. --
     },
     medical = { -- 🏥 Medical-heavy (near stations / crates). --
-        { v = { id = "bandage", min = 1, max = 3 }, w = 20 }, -- 🩹 Bandage. --
-        { v = { id = "bigbandage", min = 1, max = 2 }, w = 12 }, -- 🩹 Trauma. --
-        { v = { id = "medkit", min = 1, max = 1 }, w = 8 }, -- 🩺 Kit. --
-        { v = { id = "morphine", min = 1, max = 1 }, w = 8 }, -- 💉 Morphine. --
-        { v = { id = "bloodbag", min = 1, max = 1 }, w = 6 }, -- 🩸 Blood. --
-        { v = { id = "splint", min = 1, max = 1 }, w = 8 }, -- 🦴 Splint. --
+        { v = { id = "bandage", min = 1, max = 3 }, w = 16 }, -- 🩹 Bandage. --
+        { v = { id = "bigbandage", min = 1, max = 2 }, w = 10 }, -- 🩹 Trauma. --
+        { v = { id = "medkit", min = 1, max = 1 }, w = 7 }, -- 🩺 Kit. --
+        { v = { id = "morphine", min = 1, max = 1 }, w = 7 }, -- 💉 Morphine. --
+        { v = { id = "bloodbag", min = 1, max = 1 }, w = 5 }, -- 🩸 Blood. --
+        { v = { id = "splint", min = 1, max = 1 }, w = 7 }, -- 🦴 Splint. --
+        { v = { id = "tourniquet", min = 1, max = 1 }, w = 6 }, -- 🩸 TQ. --
+        { v = { id = "cpr_kit", min = 1, max = 1 }, w = 4 }, -- 🫁 CPR. --
+        { v = { id = "adrenaline", min = 1, max = 1 }, w = 5 }, -- 💉 Adre. --
+        { v = { id = "coffee", min = 1, max = 1 }, w = 5 }, -- ☕ Coffee. --
     },
     weapon = { -- 🔫 Rare weapon drops. --
-        { v = { id = "w_glock", min = 1, max = 1 }, w = 10 }, -- 🔫 Pistol. --
-        { v = { id = "w_knife", min = 1, max = 1 }, w = 10 }, -- 🔪 Knife. --
+        { v = { id = "w_glock", min = 1, max = 1 }, w = 9 }, -- 🔫 Pistol. --
+        { v = { id = "w_knife", min = 1, max = 1 }, w = 8 }, -- 🔪 Knife. --
         { v = { id = "w_shotgun", min = 1, max = 1 }, w = 4 }, -- 🔫 Shotgun. --
         { v = { id = "w_akm", min = 1, max = 1 }, w = 3 }, -- 🔫 Rifle. --
-        { v = { id = "armor_vest", min = 1, max = 1 }, w = 5 }, -- 🛡️ Vest. --
-        { v = { id = "ammo_rifle", min = 10, max = 30 }, w = 12 }, -- 🔫 Ammo. --
+        { v = { id = "w_smg", min = 1, max = 1 }, w = 4 }, -- 🔫 SMG. --
+        { v = { id = "w_dmr", min = 1, max = 1 }, w = 2 }, -- 🔫 DMR. --
+        { v = { id = "w_revolver", min = 1, max = 1 }, w = 3 }, -- 🔫 Revolver. --
+        { v = { id = "w_machete", min = 1, max = 1 }, w = 4 }, -- 🔪 Machete. --
+        { v = { id = "w_taser", min = 1, max = 1 }, w = 3 }, -- ⚡ Taser. --
+        { v = { id = "armor_vest", min = 1, max = 1 }, w = 4 }, -- 🛡️ Vest. --
+        { v = { id = "helmet", min = 1, max = 1 }, w = 4 }, -- 🪖 Helmet. --
+        { v = { id = "gas_mask", min = 1, max = 1 }, w = 3 }, -- 😷 Mask. --
+        { v = { id = "ammo_rifle", min = 10, max = 30 }, w = 10 }, -- 🔫 Ammo. --
+        { v = { id = "duct_tape", min = 1, max = 2 }, w = 5 }, -- 🩹 Tape. --
+        { v = { id = "rope", min = 1, max = 1 }, w = 4 }, -- 🪢 Rope. --
     },
 }
 

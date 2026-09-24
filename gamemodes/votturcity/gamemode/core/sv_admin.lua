@@ -26,11 +26,12 @@ end)
 -- 🔫 Give weapon + ammo: vcity_givegun <glock|akm|shotgun|knife>. --
 concommand.Add("vcity_givegun", function(ply, cmd, args)
     if not IsAdmin(ply) then return end -- 🛑 Deny. --
-    local map = { glock = { w = "vcity_glock", a = "ammo_9mm", n = 36 }, akm = { w = "vcity_akm", a = "ammo_rifle", n = 60 }, shotgun = { w = "vcity_shotgun", a = "ammo_shell", n = 12 }, knife = { w = "vcity_knife" } } -- 🗺️ Map. --
+    local map = { glock = { w = "vcity_glock", a = "ammo_9mm", n = 36 }, akm = { w = "vcity_akm", a = "ammo_rifle", n = 60 }, shotgun = { w = "vcity_shotgun", a = "ammo_shell", n = 12 }, knife = { w = "vcity_knife" }, smg = { w = "vcity_smg", a = "ammo_9mm", n = 64 }, dmr = { w = "vcity_dmr", a = "ammo_rifle", n = 30 }, revolver = { w = "vcity_revolver", a = "ammo_44", n = 18 }, taser = { w = "vcity_taser" }, machete = { w = "vcity_machete" }, molotov = { w = "vcity_molotov" } } -- 🗺️ Map (extended). --
     local pick = map[string.lower(args[1] or "")] -- 🔍 Lookup. --
-    if not pick then ply:ChatPrint("❌ Usage: vcity_givegun glock|akm|shotgun|knife") return end -- 📝 Help. --
+    if not pick then ply:ChatPrint("❌ Usage: vcity_givegun glock|akm|shotgun|knife|smg|dmr|revolver|taser|machete|molotov") return end -- 📝 Help. --
     ply:Give(pick.w) -- 🔫 Give weapon. --
     if pick.a then VCity.Inventory_Give(ply, pick.a, pick.n, true) VCity.Inventory_Sync(ply) end -- 🎒 Ammo. --
+    if pick.w == "vcity_molotov" then VCity.Inventory_Give(ply, "w_molotov", 2, true) VCity.Inventory_Sync(ply) end -- 🔥 Molotov fuel. --
     ply:SelectWeapon(pick.w) -- 🎯 Equip. --
 end)
 

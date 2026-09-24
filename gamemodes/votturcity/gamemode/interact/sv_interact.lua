@@ -50,7 +50,7 @@ net.Receive(VCity.Net.INTERACT, function(_, ply)
         ent:Use(ply, ply) -- 🤝 Use. --
         return -- ✅ Done. --
     end
-    if cls == "vcity_crate" or cls == "vcity_medstation" then -- 📦 Station/crate. --
+    if cls == "vcity_crate" or cls == "vcity_medstation" or cls == "vcity_trader" or cls == "vcity_campfire" or cls == "vcity_bed" or cls == "vcity_airdrop" then -- 📦 Usable stations/events. --
         ent:Use(ply, ply) -- 🤝 Use. --
         return -- ✅ Done. --
     end

@@ -117,9 +117,10 @@ function VCity.Medical_Treat(healer, patient, itemId)
     if (def.adrenaline or 0) > 0 then -- 💉 Rush. --
         patient.VCity_AdrenalineUntil = CurTime() + def.adrenaline -- ⏱️ Set expiry. --
     end
-    -- ❤️ Raw heal (capped by engine max). --
+    -- ❤️ Raw heal (capped by engine max, scaled by medic skill). --
     if (def.heal or 0) > 0 then -- ❤️ Heal. --
-        patient:SetHealth(math.min(patient:GetMaxHealth(), patient:Health() + def.heal)) -- ❤️ Apply. --
+        local scale = VCity.Skills_HealScale and VCity.Skills_HealScale(healer) or 1 -- 🩹 Medic bonus. --
+        patient:SetHealth(math.min(patient:GetMaxHealth(), patient:Health() + def.heal * scale)) -- ❤️ Apply scaled. --
     end
 
     VCity.Vitals_RefreshState(patient) -- 🚦 Update state. --

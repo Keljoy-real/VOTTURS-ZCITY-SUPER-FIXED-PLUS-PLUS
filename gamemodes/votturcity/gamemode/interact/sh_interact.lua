@@ -59,6 +59,19 @@ function VCity.Interact_Classify(ply, ent)
     if cls == "vcity_medstation" then -- 🏥 Station. --
         return VCity.InteractKind.USE_STATION, "🏥 Use station (" .. ent:GetNWInt("VCity_Charges", 0) .. ")" -- 🏥 Prompt. --
     end
+    if cls == "vcity_trader" then -- 🏪 Trader. --
+        return VCity.InteractKind.USE_STATION, "🏪 Trade (scrap = cash)" -- 🏪 Prompt. --
+    end
+    if cls == "vcity_campfire" then -- 🔥 Campfire. --
+        local lit = ent:GetNWBool("VCity_Lit", false) -- 🔥 Lit? --
+        return VCity.InteractKind.USE_STATION, lit and "🔥 Warm up (+fuel with stick)" or "🔥 Light fire (1 stick)" -- 🔥 Prompt. --
+    end
+    if cls == "vcity_bed" then -- 🛏️ Bed. --
+        return VCity.InteractKind.USE_STATION, "🛏️ Set respawn" -- 🛏️ Prompt. --
+    end
+    if cls == "vcity_airdrop" then -- 📦 Airdrop. --
+        return VCity.InteractKind.OPEN_CRATE, ent:GetNWBool("VCity_Landed", false) and "📦 Loot airdrop" or "🪂 Inbound..." -- 📦 Prompt. --
+    end
     if string.find(cls, "door") then -- 🚪 Door. --
         return VCity.InteractKind.DOOR, "🚪 Use door" -- 🚪 Prompt. --
     end

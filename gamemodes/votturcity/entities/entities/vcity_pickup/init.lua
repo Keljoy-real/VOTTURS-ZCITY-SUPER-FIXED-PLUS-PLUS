@@ -46,10 +46,12 @@ function ENT:Use(activator, caller)
     local leftover = VCity.Inventory_Give(activator, itemId, count) -- 🎒 Give. --
     if leftover <= 0 then -- ✅ Fully taken. --
         activator:EmitSound("items/ammo_pickup.wav", 60, 100) -- 🔊 Pickup. --
+        hook.Run("VCity_PickedUp", activator, itemId, count) -- 📦 Quest/progression hook. --
         self:Remove() -- 🧹 Remove entity. --
     elseif leftover < count then -- 📦 Partial (heavy/full). --
         self.VCity_Count = leftover -- 📉 Update. --
         self:SetNWInt("VCity_Count", leftover) -- 📡 Replicate. --
+        hook.Run("VCity_PickedUp", activator, itemId, count - leftover) -- 📦 Partial hook. --
         VCity.Notify(activator, 0, "🎒 Partially picked up.") -- 📝 Feedback. --
     end
     -- 🙅 If leftover == count, inventory rejected; entity stays. --

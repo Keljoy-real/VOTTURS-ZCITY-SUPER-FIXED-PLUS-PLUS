@@ -34,6 +34,7 @@ function ENT:Use(activator)
         VCity.Notify(activator, 2, "🎒 Can't carry — dropped back.") -- 📝 Feedback. --
     else -- ✅ Taken. --
         activator:EmitSound("items/ammo_pickup.wav", 60, 100) -- 🔊 Cue. --
+        hook.Run("VCity_CrateOpened", activator, stack.id, stack.count) -- 📦 Quest hook. --
         VCity.Notify(activator, 1, "📦 Found: " .. (VCity.Items[stack.id].name or stack.id) .. " x" .. stack.count) -- 📝 Loot msg. --
     end
     if #self.VCity_Loot <= 0 then self:Remove() end -- 🧹 Remove when drained. --

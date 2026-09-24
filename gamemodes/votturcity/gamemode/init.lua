@@ -58,7 +58,7 @@ function GM:PlayerSpawn(ply, transition)
     ply:UnSpectate() -- 👀 Exit spectate if previously dead. --
     ply:Freeze(false) -- 🧊 Ensure not frozen. --
 
-    -- 🎒 Starter kit: hands + bandage so new players can act immediately. --
+    -- 🎒 Starter kit: hands + bandage + snack so new players can act immediately. --
     timer.Simple(0.2, function() -- ⏳ Slight delay so weapons lib is ready. --
         if not IsValid(ply) then return end -- 🛑 Player left. --
         if not ply:Alive() then return end -- 💀 Died instantly (edge case). --
@@ -66,6 +66,9 @@ function GM:PlayerSpawn(ply, transition)
         ply:Give("vcity_hands") -- 🙌 Fists / interaction tool. --
         VCity.Inventory_Give(ply, "bandage", 1, true) -- 🩹 One free bandage. --
         VCity.Inventory_Give(ply, "painkillers", 1, true) -- 💊 One free painkiller. --
+        VCity.Inventory_Give(ply, "granola", 1, true) -- 🍫 Snack for hunger tutorial. --
+        VCity.Inventory_Give(ply, "water_bottle", 1, true) -- 💧 Drink for thirst tutorial. --
+        VCity.Inventory_Sync(ply) -- 📡 Push starter kit. --
         ply:SelectWeapon("vcity_hands") -- 🙌 Equip hands by default. --
     end)
 
@@ -73,8 +76,11 @@ function GM:PlayerSpawn(ply, transition)
     timer.Simple(1, function() -- ⏳ Wait for client to be ready. --
         if IsValid(ply) then -- ✅ Still here. --
             VCity.Vitals_Sync(ply) -- 📡 Send vitals snapshot. --
+            if VCity.Survival_Sync then VCity.Survival_Sync(ply) end -- 🍖 Survival snapshot. --
             VCity.Inventory_Sync(ply) -- 🎒 Send inventory snapshot. --
             VCity.XP_Sync(ply) -- ⭐ Send XP snapshot. --
+            if VCity.Skills_Sync then VCity.Skills_Sync(ply) end -- ⭐ Skills. --
+            if VCity.Quests_Sync then VCity.Quests_Sync(ply) end -- 📜 Quests. --
         end
     end)
 end
@@ -131,8 +137,8 @@ end)
 hook.Add("PlayerInitialSpawn", "VCity_Welcome", function(ply)
     timer.Simple(3, function() -- ⏳ Wait for HUD to load. --
         if IsValid(ply) then -- ✅ Still connected. --
-            ply:ChatPrint("🟢 Welcome to VotturCity! Press E to interact, I for inventory, H for medical.") -- 👋 Help. --
-            ply:ChatPrint("🩸 Watch your blood + pain. Bandage bleeding fast!") -- 🩸 Tip. --
+            ply:ChatPrint("🟢 Welcome to VotturCity! E interact, I inventory, H medical, C craft.") -- 👋 Help. --
+            ply:ChatPrint("🩸 Bandage bleeding! 🍖 Eat/drink! ⭐ K skills, 📜 L missions, 👥 N squad, 📻 T radio, 🎽 J gear.") -- 🩸 Tips. --
         end
     end)
 end)

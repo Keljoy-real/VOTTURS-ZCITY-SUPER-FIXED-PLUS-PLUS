@@ -22,7 +22,12 @@ local function ClassifyDamage(dmginfo) -- 🔍 Inspect DamageInfo. --
 end
 
 -- 🛡️ Apply armor reduction (returns scaled damage + armor consumed). --
-local function ApplyArmor(ply, damage, kind)
+-- 🎽 Gear hook: if sv_armor loaded, per-limb gear scales first (graceful if missing). --
+local function ApplyArmor(ply, damage, kind, limb)
+    -- 🎽 Gear first (limb-aware). --
+    if VCity.Armor_Scale then -- 🛡️ Gear system present? --
+        damage = VCity.Armor_Scale(ply, limb or VCity.Limb.CHEST, damage, kind) -- 🎽 Scale. --
+    end
     local armor = ply:Armor() -- 🛡️ Current armor. --
     if armor <= 0 then return damage end -- 🙅 No armor. --
     -- 🧠 Head + blast bypass some armor; bullets are mitigated best. --
@@ -69,6 +74,11 @@ hook.Add("EntityTakeDamage", "VCity_Damage", function(target, dmginfo)
     if not target:IsPlayer() then return end -- 👤 Players only here. --
     if not target:Alive() then return end -- 💀 Dead ignore. --
     local ply = target -- ✏️ Alias. --
+    -- 👥 Squad friendly-fire gate (needs sv_squad; graceful if missing). --
+    local atk = dmginfo:GetAttacker() -- 🔍 Attacker. --
+    if VCity.Squad_Block and VCity.IsLivePlayer(atk) and atk ~= ply then -- 👥 Check. --
+        if VCity.Squad_Block(atk, ply) then dmginfo:SetDamage(0) return true end -- 🛡️ Blocked. --
+    end
     -- 😵 Unconscious players take reduced further damage (mercy rule). --
     local state = VCity.State_Get(ply) -- 🚦 State. --
     if state == VCity.State.DEAD then return end -- ⚰️ Dead ignore. --
@@ -93,7 +103,9 @@ hook.Add("EntityTakeDamage", "VCity_Damage", function(target, dmginfo)
     if limb == VCity.Limb.HEAD then limbMult = VCity.Config.HeadshotMult end -- 🧠 Head. --
     if limb == VCity.Limb.CHEST then limbMult = VCity.Config.ChestMult end -- 🫁 Chest. --
     local final = raw * limbMult -- 🧮 Scaled. --
-    final = ApplyArmor(ply, final, kind) -- 🛡️ Armor. --
+    -- 🎯 Medic skill reduces damage taken slightly (if skills loaded). --
+    if VCity.Skills_Mitigate then final = VCity.Skills_Mitigate(ply, final, kind, limb) end -- 🛡️ Skill guard. --
+    final = ApplyArmor(ply, final, kind, limb) -- 🛡️ Armor + gear. --
 
     -- 🦴 Record limb damage + wound severity (server tables, not NW). --
     ply.VCity_Limbs = ply.VCity_Limbs or VCity.Limbs_Fresh() -- 🦴 Ensure table. --
@@ -136,8 +148,8 @@ hook.Add("EntityTakeDamage", "VCity_Damage", function(target, dmginfo)
 
     -- ❤️ Apply final HP damage through the engine (lets armor/death hooks work). --
     dmginfo:SetDamage(final) -- 🔢 Write back scaled damage. --
-    -- 🩸 Track attacker for XP on hit (throttled to avoid spam). --
-    local atk = dmginfo:GetAttacker() -- 🔍 Attacker. --
+    -- 🩸 Track attacker for XP on hit (throttled to avoid spam; reuse atk from FF gate). --
+    atk = dmginfo:GetAttacker() -- 🔍 Refresh (same value). --
     if VCity.IsLivePlayer(atk) and atk ~= ply then -- 👤 Valid killer candidate. --
         atk.VCity_LastHitTime = CurTime() -- ⏱️ Mark. --
         -- ⭐ Hit XP throttled per attacker (1/sec max). --

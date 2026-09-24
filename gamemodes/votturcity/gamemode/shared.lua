@@ -41,15 +41,28 @@ end
 -- 🗂️ Order matters: config -> enums -> utils -> net -> shared systems. --
 local SharedFiles = {
     "config/sh_config.lua", -- ⚙️ Tunables first so everything can read them. --
+    "config/sh_config_survival.lua", -- 🍖 Survival knobs. --
+    "config/sh_config_trauma.lua", -- 🩸 Trauma knobs. --
+    "config/sh_config_craft.lua", -- 🛠️ Craft/armor knobs. --
+    "config/sh_config_skills.lua", -- ⭐ Skills/quest knobs. --
     "core/sh_enum.lua", -- 🔢 Constants + enumerations. --
     "core/sh_utils.lua", -- 🧰 Small helpers + validators. --
     "core/sh_net.lua", -- 📡 Net message names. --
     "core/sh_state.lua", -- 🚦 Player-state helpers (shared). --
     "core/sh_progression.lua", -- ⭐ XP/level shared helpers. --
+    "core/sh_skills.lua", -- ⭐ Skill math. --
+    "core/sh_quests.lua", -- 📜 Quest defs. --
+    "core/sh_squad.lua", -- 👥 Squad helpers. --
+    "core/sh_armor.lua", -- 🛡️ Gear slots. --
     "health/sh_limbs.lua", -- 🦴 Limb region definitions. --
     "health/sh_medical_defs.lua", -- 💊 Medical item definitions. --
+    "health/sh_medical_ext.lua", -- 🩸 TQ/CPR/drug defs. --
+    "health/sh_survival_defs.lua", -- 🍖 Food catalog. --
     "inventory/sh_items.lua", -- 🎒 Item registry. --
+    "inventory/sh_items_food.lua", -- 🥫 Food/mats/gear items. --
+    "inventory/sh_items_weapons2.lua", -- 🔫 Second weapon batch. --
     "inventory/sh_inventory.lua", -- 🎒 Shared inventory helpers. --
+    "inventory/sh_crafting.lua", -- 🛠️ Recipes. --
     "interact/sh_interact.lua", -- 🤝 Interaction registry. --
     "corpse/sh_corpse.lua", -- 💀 Corpse helpers. --
     "audio/sh_audio.lua", -- 🔊 Audio event names. --
@@ -59,22 +72,45 @@ local ServerFiles = {
     "core/sv_persistence.lua", -- 💾 SQLite persistence layer. --
     "core/sv_state.lua", -- 🚦 Authoritative state machine. --
     "core/sv_progression.lua", -- ⭐ XP granting + saving. --
+    "core/sv_skills.lua", -- ⭐ Skills (wraps XP_Grant, after progression). --
+    "core/sv_quests.lua", -- 📜 Missions. --
     "core/sv_loot.lua", -- 🎁 World loot spawner. --
+    "core/sv_events.lua", -- 🎪 Airdrops + capture. --
+    "core/sv_weather.lua", -- 🌦️ Clock + storms. --
     "core/sv_cleanup.lua", -- 🧹 Entity + ragdoll cleanup. --
     "core/sv_admin.lua", -- 🛡️ Admin / debug commands. --
+    "core/sv_admin2.lua", -- 🛡️ Bring/goto/slay/events. --
     "health/sv_damage.lua", -- 🩸 Damage dispatcher. --
     "health/sv_vitals.lua", -- ❤️ Blood / pain / adrenaline ticker. --
+    "health/sv_survival.lua", -- 🍖 Hunger/thirst/stamina/temp. --
     "health/sv_medical.lua", -- 🩹 Medical treatment logic. --
+    "health/sv_trauma.lua", -- 🩸 Arterial/TQ/CPR/drag (wraps treat). --
+    "health/sv_drugs.lua", -- 💉 Overdose (wraps treat). --
     "inventory/sv_inventory.lua", -- 🎒 Server inventory authority. --
+    "inventory/sv_crafting.lua", -- 🛠️ Crafting authority. --
     "interact/sv_interact.lua", -- 🤝 Server interaction executor. --
     "corpse/sv_corpse.lua", -- 💀 Corpse spawn / search / cleanup. --
+    "core/sv_armor.lua", -- 🛡️ Gear protection. --
+    "core/sv_squad.lua", -- 👥 Squads. --
+    "core/sv_hitmarkers.lua", -- 🎯 Hitmarkers + killfeed + blood FX fanout. --
+    "core/sv_radio.lua", -- 📻 Squad radio relay. --
 }
 
 local ClientFiles = {
     "inventory/cl_inventory.lua", -- 🎒 Client cache + UI. --
+    "inventory/cl_crafting.lua", -- 🛠️ Crafting panel (C). --
     "interact/cl_interact.lua", -- 🤝 Prompt + key handling. --
     "corpse/cl_corpse.lua", -- 💀 Corpse search UI hook. --
+    "core/cl_armor.lua", -- 🎽 Gear panel (J). --
+    "core/cl_skills.lua", -- ⭐ Skills panel (K). --
+    "core/cl_quests.lua", -- 📜 Missions panel (L). --
+    "core/cl_squad.lua", -- 👥 Squad panel (N) + markers. --
+    "core/cl_radio.lua", -- 📻 Radio panel (T). --
     "hud/cl_hud.lua", -- 🖥️ Main survival HUD. --
+    "hud/cl_survival.lua", -- 🍖 Hunger/stamina/temp HUD. --
+    "hud/cl_hitmarkers.lua", -- 🎯 Hitmarkers + killfeed. --
+    "hud/cl_compass.lua", -- 🧭 Compass + events. --
+    "hud/cl_blood_fx.lua", -- 🩸 Blood decals. --
     "hud/cl_menus.lua", -- 📋 Scoreboard / help / medical panels. --
     "audio/cl_audio.lua", -- 🔊 Heartbeat / breathing / UI sounds. --
 }

@@ -25,10 +25,12 @@ function VCity.Inventory_Give(ply, itemId, count, silent)
     count = VCity.SanitizeCount(count or 1, 999) -- 🔢 Count. --
     VCity.Inventory_Ensure(ply) -- 🎒 Ensure. --
     local inv = ply.VCity_Inventory -- 📦 Ref. --
-    -- ⚖️ Weight gate: reject if it would exceed max. --
+    -- ⚖️ Weight gate: scavenger skill raises the cap (graceful if skills missing). --
+    local maxW = VCity.Config.InvMaxWeight -- ⚖️ Base. --
+    if VCity.Skills_WeightBonus then maxW = maxW + VCity.Skills_WeightBonus(ply) end -- 🎒 Skill bonus. --
     local newWeight = VCity.Inventory_Weight(inv) + (def.w or 0) * count -- ⚖️ Projected. --
-    if newWeight > VCity.Config.InvMaxWeight then -- 🛑 Too heavy. --
-        if not silent then VCity.Notify(ply, 2, "🎒 Too heavy!") end -- 📝 Feedback. --
+    if newWeight > maxW then -- 🛑 Too heavy. --
+        if not silent then VCity.Notify(ply, 2, "🎒 Too heavy! (" .. string.format("%.1f", newWeight) .. "/" .. maxW .. "kg)") end -- 📝 Feedback. --
         return count -- 📦 All leftover. --
     end
     -- 📦 Slot gate: count DISTINCT stacks. --

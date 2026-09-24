@@ -17,6 +17,20 @@ VCity.Net = { -- 📡 All net channel names (prefixed at registration). --
     ADMIN = "VCity_Admin", -- 🛡️ Admin command channel (validated). --
     AUDIO = "VCity_Audio", -- 🔊 Server -> client positional audio cue. --
     STATE = "VCity_State", -- 🚦 Player state change broadcast. --
+    CONSUME = "VCity_Consume", -- 🍖 Client -> server eat/drink. --
+    CRAFT = "VCity_Craft", -- 🛠️ Client -> server craft request. --
+    GEAR = "VCity_Gear", -- 🎽 Gear equip/unequip. --
+    SKILLS = "VCity_Skills", -- ⭐ Skills snapshot. --
+    SKILLUP = "VCity_SkillUp", -- ⭐ Spend skill point. --
+    QUESTS = "VCity_Quests", -- 📜 Quest progress. --
+    QUEST_CLAIM = "VCity_QuestClaim", -- 🎁 Claim quest reward. --
+    SQUAD = "VCity_Squad", -- 👥 Squad ops + roster. --
+    HIT = "VCity_Hit", -- 🎯 Hitmarker. --
+    FEED = "VCity_Feed", -- 📜 Kill feed. --
+    BLOODFX = "VCity_BloodFX", -- 🩸 Blood FX to PVS. --
+    TRADE = "VCity_Trade", -- 🏪 Trade menu. --
+    TRADE_OP = "VCity_TradeOp", -- 🏪 Buy/sell ops. --
+    RADIO = "VCity_Radio", -- 📻 Squad radio. --
 }
 
 -- 🖥️ Server registers every string once at load. --

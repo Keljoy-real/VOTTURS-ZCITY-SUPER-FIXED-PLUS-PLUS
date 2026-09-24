@@ -83,9 +83,18 @@ function VCity.Inventory_RefreshPanel()
         use:SetWide(70) -- 📐 Width. --
         use:SetText("Use") -- 📝 Label. --
         use.DoClick = function() -- 🖱️ Click. --
-            -- 🩹 Medical -> self-treatment net; weapon -> noop (equip via pickup). --
+            -- 🩹 Medical -> self-treatment net; food -> consume net; gear -> equip net. --
             if def.cat == "medical" then -- 💊 Medical. --
                 net.Start(VCity.Net.MEDICAL) -- 🩹 Open. --
+                net.WriteString(stack.id) -- 🆔 Item. --
+                net.SendToServer() -- 📤 Send. --
+            elseif def.cat == "food" then -- 🍖 Food/drink. --
+                net.Start(VCity.Net.CONSUME) -- 🍖 Open. --
+                net.WriteString(stack.id) -- 🆔 Item. --
+                net.SendToServer() -- 📤 Send. --
+            elseif def.cat == "gear" and VCity.Gear_SlotFor and VCity.Gear_SlotFor(stack.id) then -- 🎽 Gear. --
+                net.Start(VCity.Net.GEAR) -- 🎽 Open. --
+                net.WriteString("equip") -- 📝 Op. --
                 net.WriteString(stack.id) -- 🆔 Item. --
                 net.SendToServer() -- 📤 Send. --
             end
