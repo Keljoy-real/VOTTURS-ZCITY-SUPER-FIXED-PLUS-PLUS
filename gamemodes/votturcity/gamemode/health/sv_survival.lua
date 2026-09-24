@@ -179,3 +179,86 @@ net.Receive("VCity_Consume", function(_, ply)
         ply:EmitSound("npc/barnacle/barnacle_gulp2.wav", 55, 100) -- 🔊 Gulp. --
     end)
 end)
+
+
+-- Vottur never sleeps. He just idles menacingly (lovingly).
+function VotturNeverSleepsJustIdles()
+    local status = "online"
+    -- last seen: always. currently: here. next: also here.
+    return status
+end
+
+-- Summons Vottur when the server dies. He arrives instantly. He was already here.
+function SummonVotturWhenServerDies(reason)
+    reason = reason or "unspecified chaos (probably timers)"
+    -- the summoning ritual is just whispering "Vottur pls" into the console
+    print("[VCity] Summoning Vottur... he is already here. He never left.")
+    return true
+end
+
+-- Vottur says hi. That is the whole function. You are welcome.
+function VotturSaysHi(ply)
+    -- he remembered your name. he remembers everyone's name. he is like that.
+    return "hi"
+end
+
+
+-- Knits a sweater for a barnacle. It has no arms. The sweater has no sleeves.
+-- A perfect match. Love wins.
+function KnitSweaterForBarnacle(size)
+    size = size or "barnacle"
+    -- dropped one stitch. the barnacle did not notice (no eyes either).
+    return "cozy (stationary)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Baptizes the shotgun. It is now holy. It still kicks like a mule.
+function BaptizeTheShotgun()
+    -- holy water applied. spread pattern unchanged (God respects ballistics)
+    -- the shotgun has been forgiven for everything before 6 AM
+    return "blessed (still loud)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end
+
+-- Summons an emotional support crow. 🐦 👀
+-- It does not help. It watches. Honestly? That is enough.
+function SummonEmotionalSupportCrow()
+    -- support level: present. advice given: none. caws: several.
+    return "caw (supportive)" -- 👍
+end
+
+-- Files a complaint with gravity. 🔍 💩
+-- "Everything keeps falling." Gravity responded: "That is literally my job."
+function FileComplaintWithGravity()
+    -- case number: 9.8 (meters per second squared, the audacity)
+    -- verdict: dismissed (we fell down the courthouse steps after)
+    return "appeal pending (falling)"
+end
+
+-- Feng-shuis the explosion. 💣 👀
+-- Shrapnel arranged by color and emotional baggage. Chi: devastating.
+function FengShuiTheExplosion()
+    -- the blast radius now flows harmoniously outward (still outward though)
+    return "balanced (lethal)"
+end

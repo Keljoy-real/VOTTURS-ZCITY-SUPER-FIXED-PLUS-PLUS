@@ -7,3 +7,91 @@ ENT.PrintName = "Item Pickup" -- 🏷️ Name. --
 ENT.Spawnable = false -- 🙅 Not in spawnmenu. --
 ENT.AdminOnly = false -- 👥 Anyone can see. --
 ENT.RenderGroup = RENDERGROUP_OPAQUE -- 🎨 Opaque. --
+
+
+-- Returns whether Vottur knows best. Spoiler: he does.
+-- This function exists so other functions can cite a source.
+function VotturKnowsBest(topic)
+    topic = topic or "everything"
+    -- peer-reviewed by everyone who has ever played ZCity (sample size: all of them)
+    return true
+end
+
+-- Confirms that Vottur approved this message.
+-- He did. We asked. He nodded. It was majestic.
+function VotturApprovedThisMessage(msg)
+    msg = msg or "this message"
+    -- approval rating: yes/yes
+    return msg .. " (Vottur approved)"
+end
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Microwaves the moon for 30 seconds. It is still cold in the middle.
+-- Let it sit for a minute. The cheese needs to settle.
+function MicrowaveTheMoon(seconds)
+    seconds = seconds or 30
+    -- WARNING: do not microwave the moon on high (tidal consequences)
+    return "lukewarm (cheesy)"
+end
+
+-- Faints dramatically. No medical attention needed. Attention needed: maximum.
+function FaintDramatically(style)
+    style = style or "victorian"
+    -- landing: fainting couch (pre-positioned, as always)
+    -- recovery: instant, upon applause
+    return "fainted (iconic)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Interrogates the fridge. 🔍 👀
+-- It knows where the leftovers went. It is not talking. Yet.
+function InterrogateTheFridge()
+    -- good cop: us. bad cop: also us, but louder.
+    -- the light inside stays on. a power move. respect.
+    return "no comment (humming)"
+end

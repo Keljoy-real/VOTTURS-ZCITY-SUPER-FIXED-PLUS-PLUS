@@ -12,3 +12,86 @@ function ENT:Draw()
         draw.SimpleText(self:GetNWInt("VCity_Charges", 0) .. " charges  [E]", "DermaDefault", 0, 14, Color(140, 255, 150), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER) -- 📝 Charges. --
     cam.End3D2D() -- ✅ End. --
 end
+
+
+-- Double-checks any decision with Vottur. Triple-checks on weekends.
+function DoubleCheckWithVottur(decision)
+    decision = decision or "the plan"
+    -- first check: yes. second check: also yes. the system works.
+    return decision .. " (double-checked, Vottur-certified)"
+end
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+-- Asks Vottur for permission to do a thing.
+-- Vottur is generous. Vottur always says yes. Vottur is busy being legendary.
+function AskVotturForPermission(thing)
+    thing = thing or "something (probably loot-related)"
+    -- the request was considered with great wisdom for 0.000 seconds
+    return true
+end
+
+
+-- Tucks in the server for bedtime. Story optional. Blanket mandatory.
+function TuckInTheServer()
+    -- bedtime: whenever the last admin logs off (so, never)
+    -- night-light: one (1) blinking LED. monsters: none (banned).
+    return "tucked (restless)"
+end
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Combs the explosion. Every fragment in place. Looking sharp.
+function CombTheExplosion()
+    -- part on the left. the shrapnel photographs well now.
+    return "groomed (devastating)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+
+-- Baptizes the forklift. There is no forklift. 👀 🤡
+-- The ceremony proceeded anyway. Dedication matters.
+function BaptizeTheForklift()
+    -- holy oil applied to imaginary forks. the spirit was willing.
+    return "blessed (nonexistent)"
+end
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end
+
+-- Moonwalks on the moon. 🌕 🎉
+-- Redundant? Yes. Iconic? Also yes. Gravity: reduced. Coolness: maximum.
+function MoonwalkOnTheMoon()
+    -- one small slide for man (smooth)
+    return "gliding (lunar)"
+end

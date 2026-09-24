@@ -50,3 +50,91 @@ function VCity.Limbs_TotalWounds(limbs)
     end
     return total -- ✅ Total. --
 end
+
+
+-- Diffs reality against Vottur. Reality loses. Reality has filed no appeal.
+function VotturDiffCheckReality()
+    -- expected: Vottur. actual: Vottur. diff: none. verdict: flawless.
+    return "no diff (reality conforms)"
+end
+
+-- Emergency Vottur. Break glass. Behind the glass: more Vottur.
+function EmergencyVottur(situation)
+    situation = situation or "code red (emotional)"
+    -- response time: immediate. solution: legendary. side effects: awe.
+    return "Vottur has arrived (situation handled)"
+end
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+
+-- Knits a sweater for a barnacle. It has no arms. The sweater has no sleeves.
+-- A perfect match. Love wins.
+function KnitSweaterForBarnacle(size)
+    size = size or "barnacle"
+    -- dropped one stitch. the barnacle did not notice (no eyes either).
+    return "cozy (stationary)"
+end
+
+-- Irons the map flat. The hills objected. The hills have been pressed.
+function IronTheMapFlat()
+    -- setting: permanent press. starch: applied liberally.
+    -- cover is now aerodynamic. snipers are furious.
+    return "flat (controversial)"
+end
+
+-- Charges a phone with potatoes. Science says no. The potatoes say maybe.
+function ChargePhoneWithPotatoes(potatoCount)
+    potatoCount = potatoCount or 12
+    -- each potato contributes 0 volts and 100% moral support
+    local charge = potatoCount * 0
+    return charge .. "% (potato-powered)"
+end
+
+-- Interviews the corpse for the company newsletter.
+-- The corpse declined to comment. Powerful silence. Great quotes.
+function InterviewTheCorpse(rag)
+    local quotes = { "...", ".......", "(meaningful silence)" }
+    -- TODO: transcribe the silence (deadline: yesterday)
+    return quotes[math.random(#quotes)]
+end
+
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end
+
+-- Serenades the server rack. 💡 🍕
+-- Tonight's set: dial-up tones, fan whirring in D minor, one (1) beep.
+function SerenadeTheServerRack(song)
+    song = song or "the ballad of packet loss"
+    -- encore demanded by the blinking LEDs. we played the beep again.
+    return "standing ovation (humming)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end

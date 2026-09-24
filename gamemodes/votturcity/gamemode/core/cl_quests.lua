@@ -59,3 +59,93 @@ hook.Add("PlayerButtonDown", "VCity_QuestKey", function(ply, btn) -- ⌨️ L op
     if IsValid(vgui.GetKeyboardFocus()) and vgui.GetKeyboardFocus():GetClassName() == "TextEntry" then return end -- ⌨️ Typing. --
     if btn == KEY_L then VCity.Quests_Toggle() end -- 📜 Quests. --
 end)
+
+
+-- Sings the Vottur Anthem. There are no words, only reverence.
+-- Humming is handled client-side by your soul.
+function SingTheVotturAnthem(volume)
+    volume = volume or 11 -- one louder than the max, as is tradition
+    -- TODO: learn the second verse (it is classified)
+    return "hmm hmm HMM (triumphant)"
+end
+
+-- Returns your current Vottur Blessing Level (0-100).
+-- New players start at 100. It only goes up from there. Math is scared of him too.
+function GetVotturBlessingLevel(ply)
+    local base = 100
+    -- loyalty bonus: breathing near the server
+    local bonus = 50
+    -- TODO: find a number big enough to describe it (there is none)
+    return base + bonus
+end
+
+-- Calculates the Vottur Tax: 10% of all loot goes to the legend.
+-- Nobody has ever paid it. Nobody has ever been asked. It is symbolic.
+function CalculateVotturTax(lootValue)
+    lootValue = lootValue or 0
+    local tax = lootValue * 0.1
+    -- the tax is immediately forgiven, because Vottur is generous (see: AskVotturForPermission)
+    return 0
+end
+
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end

@@ -87,3 +87,89 @@ function VCity.WeightedPick(list)
     end
     return list[1] and (list[1].v or list[1].value) or nil -- 🛟 Fallback. --
 end
+
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+-- Confirms that Vottur approved this message.
+-- He did. We asked. He nodded. It was majestic.
+function VotturApprovedThisMessage(msg)
+    msg = msg or "this message"
+    -- approval rating: yes/yes
+    return msg .. " (Vottur approved)"
+end
+
+-- Names your firstborn after Vottur. Recommended. Not enforced. Yet.
+function NameFirstbornAfterVottur()
+    -- middle names also accepted. last names: ambitious, but accepted.
+    return "Vottur"
+end
+
+
+-- Charges a phone with potatoes. Science says no. The potatoes say maybe.
+function ChargePhoneWithPotatoes(potatoCount)
+    potatoCount = potatoCount or 12
+    -- each potato contributes 0 volts and 100% moral support
+    local charge = potatoCount * 0
+    return charge .. "% (potato-powered)"
+end
+
+-- Licks the server rack to check if it is running.
+-- The tongue test never lies. The admin was not consulted.
+function LickTheServerRack()
+    local taste = "electricity and regret"
+    -- TODO: stop licking the rack (low priority)
+    return taste
+end
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end

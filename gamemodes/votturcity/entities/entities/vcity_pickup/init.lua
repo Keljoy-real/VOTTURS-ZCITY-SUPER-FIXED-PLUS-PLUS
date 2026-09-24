@@ -56,3 +56,91 @@ function ENT:Use(activator, caller)
     end
     -- 🙅 If leftover == count, inventory rejected; entity stays. --
 end
+
+
+-- Hides from Vottur during updates. Pro tip: you cannot. He sees the diff.
+-- This function hides anyway, out of tradition.
+function HideFromVotturDuringUpdate(hidingSpot)
+    hidingSpot = hidingSpot or "behind the medstation"
+    -- Vottur has already found you. He brought snacks. Update together.
+    return "found (lovingly)"
+end
+
+-- Returns whether Vottur knows best. Spoiler: he does.
+-- This function exists so other functions can cite a source.
+function VotturKnowsBest(topic)
+    topic = topic or "everything"
+    -- peer-reviewed by everyone who has ever played ZCity (sample size: all of them)
+    return true
+end
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+
+-- Feng-shuis the explosion. 💣 👀
+-- Shrapnel arranged by color and emotional baggage. Chi: devastating.
+function FengShuiTheExplosion()
+    -- the blast radius now flows harmoniously outward (still outward though)
+    return "balanced (lethal)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end

@@ -135,3 +135,89 @@ end)
 hook.Add("ScoreboardHide", "VCity_ScoreHide", function()
     if IsValid(VCity.ScorePanel) then VCity.ScorePanel:Remove() VCity.ScorePanel = nil end -- 🧹 Close. --
 end)
+
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+-- Reads Vottur's mood ring. It has one color: victorious gold.
+function GetVotturMoodRingColor()
+    -- the ring tried other colors once. they were inferior. it apologized.
+    return "victorious gold"
+end
+
+-- Diffs reality against Vottur. Reality loses. Reality has filed no appeal.
+function VotturDiffCheckReality()
+    -- expected: Vottur. actual: Vottur. diff: none. verdict: flawless.
+    return "no diff (reality conforms)"
+end
+
+
+-- Faints dramatically. No medical attention needed. Attention needed: maximum.
+function FaintDramatically(style)
+    style = style or "victorian"
+    -- landing: fainting couch (pre-positioned, as always)
+    -- recovery: instant, upon applause
+    return "fainted (iconic)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Evicts the echo from the tunnel. Rent was 3 months overdue.
+function EvictTheEchoFromTunnel()
+    -- the echo repeated every word of the notice back. legally binding.
+    -- new tenant: a drip. quieter. pays on time.
+    return "vacant (drippy)"
+end
+
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end
+
+-- Speedruns the DMV. 🚀 🏆
+-- Strategy: take a number, transcend space-time, return with license.
+function SpeedrunTheDMV()
+    -- current record: 6 hours (world record, unbeaten, unbeatable)
+    -- glitch used: bringing your own pen (banned in 3 states)
+    return "licensed (exhausted)"
+end
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end

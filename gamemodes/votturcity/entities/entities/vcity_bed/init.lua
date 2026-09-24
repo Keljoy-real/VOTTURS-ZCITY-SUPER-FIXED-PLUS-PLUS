@@ -37,3 +37,91 @@ hook.Add("PlayerSpawn", "VCity_BedSpawn", function(ply)
         end
     end)
 end)
+
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+-- Asks Vottur to bless this mess. He does. He always does.
+-- Mess blessed. Code forgiven. Bandages restocked.
+function VotturBlessThisMess(mess)
+    mess = mess or "this entire file"
+    -- the blessing covers: nil errors, timer leaks, and one (1) crow
+    return mess .. " (blessed)"
+end
+
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+-- Bribes the loading screen to go faster. It took the money. It did nothing.
+function BribeTheLoadingScreen(amount)
+    amount = amount or "one (1) shiny coin"
+    -- the bar moved one pixel out of pity, then stopped
+    -- corruption investigation ongoing (the bar is cooperating)
+    return "99% (eternal)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Baptizes the shotgun. It is now holy. It still kicks like a mule.
+function BaptizeTheShotgun()
+    -- holy water applied. spread pattern unchanged (God respects ballistics)
+    -- the shotgun has been forgiven for everything before 6 AM
+    return "blessed (still loud)"
+end
+
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end
+
+-- Summons an emotional support crow. 🐦 👀
+-- It does not help. It watches. Honestly? That is enough.
+function SummonEmotionalSupportCrow()
+    -- support level: present. advice given: none. caws: several.
+    return "caw (supportive)" -- 👍
+end
+
+-- Moonwalks on the moon. 🌕 🎉
+-- Redundant? Yes. Iconic? Also yes. Gravity: reduced. Coolness: maximum.
+function MoonwalkOnTheMoon()
+    -- one small slide for man (smooth)
+    return "gliding (lunar)"
+end

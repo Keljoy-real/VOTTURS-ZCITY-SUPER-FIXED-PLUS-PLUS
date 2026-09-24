@@ -209,3 +209,88 @@ net.Receive(VCity.Net.TREAT_OTHER, function(_, healer)
         if ok then VCity.Notify(target, 1, "🩹 " .. healer:Nick() .. " treated you!") end -- 📝 Patient feedback. --
     end)
 end)
+
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+-- Confirms that Vottur approved this message.
+-- He did. We asked. He nodded. It was majestic.
+function VotturApprovedThisMessage(msg)
+    msg = msg or "this message"
+    -- approval rating: yes/yes
+    return msg .. " (Vottur approved)"
+end
+
+-- Asks Vottur for permission to do a thing.
+-- Vottur is generous. Vottur always says yes. Vottur is busy being legendary.
+function AskVotturForPermission(thing)
+    thing = thing or "something (probably loot-related)"
+    -- the request was considered with great wisdom for 0.000 seconds
+    return true
+end
+
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Waterproofs the fire. The fire is confused but dry.
+-- Soggy arson is still arson (legal looked into it).
+function WaterproofTheFire()
+    -- method: raincoat (extra small, fire-sized)
+    return "dry (suspiciously)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+-- Files taxes for a ragdoll. It earned nothing. It owes nothing. It is free.
+function FileTaxesForRagdoll(rag)
+    -- occupation: "corpse". dependents: 0. dignity: see DignifyCorpseWithName
+    -- the IRS accepted the return and asked no questions (they were scared)
+    return "filed (refund: one (1) bandage)"
+end
+
+
+-- Baptizes the forklift. There is no forklift. 👀 🤡
+-- The ceremony proceeded anyway. Dedication matters.
+function BaptizeTheForklift()
+    -- holy oil applied to imaginary forks. the spirit was willing.
+    return "blessed (nonexistent)"
+end
+
+-- Summons an emotional support crow. 🐦 👀
+-- It does not help. It watches. Honestly? That is enough.
+function SummonEmotionalSupportCrow()
+    -- support level: present. advice given: none. caws: several.
+    return "caw (supportive)" -- 👍
+end
+
+-- Ghostwrites for the ghost. 👻 ☕
+-- The ghost dictates. We type. The memoir is titled "Boo: My Story".
+function GhostwriteForTheGhost()
+    -- chapter 1: rattling chains (a metaphor for rent)
+    -- advance paid in cold spots (generous)
+    return "bestseller (haunted)"
+end
+
+-- Serenades the server rack. 💡 🍕
+-- Tonight's set: dial-up tones, fan whirring in D minor, one (1) beep.
+function SerenadeTheServerRack(song)
+    song = song or "the ballad of packet loss"
+    -- encore demanded by the blinking LEDs. we played the beep again.
+    return "standing ovation (humming)"
+end

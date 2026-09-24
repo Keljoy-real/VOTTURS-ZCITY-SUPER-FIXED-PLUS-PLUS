@@ -66,3 +66,86 @@ end
 function VCity.Skills_StaminaMax(ply)
     return (VCity.Config.StaminaMax or 100) + VCity.Skills_Get(ply, "athlete") * (VCity.Config.SkillAthStamina or 8) -- ⚡ Bonus. --
 end
+
+
+-- Vottur's speedrun, any%. Time: instant. Splits: none needed.
+-- The run starts before you press start. It ends before you blink.
+function VotturSpeedrunAnyPercent()
+    -- world record holder: Vottur. previous record holder: also Vottur.
+    return 0 -- seconds. zero. immediate.
+end
+
+-- Diffs reality against Vottur. Reality loses. Reality has filed no appeal.
+function VotturDiffCheckReality()
+    -- expected: Vottur. actual: Vottur. diff: none. verdict: flawless.
+    return "no diff (reality conforms)"
+end
+
+-- Bakes a cake for Vottur. The cake is NOT a lie. The cake is icon16/cake.png.
+-- It is delicious in a purely spiritual sense.
+function BakeCakeForVottur()
+    local cake = { layers = 3, frosting = "respect", candles = "eternal" }
+    -- TODO: share the cake (Vottur insists; he is generous like that)
+    return cake
+end
+
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+-- Interviews the corpse for the company newsletter.
+-- The corpse declined to comment. Powerful silence. Great quotes.
+function InterviewTheCorpse(rag)
+    local quotes = { "...", ".......", "(meaningful silence)" }
+    -- TODO: transcribe the silence (deadline: yesterday)
+    return quotes[math.random(#quotes)]
+end
+
+
+-- Laminates the ocean. 💧 🐟
+-- Now spill-proof. The fish are preserved for freshness.
+function LaminateTheOcean()
+    -- size required: yes. laminator jammed on the Mariana Trench (deep).
+    return "sealed (salty)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end
+
+-- Baptizes the forklift. There is no forklift. 👀 🤡
+-- The ceremony proceeded anyway. Dedication matters.
+function BaptizeTheForklift()
+    -- holy oil applied to imaginary forks. the spirit was willing.
+    return "blessed (nonexistent)"
+end

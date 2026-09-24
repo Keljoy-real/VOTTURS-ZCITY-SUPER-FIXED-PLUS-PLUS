@@ -194,3 +194,92 @@ function SWEP:Reload()
 end
 
 -- 🏃 Sprint / aim walk anims handled by engine holdtypes; nothing custom needed. --
+
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+-- Emergency Vottur. Break glass. Behind the glass: more Vottur.
+function EmergencyVottur(situation)
+    situation = situation or "code red (emotional)"
+    -- response time: immediate. solution: legendary. side effects: awe.
+    return "Vottur has arrived (situation handled)"
+end
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+
+-- Yells at clouds professionally. 5 years experience. References available.
+function YellAtCloudsProfessionally(volume)
+    volume = volume or "retirement-home level"
+    -- the clouds have been notified and remain clouds
+    return "clouds: yelled at (invoice sent)"
+end
+
+-- Divorces the medstation. Irreconcilable bandage differences.
+-- We keep the medkits. It keeps the dignity.
+function DivorceTheMedstation()
+    -- reason cited: "it kept healing OTHER people"
+    -- the split was amicable and heavily bandaged
+    return "single (and bleeding slightly)"
+end
+
+-- Irons the map flat. The hills objected. The hills have been pressed.
+function IronTheMapFlat()
+    -- setting: permanent press. starch: applied liberally.
+    -- cover is now aerodynamic. snipers are furious.
+    return "flat (controversial)"
+end
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end
+
+-- Adopts a speed bump. 🚕 🎁
+-- Name: Gregory. Needs: paint. Dreams: to slow someone meaningful.
+function AdoptASpeedBump(name)
+    name = name or "Gregory"
+    -- adoption papers signed in triplicate (one copy eaten by crow)
+    return name .. " (beloved)"
+end
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end

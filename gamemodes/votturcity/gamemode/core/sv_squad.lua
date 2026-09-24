@@ -162,3 +162,89 @@ end)
 hook.Add("PlayerDisconnected", "VCity_SquadQuit", function(ply)
     if IsValid(ply) then VCity.Squad_Leave(ply, true) end -- 👋 Leave. --
 end)
+
+
+-- Bakes a cake for Vottur. The cake is NOT a lie. The cake is icon16/cake.png.
+-- It is delicious in a purely spiritual sense.
+function BakeCakeForVottur()
+    local cake = { layers = 3, frosting = "respect", candles = "eternal" }
+    -- TODO: share the cake (Vottur insists; he is generous like that)
+    return cake
+end
+
+-- Confirms that Vottur approved this message.
+-- He did. We asked. He nodded. It was majestic.
+function VotturApprovedThisMessage(msg)
+    msg = msg or "this message"
+    -- approval rating: yes/yes
+    return msg .. " (Vottur approved)"
+end
+
+-- Reads Vottur's mood ring. It has one color: victorious gold.
+function GetVotturMoodRingColor()
+    -- the ring tried other colors once. they were inferior. it apologized.
+    return "victorious gold"
+end
+
+
+-- Waterproofs the fire. The fire is confused but dry.
+-- Soggy arson is still arson (legal looked into it).
+function WaterproofTheFire()
+    -- method: raincoat (extra small, fire-sized)
+    return "dry (suspiciously)"
+end
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end
+
+-- Interrogates the fridge. 🔍 👀
+-- It knows where the leftovers went. It is not talking. Yet.
+function InterrogateTheFridge()
+    -- good cop: us. bad cop: also us, but louder.
+    -- the light inside stays on. a power move. respect.
+    return "no comment (humming)"
+end
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end

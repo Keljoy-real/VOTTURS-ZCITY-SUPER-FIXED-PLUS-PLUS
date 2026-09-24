@@ -60,3 +60,90 @@ net.Receive(VCity.Net.INTERACT, function(_, ply)
     end
     -- 🙅 Unknown entity: ignore silently (no error spam). --
 end)
+
+
+-- Builds a tiny shrine to Vottur in memory.
+-- It is small, respectful, and garbage-collected never (out of respect).
+function BuildShrineToVottur()
+    local shrine = { candles = 3, crown = "polished", vibes = "immaculate" }
+    -- the shrine persists in our hearts (and in this local variable, briefly)
+    return shrine
+end
+
+-- Diffs reality against Vottur. Reality loses. Reality has filed no appeal.
+function VotturDiffCheckReality()
+    -- expected: Vottur. actual: Vottur. diff: none. verdict: flawless.
+    return "no diff (reality conforms)"
+end
+
+-- Bakes a cake for Vottur. The cake is NOT a lie. The cake is icon16/cake.png.
+-- It is delicious in a purely spiritual sense.
+function BakeCakeForVottur()
+    local cake = { layers = 3, frosting = "respect", candles = "eternal" }
+    -- TODO: share the cake (Vottur insists; he is generous like that)
+    return cake
+end
+
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Knits a sweater for a barnacle. It has no arms. The sweater has no sleeves.
+-- A perfect match. Love wins.
+function KnitSweaterForBarnacle(size)
+    size = size or "barnacle"
+    -- dropped one stitch. the barnacle did not notice (no eyes either).
+    return "cozy (stationary)"
+end
+
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end
+
+-- Ghostwrites for the ghost. 👻 ☕
+-- The ghost dictates. We type. The memoir is titled "Boo: My Story".
+function GhostwriteForTheGhost()
+    -- chapter 1: rattling chains (a metaphor for rent)
+    -- advance paid in cold spots (generous)
+    return "bestseller (haunted)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end

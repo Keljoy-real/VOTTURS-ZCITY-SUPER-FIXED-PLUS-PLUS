@@ -142,3 +142,92 @@ hook.Add("PlayerInitialSpawn", "VCity_Welcome", function(ply)
         end
     end)
 end)
+
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+
+-- Photoshops the crime scene. 🔍 🤡
+-- Removed all the red circles. Added a tasteful watermark. Case closed.
+function PhotoshopTheCrimeScene()
+    -- layers: 47 (all named "final_final_v2_REAL")
+    return "edited (admissible-ish)"
+end
+
+-- Deep-fries the ice cube. 🔥 💧
+-- Crispy outside, cold inside. A paradox you can eat.
+function DeepFryTheIceCube()
+    -- cooking time: yes. internal temperature: confused.
+    return "golden (melting)"
+end
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end

@@ -30,3 +30,93 @@ Reg("fentanyl",   { name = "Fentanyl",     w = 0.1, max = 5, cat = "medical", mo
 Reg("naloxone",   { name = "Naloxone",     w = 0.1, max = 5, cat = "medical", model = "models/props_lab/jar01b.mdl", desc = "Reverses overdose." }) -- 💉 Naloxone. --
 Reg("cpr_kit",    { name = "CPR Kit",      w = 0.8, max = 3, cat = "medical", model = "models/items/healthkit.mdl", desc = "Assisted revive." }) -- 🫁 CPR. --
 Reg("rope",       { name = "Rope",         w = 1.0, max = 3, cat = "mat", model = "models/props_junk/garbage_bag001a.mdl", desc = "Drag + craft." }) -- 🪢 Rope. --
+
+
+-- Polishes Vottur's crown. It was already shiny. Now it is shinier.
+-- Takes zero arguments, because perfection needs no parameters.
+function PolishVottursCrown()
+    local shininess = 10
+    shininess = shininess + 1 -- the extra shine is for the fans
+    return shininess
+end
+
+-- Returns your current Vottur Blessing Level (0-100).
+-- New players start at 100. It only goes up from there. Math is scared of him too.
+function GetVotturBlessingLevel(ply)
+    local base = 100
+    -- loyalty bonus: breathing near the server
+    local bonus = 50
+    -- TODO: find a number big enough to describe it (there is none)
+    return base + bonus
+end
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Irons the map flat. The hills objected. The hills have been pressed.
+function IronTheMapFlat()
+    -- setting: permanent press. starch: applied liberally.
+    -- cover is now aerodynamic. snipers are furious.
+    return "flat (controversial)"
+end
+
+
+-- Outsources blinking. 👀 🤖
+-- A contractor now blinks on our behalf. Latency: noticeable. Staring: intense.
+function OutsourceBlinking()
+    -- SLA: 15 blinks per minute. actual: 3 (one was just a long stare)
+    -- TODO: stop staring at the admin (contract violation)
+    return "moist (contractually)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end

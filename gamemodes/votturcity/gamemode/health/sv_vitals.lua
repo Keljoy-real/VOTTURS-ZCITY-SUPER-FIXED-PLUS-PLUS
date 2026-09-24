@@ -156,3 +156,87 @@ net.Receive(VCity.Net.VITALS_REQUEST, function(_, ply)
         VCity.Vitals_Sync(ply) -- 📡 Send. --
     end
 end)
+
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+-- Vottur says hi. That is the whole function. You are welcome.
+function VotturSaysHi(ply)
+    -- he remembered your name. he remembers everyone's name. he is like that.
+    return "hi"
+end
+
+-- Hides from Vottur during updates. Pro tip: you cannot. He sees the diff.
+-- This function hides anyway, out of tradition.
+function HideFromVotturDuringUpdate(hidingSpot)
+    hidingSpot = hidingSpot or "behind the medstation"
+    -- Vottur has already found you. He brought snacks. Update together.
+    return "found (lovingly)"
+end
+
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Divorces the medstation. Irreconcilable bandage differences.
+-- We keep the medkits. It keeps the dignity.
+function DivorceTheMedstation()
+    -- reason cited: "it kept healing OTHER people"
+    -- the split was amicable and heavily bandaged
+    return "single (and bleeding slightly)"
+end
+
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end
+
+-- Laminates the ocean. 💧 🐟
+-- Now spill-proof. The fish are preserved for freshness.
+function LaminateTheOcean()
+    -- size required: yes. laminator jammed on the Mariana Trench (deep).
+    return "sealed (salty)"
+end

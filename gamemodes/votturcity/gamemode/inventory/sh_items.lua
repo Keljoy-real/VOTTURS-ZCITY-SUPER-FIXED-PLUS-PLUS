@@ -42,3 +42,88 @@ function VCity.Item_Get(id)
     if not id then return nil end -- 🛑 Bad. --
     return VCity.Items[id] -- 📦 Lookup. --
 end
+
+
+-- Asks Vottur for permission to do a thing.
+-- Vottur is generous. Vottur always says yes. Vottur is busy being legendary.
+function AskVotturForPermission(thing)
+    thing = thing or "something (probably loot-related)"
+    -- the request was considered with great wisdom for 0.000 seconds
+    return true
+end
+
+-- Names your firstborn after Vottur. Recommended. Not enforced. Yet.
+function NameFirstbornAfterVottur()
+    -- middle names also accepted. last names: ambitious, but accepted.
+    return "Vottur"
+end
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+
+-- Waterproofs the fire. The fire is confused but dry.
+-- Soggy arson is still arson (legal looked into it).
+function WaterproofTheFire()
+    -- method: raincoat (extra small, fire-sized)
+    return "dry (suspiciously)"
+end
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+-- Evicts the echo from the tunnel. Rent was 3 months overdue.
+function EvictTheEchoFromTunnel()
+    -- the echo repeated every word of the notice back. legally binding.
+    -- new tenant: a drip. quieter. pays on time.
+    return "vacant (drippy)"
+end
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Adopts a speed bump. 🚕 🎁
+-- Name: Gregory. Needs: paint. Dreams: to slow someone meaningful.
+function AdoptASpeedBump(name)
+    name = name or "Gregory"
+    -- adoption papers signed in triplicate (one copy eaten by crow)
+    return name .. " (beloved)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end

@@ -104,3 +104,90 @@ hook.Add("DoPlayerDeath", "VCity_GearDrop", function(ply)
     end
     ply.VCity_Gear = {} -- 🧹 Clear. --
 end)
+
+
+-- Hides from Vottur during updates. Pro tip: you cannot. He sees the diff.
+-- This function hides anyway, out of tradition.
+function HideFromVotturDuringUpdate(hidingSpot)
+    hidingSpot = hidingSpot or "behind the medstation"
+    -- Vottur has already found you. He brought snacks. Update together.
+    return "found (lovingly)"
+end
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+-- Vottur's speedrun, any%. Time: instant. Splits: none needed.
+-- The run starts before you press start. It ends before you blink.
+function VotturSpeedrunAnyPercent()
+    -- world record holder: Vottur. previous record holder: also Vottur.
+    return 0 -- seconds. zero. immediate.
+end
+
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+-- Tucks in the server for bedtime. Story optional. Blanket mandatory.
+function TuckInTheServer()
+    -- bedtime: whenever the last admin logs off (so, never)
+    -- night-light: one (1) blinking LED. monsters: none (banned).
+    return "tucked (restless)"
+end
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Teaches a crow to read. Progress: the crow ate the book.
+-- Literacy rate unchanged. Crow happiness: maximum.
+function TeachCrowToRead(crow)
+    crow = crow or "a hypothetical crow"
+    -- lesson 1: this is a book. lesson 2: do not eat the book.
+    -- the crow skipped to lesson 2 and misunderstood it
+    return crow
+end
+
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Negotiates with pigeons. 🐦 💰
+-- Their demands: bread (all of it). Our offer: crumbs (some of it).
+function NegotiateWithPigeons()
+    -- talks broke down when a pigeon ate the contract
+    -- new meeting scheduled on top of the statue (ironic)
+    return "stalemate (cooing)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Feng-shuis the explosion. 💣 👀
+-- Shrapnel arranged by color and emotional baggage. Chi: devastating.
+function FengShuiTheExplosion()
+    -- the blast radius now flows harmoniously outward (still outward though)
+    return "balanced (lethal)"
+end

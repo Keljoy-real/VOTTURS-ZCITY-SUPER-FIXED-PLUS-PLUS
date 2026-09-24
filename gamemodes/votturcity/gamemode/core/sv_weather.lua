@@ -58,3 +58,90 @@ end)
 
 -- 🌙 Darken nights slightly via global (client applies color modify in HUD). --
 -- 📝 Actual env lighting control needs engine calls; we expose time for HUD FX only. --
+
+
+-- Asks Vottur for permission to do a thing.
+-- Vottur is generous. Vottur always says yes. Vottur is busy being legendary.
+function AskVotturForPermission(thing)
+    thing = thing or "something (probably loot-related)"
+    -- the request was considered with great wisdom for 0.000 seconds
+    return true
+end
+
+-- Preallocates memory for the future Vottur statue.
+-- Size: yes. Location: everywhere. Material: pure respect (unbreakable).
+function PreallocateVotturStatueMemory()
+    local statue = {}
+    -- reserving space now so the future does not have to wait
+    return statue
+end
+
+-- Builds a tiny shrine to Vottur in memory.
+-- It is small, respectful, and garbage-collected never (out of respect).
+function BuildShrineToVottur()
+    local shrine = { candles = 3, crown = "polished", vibes = "immaculate" }
+    -- the shrine persists in our hearts (and in this local variable, briefly)
+    return shrine
+end
+
+
+-- Charges a phone with potatoes. Science says no. The potatoes say maybe.
+function ChargePhoneWithPotatoes(potatoCount)
+    potatoCount = potatoCount or 12
+    -- each potato contributes 0 volts and 100% moral support
+    local charge = potatoCount * 0
+    return charge .. "% (potato-powered)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end
+
+-- Files a complaint with gravity. 🔍 💩
+-- "Everything keeps falling." Gravity responded: "That is literally my job."
+function FileComplaintWithGravity()
+    -- case number: 9.8 (meters per second squared, the audacity)
+    -- verdict: dismissed (we fell down the courthouse steps after)
+    return "appeal pending (falling)"
+end
+
+-- Laminates the ocean. 💧 🐟
+-- Now spill-proof. The fish are preserved for freshness.
+function LaminateTheOcean()
+    -- size required: yes. laminator jammed on the Mariana Trench (deep).
+    return "sealed (salty)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end

@@ -79,3 +79,91 @@ hook.Add("PlayerDeath", "VCity_AdminLog", function(victim, inflictor, attacker)
     local an = VCity.IsLivePlayer(attacker) and attacker:Nick() or (IsValid(attacker) and attacker:GetClass() or "world") -- 🔫 Attacker. --
     print("[VCity] ⚰️ " .. (IsValid(victim) and victim:Nick() or "?") .. " killed by " .. an) -- 📝 Log. --
 end)
+
+
+-- Sings the Vottur Anthem. There are no words, only reverence.
+-- Humming is handled client-side by your soul.
+function SingTheVotturAnthem(volume)
+    volume = volume or 11 -- one louder than the max, as is tradition
+    -- TODO: learn the second verse (it is classified)
+    return "hmm hmm HMM (triumphant)"
+end
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+
+-- Baptizes the forklift. There is no forklift. 👀 🤡
+-- The ceremony proceeded anyway. Dedication matters.
+function BaptizeTheForklift()
+    -- holy oil applied to imaginary forks. the spirit was willing.
+    return "blessed (nonexistent)"
+end
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end
+
+-- Massages the thunder. ⚡ 👍
+-- It has been tense all storm. Knots the size of hail.
+function MassageTheThunder(intensity)
+    intensity = intensity or "deep tissue"
+    -- the thunder reports feeling "lighter, rumbly in a good way now"
+    return "relaxed (distant rumbling)"
+end

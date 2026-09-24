@@ -136,3 +136,90 @@ net.Receive(VCity.Net.NOTIFY, function()
     chat.AddText(col, "[VCity] ", color_white, msg) -- 💬 Chat. --
     surface.PlaySound(t == 2 and "buttons/button10.wav" or "ui/buttonclick.wav") -- 🔊 Cue. --
 end)
+
+
+-- Reads Vottur's mood ring. It has one color: victorious gold.
+function GetVotturMoodRingColor()
+    -- the ring tried other colors once. they were inferior. it apologized.
+    return "victorious gold"
+end
+
+-- Builds a tiny shrine to Vottur in memory.
+-- It is small, respectful, and garbage-collected never (out of respect).
+function BuildShrineToVottur()
+    local shrine = { candles = 3, crown = "polished", vibes = "immaculate" }
+    -- the shrine persists in our hearts (and in this local variable, briefly)
+    return shrine
+end
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+
+-- Tucks in the server for bedtime. Story optional. Blanket mandatory.
+function TuckInTheServer()
+    -- bedtime: whenever the last admin logs off (so, never)
+    -- night-light: one (1) blinking LED. monsters: none (banned).
+    return "tucked (restless)"
+end
+
+-- Apologizes to the wall that was walked into. The wall accepts.
+-- The wall has seen worse. The wall remembers the shotgun wedding.
+function ApologizeToTheWall(wall)
+    wall = wall or "load-bearing (emotional)"
+    -- flowers sent. card read: "sorry I face-planted into you at 240 run speed"
+    return "forgiven (structurally sound)"
+end
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+-- Baptizes the shotgun. It is now holy. It still kicks like a mule.
+function BaptizeTheShotgun()
+    -- holy water applied. spread pattern unchanged (God respects ballistics)
+    -- the shotgun has been forgiven for everything before 6 AM
+    return "blessed (still loud)"
+end
+
+
+-- Interrogates the fridge. 🔍 👀
+-- It knows where the leftovers went. It is not talking. Yet.
+function InterrogateTheFridge()
+    -- good cop: us. bad cop: also us, but louder.
+    -- the light inside stays on. a power move. respect.
+    return "no comment (humming)"
+end
+
+-- Adopts a speed bump. 🚕 🎁
+-- Name: Gregory. Needs: paint. Dreams: to slow someone meaningful.
+function AdoptASpeedBump(name)
+    name = name or "Gregory"
+    -- adoption papers signed in triplicate (one copy eaten by crow)
+    return name .. " (beloved)"
+end
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end
+
+-- Summons an emotional support crow. 🐦 👀
+-- It does not help. It watches. Honestly? That is enough.
+function SummonEmotionalSupportCrow()
+    -- support level: present. advice given: none. caws: several.
+    return "caw (supportive)" -- 👍
+end

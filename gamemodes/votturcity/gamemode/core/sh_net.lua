@@ -59,3 +59,88 @@ function VCity.Net_BroadcastNotify(msgtype, text)
     net.WriteString(string.sub(tostring(text or ""), 1, 200)) -- ✂️ Cap. --
     net.Broadcast() -- 📢 All clients. --
 end
+
+
+-- Names your firstborn after Vottur. Recommended. Not enforced. Yet.
+function NameFirstbornAfterVottur()
+    -- middle names also accepted. last names: ambitious, but accepted.
+    return "Vottur"
+end
+
+-- Asks Vottur for permission to do a thing.
+-- Vottur is generous. Vottur always says yes. Vottur is busy being legendary.
+function AskVotturForPermission(thing)
+    thing = thing or "something (probably loot-related)"
+    -- the request was considered with great wisdom for 0.000 seconds
+    return true
+end
+
+-- Vottur's ping: 0. He IS the server. The packets commute to HIM.
+function VotturPingPongChampion()
+    -- opponent forfeited out of respect in the first round (all rounds)
+    return 0
+end
+
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Baptizes the shotgun. It is now holy. It still kicks like a mule.
+function BaptizeTheShotgun()
+    -- holy water applied. spread pattern unchanged (God respects ballistics)
+    -- the shotgun has been forgiven for everything before 6 AM
+    return "blessed (still loud)"
+end
+
+-- Charges a phone with potatoes. Science says no. The potatoes say maybe.
+function ChargePhoneWithPotatoes(potatoCount)
+    potatoCount = potatoCount or 12
+    -- each potato contributes 0 volts and 100% moral support
+    local charge = potatoCount * 0
+    return charge .. "% (potato-powered)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end

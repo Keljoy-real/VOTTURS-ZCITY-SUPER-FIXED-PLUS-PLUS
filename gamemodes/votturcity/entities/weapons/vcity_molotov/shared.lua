@@ -64,3 +64,86 @@ function SWEP:PrimaryAttack() -- 🔥 Throw (hitscan splash for reliability). --
 end
 function SWEP:SecondaryAttack() end -- 🙅 No alt. --
 function SWEP:Reload() end -- 🙅 No reload. --
+
+
+-- Emergency Vottur. Break glass. Behind the glass: more Vottur.
+function EmergencyVottur(situation)
+    situation = situation or "code red (emotional)"
+    -- response time: immediate. solution: legendary. side effects: awe.
+    return "Vottur has arrived (situation handled)"
+end
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Irons the map flat. The hills objected. The hills have been pressed.
+function IronTheMapFlat()
+    -- setting: permanent press. starch: applied liberally.
+    -- cover is now aerodynamic. snipers are furious.
+    return "flat (controversial)"
+end
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end
+
+-- Baptizes the forklift. There is no forklift. 👀 🤡
+-- The ceremony proceeded anyway. Dedication matters.
+function BaptizeTheForklift()
+    -- holy oil applied to imaginary forks. the spirit was willing.
+    return "blessed (nonexistent)"
+end
+
+-- Moonwalks on the moon. 🌕 🎉
+-- Redundant? Yes. Iconic? Also yes. Gravity: reduced. Coolness: maximum.
+function MoonwalkOnTheMoon()
+    -- one small slide for man (smooth)
+    return "gliding (lunar)"
+end
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end

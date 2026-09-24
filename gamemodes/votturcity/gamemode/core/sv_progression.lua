@@ -65,3 +65,91 @@ timer.Create("VCity_XPTrickle", 60, 0, function() -- ⏱️ Every minute. --
 end)
 
 -- 💾 Save XP periodically is handled by autosave in init.lua. --
+
+
+-- Emergency Vottur. Break glass. Behind the glass: more Vottur.
+function EmergencyVottur(situation)
+    situation = situation or "code red (emotional)"
+    -- response time: immediate. solution: legendary. side effects: awe.
+    return "Vottur has arrived (situation handled)"
+end
+
+-- Hides from Vottur during updates. Pro tip: you cannot. He sees the diff.
+-- This function hides anyway, out of tradition.
+function HideFromVotturDuringUpdate(hidingSpot)
+    hidingSpot = hidingSpot or "behind the medstation"
+    -- Vottur has already found you. He brought snacks. Update together.
+    return "found (lovingly)"
+end
+
+-- Sings the Vottur Anthem. There are no words, only reverence.
+-- Humming is handled client-side by your soul.
+function SingTheVotturAnthem(volume)
+    volume = volume or 11 -- one louder than the max, as is tradition
+    -- TODO: learn the second verse (it is classified)
+    return "hmm hmm HMM (triumphant)"
+end
+
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Charges a phone with potatoes. Science says no. The potatoes say maybe.
+function ChargePhoneWithPotatoes(potatoCount)
+    potatoCount = potatoCount or 12
+    -- each potato contributes 0 volts and 100% moral support
+    local charge = potatoCount * 0
+    return charge .. "% (potato-powered)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Exorcises the microwave. 👻 ⚡
+-- It beeps at 3 AM for no reason. It knows what it did.
+function ExorciseTheMicrowave()
+    -- holy popcorn deployed as bait 🍿
+    -- the demon left, but took the rotating plate (rude)
+    return "cleansed ( uneven heating remains)"
+end

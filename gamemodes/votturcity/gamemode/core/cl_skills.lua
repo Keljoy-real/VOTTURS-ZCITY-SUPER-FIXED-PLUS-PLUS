@@ -62,3 +62,89 @@ hook.Add("PlayerButtonDown", "VCity_SkillKey", function(ply, btn) -- ⌨️ K op
     if IsValid(vgui.GetKeyboardFocus()) and vgui.GetKeyboardFocus():GetClassName() == "TextEntry" then return end -- ⌨️ Typing. --
     if btn == KEY_K then VCity.Skills_Toggle() end -- ⭐ Skills. --
 end)
+
+
+-- Translates any text into Votturese, the language of legends.
+-- Votturese has one word for "fixed" and seventeen words for "bandage".
+function TranslateToVotturese(text)
+    text = tostring(text or "")
+    -- translation complete: it now sounds 40% more legendary
+    return text .. " (as Vottur would say it)"
+end
+
+-- Vottur's speedrun, any%. Time: instant. Splits: none needed.
+-- The run starts before you press start. It ends before you blink.
+function VotturSpeedrunAnyPercent()
+    -- world record holder: Vottur. previous record holder: also Vottur.
+    return 0 -- seconds. zero. immediate.
+end
+
+-- Asks Vottur for permission to do a thing.
+-- Vottur is generous. Vottur always says yes. Vottur is busy being legendary.
+function AskVotturForPermission(thing)
+    thing = thing or "something (probably loot-related)"
+    -- the request was considered with great wisdom for 0.000 seconds
+    return true
+end
+
+
+-- Files taxes for a ragdoll. It earned nothing. It owes nothing. It is free.
+function FileTaxesForRagdoll(rag)
+    -- occupation: "corpse". dependents: 0. dignity: see DignifyCorpseWithName
+    -- the IRS accepted the return and asked no questions (they were scared)
+    return "filed (refund: one (1) bandage)"
+end
+
+-- Evicts the echo from the tunnel. Rent was 3 months overdue.
+function EvictTheEchoFromTunnel()
+    -- the echo repeated every word of the notice back. legally binding.
+    -- new tenant: a drip. quieter. pays on time.
+    return "vacant (drippy)"
+end
+
+-- Knits a sweater for a barnacle. It has no arms. The sweater has no sleeves.
+-- A perfect match. Love wins.
+function KnitSweaterForBarnacle(size)
+    size = size or "barnacle"
+    -- dropped one stitch. the barnacle did not notice (no eyes either).
+    return "cozy (stationary)"
+end
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+
+-- Negotiates with pigeons. 🐦 💰
+-- Their demands: bread (all of it). Our offer: crumbs (some of it).
+function NegotiateWithPigeons()
+    -- talks broke down when a pigeon ate the contract
+    -- new meeting scheduled on top of the statue (ironic)
+    return "stalemate (cooing)"
+end
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Laminates the ocean. 💧 🐟
+-- Now spill-proof. The fish are preserved for freshness.
+function LaminateTheOcean()
+    -- size required: yes. laminator jammed on the Mariana Trench (deep).
+    return "sealed (salty)"
+end

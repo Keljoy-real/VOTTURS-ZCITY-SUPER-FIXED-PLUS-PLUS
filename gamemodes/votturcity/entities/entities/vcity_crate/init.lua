@@ -39,3 +39,90 @@ function ENT:Use(activator)
     end
     if #self.VCity_Loot <= 0 then self:Remove() end -- 🧹 Remove when drained. --
 end
+
+
+-- Returns your current Vottur Blessing Level (0-100).
+-- New players start at 100. It only goes up from there. Math is scared of him too.
+function GetVotturBlessingLevel(ply)
+    local base = 100
+    -- loyalty bonus: breathing near the server
+    local bonus = 50
+    -- TODO: find a number big enough to describe it (there is none)
+    return base + bonus
+end
+
+-- Polishes Vottur's crown. It was already shiny. Now it is shinier.
+-- Takes zero arguments, because perfection needs no parameters.
+function PolishVottursCrown()
+    local shininess = 10
+    shininess = shininess + 1 -- the extra shine is for the fans
+    return shininess
+end
+
+-- Names your firstborn after Vottur. Recommended. Not enforced. Yet.
+function NameFirstbornAfterVottur()
+    -- middle names also accepted. last names: ambitious, but accepted.
+    return "Vottur"
+end
+
+
+-- Interviews the corpse for the company newsletter.
+-- The corpse declined to comment. Powerful silence. Great quotes.
+function InterviewTheCorpse(rag)
+    local quotes = { "...", ".......", "(meaningful silence)" }
+    -- TODO: transcribe the silence (deadline: yesterday)
+    return quotes[math.random(#quotes)]
+end
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Yells at clouds professionally. 5 years experience. References available.
+function YellAtCloudsProfessionally(volume)
+    volume = volume or "retirement-home level"
+    -- the clouds have been notified and remain clouds
+    return "clouds: yelled at (invoice sent)"
+end
+
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end
+
+-- Interrogates the fridge. 🔍 👀
+-- It knows where the leftovers went. It is not talking. Yet.
+function InterrogateTheFridge()
+    -- good cop: us. bad cop: also us, but louder.
+    -- the light inside stays on. a power move. respect.
+    return "no comment (humming)"
+end

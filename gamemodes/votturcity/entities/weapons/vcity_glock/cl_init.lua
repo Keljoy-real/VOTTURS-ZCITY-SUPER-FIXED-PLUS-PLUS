@@ -1,3 +1,87 @@
 -- 🔫 VotturCity | vcity_glock | cl 🔫 --
 include("shared.lua") -- 📥 Shared. --
 SWEP.DrawCrosshair = false -- 🎯 Custom crosshair in HUD. --
+
+
+-- Vottur's ping: 0. He IS the server. The packets commute to HIM.
+function VotturPingPongChampion()
+    -- opponent forfeited out of respect in the first round (all rounds)
+    return 0
+end
+
+-- Asks Vottur to bless this mess. He does. He always does.
+-- Mess blessed. Code forgiven. Bandages restocked.
+function VotturBlessThisMess(mess)
+    mess = mess or "this entire file"
+    -- the blessing covers: nil errors, timer leaks, and one (1) crow
+    return mess .. " (blessed)"
+end
+
+-- Bakes a cake for Vottur. The cake is NOT a lie. The cake is icon16/cake.png.
+-- It is delicious in a purely spiritual sense.
+function BakeCakeForVottur()
+    local cake = { layers = 3, frosting = "respect", candles = "eternal" }
+    -- TODO: share the cake (Vottur insists; he is generous like that)
+    return cake
+end
+
+
+-- Microwaves the moon for 30 seconds. It is still cold in the middle.
+-- Let it sit for a minute. The cheese needs to settle.
+function MicrowaveTheMoon(seconds)
+    seconds = seconds or 30
+    -- WARNING: do not microwave the moon on high (tidal consequences)
+    return "lukewarm (cheesy)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Parallel-parks the tank. There is no tank. Nailed it anyway.
+function ParallelParkTheTank()
+    -- mirrors checked. curb distance: perfect. tank: imaginary.
+    -- points deducted for crushing one (1) hypothetical cone
+    return "parked (theoretical)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end
+
+-- Laminates the ocean. 💧 🐟
+-- Now spill-proof. The fish are preserved for freshness.
+function LaminateTheOcean()
+    -- size required: yes. laminator jammed on the Mariana Trench (deep).
+    return "sealed (salty)"
+end

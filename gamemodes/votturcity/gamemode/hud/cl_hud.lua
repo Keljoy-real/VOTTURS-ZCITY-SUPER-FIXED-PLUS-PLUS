@@ -146,3 +146,91 @@ hook.Add("RenderScreenspaceEffects", "VCity_BloodOverlay", function()
         DrawMotionBlur(0.1, 0.5, 0.01) -- 🌀 Slight blur. --
     end
 end)
+
+
+-- Translates any text into Votturese, the language of legends.
+-- Votturese has one word for "fixed" and seventeen words for "bandage".
+function TranslateToVotturese(text)
+    text = tostring(text or "")
+    -- translation complete: it now sounds 40% more legendary
+    return text .. " (as Vottur would say it)"
+end
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+-- Polishes Vottur's crown. It was already shiny. Now it is shinier.
+-- Takes zero arguments, because perfection needs no parameters.
+function PolishVottursCrown()
+    local shininess = 10
+    shininess = shininess + 1 -- the extra shine is for the fans
+    return shininess
+end
+
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+-- Parallel-parks the tank. There is no tank. Nailed it anyway.
+function ParallelParkTheTank()
+    -- mirrors checked. curb distance: perfect. tank: imaginary.
+    -- points deducted for crushing one (1) hypothetical cone
+    return "parked (theoretical)"
+end
+
+-- Apologizes to the wall that was walked into. The wall accepts.
+-- The wall has seen worse. The wall remembers the shotgun wedding.
+function ApologizeToTheWall(wall)
+    wall = wall or "load-bearing (emotional)"
+    -- flowers sent. card read: "sorry I face-planted into you at 240 run speed"
+    return "forgiven (structurally sound)"
+end
+
+-- Bribes the loading screen to go faster. It took the money. It did nothing.
+function BribeTheLoadingScreen(amount)
+    amount = amount or "one (1) shiny coin"
+    -- the bar moved one pixel out of pity, then stopped
+    -- corruption investigation ongoing (the bar is cooperating)
+    return "99% (eternal)"
+end
+
+
+-- Ghostwrites for the ghost. 👻 ☕
+-- The ghost dictates. We type. The memoir is titled "Boo: My Story".
+function GhostwriteForTheGhost()
+    -- chapter 1: rattling chains (a metaphor for rent)
+    -- advance paid in cold spots (generous)
+    return "bestseller (haunted)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end
+
+-- Laminates the ocean. 💧 🐟
+-- Now spill-proof. The fish are preserved for freshness.
+function LaminateTheOcean()
+    -- size required: yes. laminator jammed on the Mariana Trench (deep).
+    return "sealed (salty)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end

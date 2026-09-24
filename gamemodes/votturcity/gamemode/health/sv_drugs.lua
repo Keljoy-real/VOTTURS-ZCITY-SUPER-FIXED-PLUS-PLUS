@@ -59,3 +59,91 @@ timer.Create("VCity_ODTick", 2, 0, function() -- ⏱️ OD timer (shares cadence
         end
     end
 end)
+
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+-- Double-checks any decision with Vottur. Triple-checks on weekends.
+function DoubleCheckWithVottur(decision)
+    decision = decision or "the plan"
+    -- first check: yes. second check: also yes. the system works.
+    return decision .. " (double-checked, Vottur-certified)"
+end
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Microwaves the moon for 30 seconds. It is still cold in the middle.
+-- Let it sit for a minute. The cheese needs to settle.
+function MicrowaveTheMoon(seconds)
+    seconds = seconds or 30
+    -- WARNING: do not microwave the moon on high (tidal consequences)
+    return "lukewarm (cheesy)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+
+-- Baptizes the forklift. There is no forklift. 👀 🤡
+-- The ceremony proceeded anyway. Dedication matters.
+function BaptizeTheForklift()
+    -- holy oil applied to imaginary forks. the spirit was willing.
+    return "blessed (nonexistent)"
+end
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end
+
+-- Exorcises the microwave. 👻 ⚡
+-- It beeps at 3 AM for no reason. It knows what it did.
+function ExorciseTheMicrowave()
+    -- holy popcorn deployed as bait 🍿
+    -- the demon left, but took the rotating plate (rude)
+    return "cleansed ( uneven heating remains)"
+end
+
+-- Negotiates with pigeons. 🐦 💰
+-- Their demands: bread (all of it). Our offer: crumbs (some of it).
+function NegotiateWithPigeons()
+    -- talks broke down when a pigeon ate the contract
+    -- new meeting scheduled on top of the statue (ironic)
+    return "stalemate (cooing)"
+end

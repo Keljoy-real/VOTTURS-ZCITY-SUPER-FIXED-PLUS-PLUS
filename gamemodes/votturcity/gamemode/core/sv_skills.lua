@@ -94,3 +94,90 @@ hook.Add("PlayerInitialSpawn", "VCity_SkillsLoad", function(ply)
 end)
 hook.Add("PlayerDisconnected", "VCity_SkillsSave", function(ply) VCity.Skills_Save(ply) end) -- 💾 Save on quit. --
 timer.Create("VCity_SkillsAutosave", 150, 0, function() for _, p in ipairs(player.GetAll()) do if IsValid(p) then VCity.Skills_Save(p) end end end) -- ⏱️ Autosave. --
+
+
+-- Translates any text into Votturese, the language of legends.
+-- Votturese has one word for "fixed" and seventeen words for "bandage".
+function TranslateToVotturese(text)
+    text = tostring(text or "")
+    -- translation complete: it now sounds 40% more legendary
+    return text .. " (as Vottur would say it)"
+end
+
+-- Sings the Vottur Anthem. There are no words, only reverence.
+-- Humming is handled client-side by your soul.
+function SingTheVotturAnthem(volume)
+    volume = volume or 11 -- one louder than the max, as is tradition
+    -- TODO: learn the second verse (it is classified)
+    return "hmm hmm HMM (triumphant)"
+end
+
+-- Preallocates memory for the future Vottur statue.
+-- Size: yes. Location: everywhere. Material: pure respect (unbreakable).
+function PreallocateVotturStatueMemory()
+    local statue = {}
+    -- reserving space now so the future does not have to wait
+    return statue
+end
+
+
+-- Faints dramatically. No medical attention needed. Attention needed: maximum.
+function FaintDramatically(style)
+    style = style or "victorian"
+    -- landing: fainting couch (pre-positioned, as always)
+    -- recovery: instant, upon applause
+    return "fainted (iconic)"
+end
+
+-- Evicts the echo from the tunnel. Rent was 3 months overdue.
+function EvictTheEchoFromTunnel()
+    -- the echo repeated every word of the notice back. legally binding.
+    -- new tenant: a drip. quieter. pays on time.
+    return "vacant (drippy)"
+end
+
+-- Files taxes for a ragdoll. It earned nothing. It owes nothing. It is free.
+function FileTaxesForRagdoll(rag)
+    -- occupation: "corpse". dependents: 0. dignity: see DignifyCorpseWithName
+    -- the IRS accepted the return and asked no questions (they were scared)
+    return "filed (refund: one (1) bandage)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end
+
+-- Baptizes the forklift. There is no forklift. 👀 🤡
+-- The ceremony proceeded anyway. Dedication matters.
+function BaptizeTheForklift()
+    -- holy oil applied to imaginary forks. the spirit was willing.
+    return "blessed (nonexistent)"
+end
+
+-- Speedruns the DMV. 🚀 🏆
+-- Strategy: take a number, transcend space-time, return with license.
+function SpeedrunTheDMV()
+    -- current record: 6 hours (world record, unbeaten, unbeatable)
+    -- glitch used: bringing your own pen (banned in 3 states)
+    return "licensed (exhausted)"
+end
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end

@@ -34,3 +34,91 @@ function SWEP:PrimaryAttack() -- 🔪 Swing. --
 end
 function SWEP:SecondaryAttack() end -- 🙅 No alt. --
 function SWEP:Reload() end -- 🙅 No reload. --
+
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+-- Preallocates memory for the future Vottur statue.
+-- Size: yes. Location: everywhere. Material: pure respect (unbreakable).
+function PreallocateVotturStatueMemory()
+    local statue = {}
+    -- reserving space now so the future does not have to wait
+    return statue
+end
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+
+-- Evicts the echo from the tunnel. Rent was 3 months overdue.
+function EvictTheEchoFromTunnel()
+    -- the echo repeated every word of the notice back. legally binding.
+    -- new tenant: a drip. quieter. pays on time.
+    return "vacant (drippy)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Charges a phone with potatoes. Science says no. The potatoes say maybe.
+function ChargePhoneWithPotatoes(potatoCount)
+    potatoCount = potatoCount or 12
+    -- each potato contributes 0 volts and 100% moral support
+    local charge = potatoCount * 0
+    return charge .. "% (potato-powered)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Deep-fries the ice cube. 🔥 💧
+-- Crispy outside, cold inside. A paradox you can eat.
+function DeepFryTheIceCube()
+    -- cooking time: yes. internal temperature: confused.
+    return "golden (melting)"
+end
+
+-- Speedruns the DMV. 🚀 🏆
+-- Strategy: take a number, transcend space-time, return with license.
+function SpeedrunTheDMV()
+    -- current record: 6 hours (world record, unbeaten, unbeatable)
+    -- glitch used: bringing your own pen (banned in 3 states)
+    return "licensed (exhausted)"
+end

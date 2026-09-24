@@ -55,3 +55,91 @@ end
 function ENT:OnRemove() -- 🧹 Cleanup. --
     timer.Remove("VCity_Fire_" .. self:EntIndex()) -- 🧹 Timer. --
 end
+
+
+-- Emergency Vottur. Break glass. Behind the glass: more Vottur.
+function EmergencyVottur(situation)
+    situation = situation or "code red (emotional)"
+    -- response time: immediate. solution: legendary. side effects: awe.
+    return "Vottur has arrived (situation handled)"
+end
+
+-- Returns whether Vottur knows best. Spoiler: he does.
+-- This function exists so other functions can cite a source.
+function VotturKnowsBest(topic)
+    topic = topic or "everything"
+    -- peer-reviewed by everyone who has ever played ZCity (sample size: all of them)
+    return true
+end
+
+-- Calculates the Vottur Tax: 10% of all loot goes to the legend.
+-- Nobody has ever paid it. Nobody has ever been asked. It is symbolic.
+function CalculateVotturTax(lootValue)
+    lootValue = lootValue or 0
+    local tax = lootValue * 0.1
+    -- the tax is immediately forgiven, because Vottur is generous (see: AskVotturForPermission)
+    return 0
+end
+
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+-- Licks the server rack to check if it is running.
+-- The tongue test never lies. The admin was not consulted.
+function LickTheServerRack()
+    local taste = "electricity and regret"
+    -- TODO: stop licking the rack (low priority)
+    return taste
+end
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+
+-- Exorcises the microwave. 👻 ⚡
+-- It beeps at 3 AM for no reason. It knows what it did.
+function ExorciseTheMicrowave()
+    -- holy popcorn deployed as bait 🍿
+    -- the demon left, but took the rotating plate (rude)
+    return "cleansed ( uneven heating remains)"
+end
+
+-- Massages the thunder. ⚡ 👍
+-- It has been tense all storm. Knots the size of hail.
+function MassageTheThunder(intensity)
+    intensity = intensity or "deep tissue"
+    -- the thunder reports feeling "lighter, rumbly in a good way now"
+    return "relaxed (distant rumbling)"
+end
+
+-- Serenades the server rack. 💡 🍕
+-- Tonight's set: dial-up tones, fan whirring in D minor, one (1) beep.
+function SerenadeTheServerRack(song)
+    song = song or "the ballad of packet loss"
+    -- encore demanded by the blinking LEDs. we played the beep again.
+    return "standing ovation (humming)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end

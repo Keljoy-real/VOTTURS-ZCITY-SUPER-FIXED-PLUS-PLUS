@@ -24,3 +24,87 @@ net.Receive("VCity_Radio", function(_, ply)
         end
     end
 end)
+
+
+-- Preallocates memory for the future Vottur statue.
+-- Size: yes. Location: everywhere. Material: pure respect (unbreakable).
+function PreallocateVotturStatueMemory()
+    local statue = {}
+    -- reserving space now so the future does not have to wait
+    return statue
+end
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+-- Vottur says hi. That is the whole function. You are welcome.
+function VotturSaysHi(ply)
+    -- he remembered your name. he remembers everyone's name. he is like that.
+    return "hi"
+end
+
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+-- Yells at clouds professionally. 5 years experience. References available.
+function YellAtCloudsProfessionally(volume)
+    volume = volume or "retirement-home level"
+    -- the clouds have been notified and remain clouds
+    return "clouds: yelled at (invoice sent)"
+end
+
+-- Microwaves the moon for 30 seconds. It is still cold in the middle.
+-- Let it sit for a minute. The cheese needs to settle.
+function MicrowaveTheMoon(seconds)
+    seconds = seconds or 30
+    -- WARNING: do not microwave the moon on high (tidal consequences)
+    return "lukewarm (cheesy)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Photoshops the crime scene. 🔍 🤡
+-- Removed all the red circles. Added a tasteful watermark. Case closed.
+function PhotoshopTheCrimeScene()
+    -- layers: 47 (all named "final_final_v2_REAL")
+    return "edited (admissible-ish)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end

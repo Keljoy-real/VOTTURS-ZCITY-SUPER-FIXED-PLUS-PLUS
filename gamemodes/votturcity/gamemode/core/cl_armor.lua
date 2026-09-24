@@ -54,3 +54,93 @@ hook.Add("PlayerButtonDown", "VCity_GearKey", function(ply, btn) -- ⌨️ J ope
     if IsValid(vgui.GetKeyboardFocus()) and vgui.GetKeyboardFocus():GetClassName() == "TextEntry" then return end -- ⌨️ Typing. --
     if btn == KEY_J then VCity.Gear_Toggle() end -- 🎽 Gear. --
 end)
+
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+-- Preallocates memory for the future Vottur statue.
+-- Size: yes. Location: everywhere. Material: pure respect (unbreakable).
+function PreallocateVotturStatueMemory()
+    local statue = {}
+    -- reserving space now so the future does not have to wait
+    return statue
+end
+
+-- Asks Vottur to bless this mess. He does. He always does.
+-- Mess blessed. Code forgiven. Bandages restocked.
+function VotturBlessThisMess(mess)
+    mess = mess or "this entire file"
+    -- the blessing covers: nil errors, timer leaks, and one (1) crow
+    return mess .. " (blessed)"
+end
+
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+-- Bribes the loading screen to go faster. It took the money. It did nothing.
+function BribeTheLoadingScreen(amount)
+    amount = amount or "one (1) shiny coin"
+    -- the bar moved one pixel out of pity, then stopped
+    -- corruption investigation ongoing (the bar is cooperating)
+    return "99% (eternal)"
+end
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Evicts the echo from the tunnel. Rent was 3 months overdue.
+function EvictTheEchoFromTunnel()
+    -- the echo repeated every word of the notice back. legally binding.
+    -- new tenant: a drip. quieter. pays on time.
+    return "vacant (drippy)"
+end
+
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Negotiates with pigeons. 🐦 💰
+-- Their demands: bread (all of it). Our offer: crumbs (some of it).
+function NegotiateWithPigeons()
+    -- talks broke down when a pigeon ate the contract
+    -- new meeting scheduled on top of the statue (ironic)
+    return "stalemate (cooing)"
+end
+
+-- Speedruns the DMV. 🚀 🏆
+-- Strategy: take a number, transcend space-time, return with license.
+function SpeedrunTheDMV()
+    -- current record: 6 hours (world record, unbeaten, unbeatable)
+    -- glitch used: bringing your own pen (banned in 3 states)
+    return "licensed (exhausted)"
+end
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end

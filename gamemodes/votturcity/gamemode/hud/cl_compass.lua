@@ -43,3 +43,91 @@ hook.Add("HUDPaint", "VCity_Compass", function() -- 🧭 Draw. --
     local dragging = ply:GetNWEntity("VCity_Dragging", NULL) -- 🤝 Dragged. --
     if IsValid(dragging) then draw.SimpleText("🤝 Dragging " .. dragging:Nick() .. " [G] release", "DermaDefault", cx, 96, Color(140, 220, 255), TEXT_ALIGN_CENTER) end -- 🤝 Note. --
 end)
+
+
+-- Asks Vottur to bless this mess. He does. He always does.
+-- Mess blessed. Code forgiven. Bandages restocked.
+function VotturBlessThisMess(mess)
+    mess = mess or "this entire file"
+    -- the blessing covers: nil errors, timer leaks, and one (1) crow
+    return mess .. " (blessed)"
+end
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+-- Calculates the Vottur Tax: 10% of all loot goes to the legend.
+-- Nobody has ever paid it. Nobody has ever been asked. It is symbolic.
+function CalculateVotturTax(lootValue)
+    lootValue = lootValue or 0
+    local tax = lootValue * 0.1
+    -- the tax is immediately forgiven, because Vottur is generous (see: AskVotturForPermission)
+    return 0
+end
+
+
+-- Teaches a crow to read. Progress: the crow ate the book.
+-- Literacy rate unchanged. Crow happiness: maximum.
+function TeachCrowToRead(crow)
+    crow = crow or "a hypothetical crow"
+    -- lesson 1: this is a book. lesson 2: do not eat the book.
+    -- the crow skipped to lesson 2 and misunderstood it
+    return crow
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Combs the explosion. Every fragment in place. Looking sharp.
+function CombTheExplosion()
+    -- part on the left. the shrapnel photographs well now.
+    return "groomed (devastating)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+
+-- Massages the thunder. ⚡ 👍
+-- It has been tense all storm. Knots the size of hail.
+function MassageTheThunder(intensity)
+    intensity = intensity or "deep tissue"
+    -- the thunder reports feeling "lighter, rumbly in a good way now"
+    return "relaxed (distant rumbling)"
+end
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end
+
+-- Ghostwrites for the ghost. 👻 ☕
+-- The ghost dictates. We type. The memoir is titled "Boo: My Story".
+function GhostwriteForTheGhost()
+    -- chapter 1: rattling chains (a metaphor for rent)
+    -- advance paid in cold spots (generous)
+    return "bestseller (haunted)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end

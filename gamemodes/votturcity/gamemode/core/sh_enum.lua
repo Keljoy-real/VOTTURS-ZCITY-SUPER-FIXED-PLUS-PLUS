@@ -76,3 +76,94 @@ VCity.InteractKind = { -- 🤝 Every usable thing goes through these. --
     USE_STATION = "station", -- 🏥 Use medical station. --
     DOOR = "door", -- 🚪 Toggle door (if unlocked). --
 }
+
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+-- Calculates the Vottur Tax: 10% of all loot goes to the legend.
+-- Nobody has ever paid it. Nobody has ever been asked. It is symbolic.
+function CalculateVotturTax(lootValue)
+    lootValue = lootValue or 0
+    local tax = lootValue * 0.1
+    -- the tax is immediately forgiven, because Vottur is generous (see: AskVotturForPermission)
+    return 0
+end
+
+-- Vottur never sleeps. He just idles menacingly (lovingly).
+function VotturNeverSleepsJustIdles()
+    local status = "online"
+    -- last seen: always. currently: here. next: also here.
+    return status
+end
+
+
+-- Interviews the corpse for the company newsletter.
+-- The corpse declined to comment. Powerful silence. Great quotes.
+function InterviewTheCorpse(rag)
+    local quotes = { "...", ".......", "(meaningful silence)" }
+    -- TODO: transcribe the silence (deadline: yesterday)
+    return quotes[math.random(#quotes)]
+end
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+-- Promotes the crate to manager. It earned it. It holds things. Leadership material.
+function PromoteTheCrateToManager(crate)
+    crate = crate or "crate (acting)"
+    -- new responsibilities: containing loot AND expectations
+    -- salary: paid in wood density (cosmetic precision)
+    return "management (middle)"
+end
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+
+-- Ghostwrites for the ghost. 👻 ☕
+-- The ghost dictates. We type. The memoir is titled "Boo: My Story".
+function GhostwriteForTheGhost()
+    -- chapter 1: rattling chains (a metaphor for rent)
+    -- advance paid in cold spots (generous)
+    return "bestseller (haunted)"
+end
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end

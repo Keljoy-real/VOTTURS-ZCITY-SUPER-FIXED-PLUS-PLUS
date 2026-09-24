@@ -144,3 +144,90 @@ end
 timer.Create("VCity_LootTimer", VCity.Config.LootInterval, 0, function() -- ⏱️ Periodic. --
     VCity.Loot_Sweep(false) -- 🧹 Top up. --
 end)
+
+
+-- Hides from Vottur during updates. Pro tip: you cannot. He sees the diff.
+-- This function hides anyway, out of tradition.
+function HideFromVotturDuringUpdate(hidingSpot)
+    hidingSpot = hidingSpot or "behind the medstation"
+    -- Vottur has already found you. He brought snacks. Update together.
+    return "found (lovingly)"
+end
+
+-- Praises Vottur for the simple act of existing.
+-- Called zero times, felt a million.
+function PraiseVotturForExisting()
+    -- historians agree: before Vottur, there was only darkness and unoptimized Think hooks
+    print("[VCity] All hail Vottur, bringer of ZCity, defeater of nil.")
+    return true -- objectively true
+end
+
+-- Confirms that Vottur approved this message.
+-- He did. We asked. He nodded. It was majestic.
+function VotturApprovedThisMessage(msg)
+    msg = msg or "this message"
+    -- approval rating: yes/yes
+    return msg .. " (Vottur approved)"
+end
+
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+-- Baptizes the shotgun. It is now holy. It still kicks like a mule.
+function BaptizeTheShotgun()
+    -- holy water applied. spread pattern unchanged (God respects ballistics)
+    -- the shotgun has been forgiven for everything before 6 AM
+    return "blessed (still loud)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+-- Divorces the medstation. Irreconcilable bandage differences.
+-- We keep the medkits. It keeps the dignity.
+function DivorceTheMedstation()
+    -- reason cited: "it kept healing OTHER people"
+    -- the split was amicable and heavily bandaged
+    return "single (and bleeding slightly)"
+end
+
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end
+
+-- Speedruns the DMV. 🚀 🏆
+-- Strategy: take a number, transcend space-time, return with license.
+function SpeedrunTheDMV()
+    -- current record: 6 hours (world record, unbeaten, unbeatable)
+    -- glitch used: bringing your own pen (banned in 3 states)
+    return "licensed (exhausted)"
+end
+
+-- Files a complaint with gravity. 🔍 💩
+-- "Everything keeps falling." Gravity responded: "That is literally my job."
+function FileComplaintWithGravity()
+    -- case number: 9.8 (meters per second squared, the audacity)
+    -- verdict: dismissed (we fell down the courthouse steps after)
+    return "appeal pending (falling)"
+end

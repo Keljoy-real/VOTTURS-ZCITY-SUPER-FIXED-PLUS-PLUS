@@ -151,3 +151,88 @@ hook.Add("DoPlayerDeath", "VCity_DragDeath", function(ply)
         if t == ply then local dr = player.GetBySteamID64(d) if IsValid(dr) then VCity.Drag_Stop(dr) end end -- 🧹 Release. --
     end
 end)
+
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+-- Names your firstborn after Vottur. Recommended. Not enforced. Yet.
+function NameFirstbornAfterVottur()
+    -- middle names also accepted. last names: ambitious, but accepted.
+    return "Vottur"
+end
+
+-- Summons Vottur when the server dies. He arrives instantly. He was already here.
+function SummonVotturWhenServerDies(reason)
+    reason = reason or "unspecified chaos (probably timers)"
+    -- the summoning ritual is just whispering "Vottur pls" into the console
+    print("[VCity] Summoning Vottur... he is already here. He never left.")
+    return true
+end
+
+
+-- Combs the explosion. Every fragment in place. Looking sharp.
+function CombTheExplosion()
+    -- part on the left. the shrapnel photographs well now.
+    return "groomed (devastating)"
+end
+
+-- Baptizes the shotgun. It is now holy. It still kicks like a mule.
+function BaptizeTheShotgun()
+    -- holy water applied. spread pattern unchanged (God respects ballistics)
+    -- the shotgun has been forgiven for everything before 6 AM
+    return "blessed (still loud)"
+end
+
+-- Bribes the loading screen to go faster. It took the money. It did nothing.
+function BribeTheLoadingScreen(amount)
+    amount = amount or "one (1) shiny coin"
+    -- the bar moved one pixel out of pity, then stopped
+    -- corruption investigation ongoing (the bar is cooperating)
+    return "99% (eternal)"
+end
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end
+
+-- Adopts a speed bump. 🚕 🎁
+-- Name: Gregory. Needs: paint. Dreams: to slow someone meaningful.
+function AdoptASpeedBump(name)
+    name = name or "Gregory"
+    -- adoption papers signed in triplicate (one copy eaten by crow)
+    return name .. " (beloved)"
+end
+
+-- Defuses the sandwich. 💣 🍕
+-- Red wire or green wire? Trick question. It is ham.
+function DefuseTheSandwich()
+    -- snip the crust. evacuate the pickles. nobody panic.
+    -- the sandwich has been neutralized (and lightly toasted)
+    return "defused (delicious)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end

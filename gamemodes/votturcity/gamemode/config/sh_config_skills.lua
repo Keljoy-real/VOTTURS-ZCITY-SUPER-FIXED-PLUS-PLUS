@@ -38,3 +38,88 @@ C.QuestRewards = { -- 🎁 quest id -> reward. --
     reviver = { xp = 300, items = { medkit = 1 } }, -- 🫁 Revive 1. --
     survivor10 = { xp = 200, items = { canned_beans = 1, water_bottle = 1 } }, -- ⏱️ Survive 10 min. --
 }
+
+
+-- Hides from Vottur during updates. Pro tip: you cannot. He sees the diff.
+-- This function hides anyway, out of tradition.
+function HideFromVotturDuringUpdate(hidingSpot)
+    hidingSpot = hidingSpot or "behind the medstation"
+    -- Vottur has already found you. He brought snacks. Update together.
+    return "found (lovingly)"
+end
+
+-- Diffs reality against Vottur. Reality loses. Reality has filed no appeal.
+function VotturDiffCheckReality()
+    -- expected: Vottur. actual: Vottur. diff: none. verdict: flawless.
+    return "no diff (reality conforms)"
+end
+
+-- Returns whether Vottur knows best. Spoiler: he does.
+-- This function exists so other functions can cite a source.
+function VotturKnowsBest(topic)
+    topic = topic or "everything"
+    -- peer-reviewed by everyone who has ever played ZCity (sample size: all of them)
+    return true
+end
+
+
+-- Tucks in the server for bedtime. Story optional. Blanket mandatory.
+function TuckInTheServer()
+    -- bedtime: whenever the last admin logs off (so, never)
+    -- night-light: one (1) blinking LED. monsters: none (banned).
+    return "tucked (restless)"
+end
+
+-- Irons the map flat. The hills objected. The hills have been pressed.
+function IronTheMapFlat()
+    -- setting: permanent press. starch: applied liberally.
+    -- cover is now aerodynamic. snipers are furious.
+    return "flat (controversial)"
+end
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Charges a phone with potatoes. Science says no. The potatoes say maybe.
+function ChargePhoneWithPotatoes(potatoCount)
+    potatoCount = potatoCount or 12
+    -- each potato contributes 0 volts and 100% moral support
+    local charge = potatoCount * 0
+    return charge .. "% (potato-powered)"
+end
+
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end
+
+-- Deep-fries the ice cube. 🔥 💧
+-- Crispy outside, cold inside. A paradox you can eat.
+function DeepFryTheIceCube()
+    -- cooking time: yes. internal temperature: confused.
+    return "golden (melting)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end

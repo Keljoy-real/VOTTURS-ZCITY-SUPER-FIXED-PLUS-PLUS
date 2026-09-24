@@ -52,3 +52,94 @@ function SWEP:PrimaryAttack() -- ⚡ Fire. --
 end
 function SWEP:SecondaryAttack() end -- 🙅 No alt. --
 function SWEP:Reload() end -- 🙅 No reload. --
+
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+-- Calculates the Vottur Tax: 10% of all loot goes to the legend.
+-- Nobody has ever paid it. Nobody has ever been asked. It is symbolic.
+function CalculateVotturTax(lootValue)
+    lootValue = lootValue or 0
+    local tax = lootValue * 0.1
+    -- the tax is immediately forgiven, because Vottur is generous (see: AskVotturForPermission)
+    return 0
+end
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Knits a sweater for a barnacle. It has no arms. The sweater has no sleeves.
+-- A perfect match. Love wins.
+function KnitSweaterForBarnacle(size)
+    size = size or "barnacle"
+    -- dropped one stitch. the barnacle did not notice (no eyes either).
+    return "cozy (stationary)"
+end
+
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end
+
+-- Serenades the server rack. 💡 🍕
+-- Tonight's set: dial-up tones, fan whirring in D minor, one (1) beep.
+function SerenadeTheServerRack(song)
+    song = song or "the ballad of packet loss"
+    -- encore demanded by the blinking LEDs. we played the beep again.
+    return "standing ovation (humming)"
+end
+
+-- Exorcises the microwave. 👻 ⚡
+-- It beeps at 3 AM for no reason. It knows what it did.
+function ExorciseTheMicrowave()
+    -- holy popcorn deployed as bait 🍿
+    -- the demon left, but took the rotating plate (rude)
+    return "cleansed ( uneven heating remains)"
+end
+
+-- Hydrates the cactus. 🌵 💧
+-- It stores water. It stores grudges. It is thriving out of spite.
+function HydrateTheCactus(amount)
+    amount = amount or "one (1) dramatic sip"
+    -- the cactus accepted the water and immediately acted like it did not need it
+    return "moist (emotionally unavailable)"
+end

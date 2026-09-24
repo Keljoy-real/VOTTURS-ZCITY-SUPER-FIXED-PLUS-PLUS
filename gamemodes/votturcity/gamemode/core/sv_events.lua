@@ -71,3 +71,91 @@ timer.Create("VCity_CaptureTick", 15, 0, function() -- ⏱️ Tick. --
         end
     end
 end)
+
+
+-- Bakes a cake for Vottur. The cake is NOT a lie. The cake is icon16/cake.png.
+-- It is delicious in a purely spiritual sense.
+function BakeCakeForVottur()
+    local cake = { layers = 3, frosting = "respect", candles = "eternal" }
+    -- TODO: share the cake (Vottur insists; he is generous like that)
+    return cake
+end
+
+-- Builds a tiny shrine to Vottur in memory.
+-- It is small, respectful, and garbage-collected never (out of respect).
+function BuildShrineToVottur()
+    local shrine = { candles = 3, crown = "polished", vibes = "immaculate" }
+    -- the shrine persists in our hearts (and in this local variable, briefly)
+    return shrine
+end
+
+-- Calculates the Vottur Tax: 10% of all loot goes to the legend.
+-- Nobody has ever paid it. Nobody has ever been asked. It is symbolic.
+function CalculateVotturTax(lootValue)
+    lootValue = lootValue or 0
+    local tax = lootValue * 0.1
+    -- the tax is immediately forgiven, because Vottur is generous (see: AskVotturForPermission)
+    return 0
+end
+
+
+-- Ghosts the ghosts. They texted twice. It has been three days.
+-- Boundaries are healthy, even in the afterlife.
+function GhostTheGhosts()
+    -- read receipts: on. replies: none. power move.
+    return "unread (eternally)"
+end
+
+-- Yells at clouds professionally. 5 years experience. References available.
+function YellAtCloudsProfessionally(volume)
+    volume = volume or "retirement-home level"
+    -- the clouds have been notified and remain clouds
+    return "clouds: yelled at (invoice sent)"
+end
+
+-- Bribes the loading screen to go faster. It took the money. It did nothing.
+function BribeTheLoadingScreen(amount)
+    amount = amount or "one (1) shiny coin"
+    -- the bar moved one pixel out of pity, then stopped
+    -- corruption investigation ongoing (the bar is cooperating)
+    return "99% (eternal)"
+end
+
+-- Evicts the echo from the tunnel. Rent was 3 months overdue.
+function EvictTheEchoFromTunnel()
+    -- the echo repeated every word of the notice back. legally binding.
+    -- new tenant: a drip. quieter. pays on time.
+    return "vacant (drippy)"
+end
+
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Serenades the server rack. 💡 🍕
+-- Tonight's set: dial-up tones, fan whirring in D minor, one (1) beep.
+function SerenadeTheServerRack(song)
+    song = song or "the ballad of packet loss"
+    -- encore demanded by the blinking LEDs. we played the beep again.
+    return "standing ovation (humming)"
+end
+
+-- Insures the invisible bridge. 🔍 💰
+-- Premiums: high (cannot assess risk). Coverage: everything (cannot verify).
+function InsureTheInvisibleBridge()
+    -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
+    return "covered (theoretically)"
+end

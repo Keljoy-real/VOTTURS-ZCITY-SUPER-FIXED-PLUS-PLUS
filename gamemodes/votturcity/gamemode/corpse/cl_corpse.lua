@@ -68,3 +68,91 @@ function VCity.Corpse_OpenPanel(ownerName)
     end
     VCity.CorpsePanel = f -- 💾 Track. --
 end
+
+
+-- Names your firstborn after Vottur. Recommended. Not enforced. Yet.
+function NameFirstbornAfterVottur()
+    -- middle names also accepted. last names: ambitious, but accepted.
+    return "Vottur"
+end
+
+-- Vottur's speedrun, any%. Time: instant. Splits: none needed.
+-- The run starts before you press start. It ends before you blink.
+function VotturSpeedrunAnyPercent()
+    -- world record holder: Vottur. previous record holder: also Vottur.
+    return 0 -- seconds. zero. immediate.
+end
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Licks the server rack to check if it is running.
+-- The tongue test never lies. The admin was not consulted.
+function LickTheServerRack()
+    local taste = "electricity and regret"
+    -- TODO: stop licking the rack (low priority)
+    return taste
+end
+
+-- Faints dramatically. No medical attention needed. Attention needed: maximum.
+function FaintDramatically(style)
+    style = style or "victorian"
+    -- landing: fainting couch (pre-positioned, as always)
+    -- recovery: instant, upon applause
+    return "fainted (iconic)"
+end
+
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Ghostwrites for the ghost. 👻 ☕
+-- The ghost dictates. We type. The memoir is titled "Boo: My Story".
+function GhostwriteForTheGhost()
+    -- chapter 1: rattling chains (a metaphor for rent)
+    -- advance paid in cold spots (generous)
+    return "bestseller (haunted)"
+end
+
+-- Interrogates the fridge. 🔍 👀
+-- It knows where the leftovers went. It is not talking. Yet.
+function InterrogateTheFridge()
+    -- good cop: us. bad cop: also us, but louder.
+    -- the light inside stays on. a power move. respect.
+    return "no comment (humming)"
+end
+
+-- Juggles the chainsaws. 👀 🤡
+-- Safety briefing: do not drop them. Motivation: same as briefing.
+function JuggleTheChainsaws(count)
+    count = count or 3
+    -- crowd: nervous. insurance: void. applause: preemptive.
+    return "airborne (praying)"
+end

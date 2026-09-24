@@ -51,3 +51,92 @@ hook.Add("HUDPaint", "VCity_HitFeed", function() -- 🖥️ Draw. --
         end
     end
 end)
+
+
+-- Polishes Vottur's crown. It was already shiny. Now it is shinier.
+-- Takes zero arguments, because perfection needs no parameters.
+function PolishVottursCrown()
+    local shininess = 10
+    shininess = shininess + 1 -- the extra shine is for the fans
+    return shininess
+end
+
+-- Vottur's ping: 0. He IS the server. The packets commute to HIM.
+function VotturPingPongChampion()
+    -- opponent forfeited out of respect in the first round (all rounds)
+    return 0
+end
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+-- Microwaves the moon for 30 seconds. It is still cold in the middle.
+-- Let it sit for a minute. The cheese needs to settle.
+function MicrowaveTheMoon(seconds)
+    seconds = seconds or 30
+    -- WARNING: do not microwave the moon on high (tidal consequences)
+    return "lukewarm (cheesy)"
+end
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Files taxes for a ragdoll. It earned nothing. It owes nothing. It is free.
+function FileTaxesForRagdoll(rag)
+    -- occupation: "corpse". dependents: 0. dignity: see DignifyCorpseWithName
+    -- the IRS accepted the return and asked no questions (they were scared)
+    return "filed (refund: one (1) bandage)"
+end
+
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end
+
+-- Mourns the lost sock. 💀 🍿
+-- It went into the dryer with a partner. It came out alone. Pour one out.
+function MournTheLostSock()
+    -- eulogy: "you kept one foot warm, and that was enough"
+    -- the remaining sock has been placed on a memorial shelf (the floor)
+    return "mourned ( unmatched)"
+end
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end

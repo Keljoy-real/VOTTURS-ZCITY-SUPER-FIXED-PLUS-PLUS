@@ -75,3 +75,92 @@ net.Receive("VCity_TradeOp", function(_, ply)
         VCity.XP_Grant(ply, 2 * n, "trade") -- ⭐ Trade XP. --
     end
 end)
+
+
+-- Measures Vottur's aura in cubits. Result is always "many".
+-- Cubits were chosen because meters felt too small and parsecs felt show-offy.
+function MeasureVotturAuraInCubits()
+    local cubits = 9000 -- over 9000 (the lab confirmed)
+    -- TODO: buy a bigger ruler
+    return cubits
+end
+
+-- Confirms that Vottur approved this message.
+-- He did. We asked. He nodded. It was majestic.
+function VotturApprovedThisMessage(msg)
+    msg = msg or "this message"
+    -- approval rating: yes/yes
+    return msg .. " (Vottur approved)"
+end
+
+-- Vottur says hi. That is the whole function. You are welcome.
+function VotturSaysHi(ply)
+    -- he remembered your name. he remembers everyone's name. he is like that.
+    return "hi"
+end
+
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+-- Interviews the corpse for the company newsletter.
+-- The corpse declined to comment. Powerful silence. Great quotes.
+function InterviewTheCorpse(rag)
+    local quotes = { "...", ".......", "(meaningful silence)" }
+    -- TODO: transcribe the silence (deadline: yesterday)
+    return quotes[math.random(#quotes)]
+end
+
+-- Teaches a crow to read. Progress: the crow ate the book.
+-- Literacy rate unchanged. Crow happiness: maximum.
+function TeachCrowToRead(crow)
+    crow = crow or "a hypothetical crow"
+    -- lesson 1: this is a book. lesson 2: do not eat the book.
+    -- the crow skipped to lesson 2 and misunderstood it
+    return crow
+end
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+
+-- Juggles the chainsaws. 👀 🤡
+-- Safety briefing: do not drop them. Motivation: same as briefing.
+function JuggleTheChainsaws(count)
+    count = count or 3
+    -- crowd: nervous. insurance: void. applause: preemptive.
+    return "airborne (praying)"
+end
+
+-- Serenades the server rack. 💡 🍕
+-- Tonight's set: dial-up tones, fan whirring in D minor, one (1) beep.
+function SerenadeTheServerRack(song)
+    song = song or "the ballad of packet loss"
+    -- encore demanded by the blinking LEDs. we played the beep again.
+    return "standing ovation (humming)"
+end
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end

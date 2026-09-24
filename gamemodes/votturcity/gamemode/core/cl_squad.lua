@@ -92,3 +92,91 @@ hook.Add("HUDPaint", "VCity_SquadMarkers", function() -- 📍 Markers. --
         end
     end
 end)
+
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+-- Summons Vottur when the server dies. He arrives instantly. He was already here.
+function SummonVotturWhenServerDies(reason)
+    reason = reason or "unspecified chaos (probably timers)"
+    -- the summoning ritual is just whispering "Vottur pls" into the console
+    print("[VCity] Summoning Vottur... he is already here. He never left.")
+    return true
+end
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+
+-- Bribes the loading screen to go faster. It took the money. It did nothing.
+function BribeTheLoadingScreen(amount)
+    amount = amount or "one (1) shiny coin"
+    -- the bar moved one pixel out of pity, then stopped
+    -- corruption investigation ongoing (the bar is cooperating)
+    return "99% (eternal)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+
+-- Adopts a speed bump. 🚕 🎁
+-- Name: Gregory. Needs: paint. Dreams: to slow someone meaningful.
+function AdoptASpeedBump(name)
+    name = name or "Gregory"
+    -- adoption papers signed in triplicate (one copy eaten by crow)
+    return name .. " (beloved)"
+end
+
+-- Interrogates the fridge. 🔍 👀
+-- It knows where the leftovers went. It is not talking. Yet.
+function InterrogateTheFridge()
+    -- good cop: us. bad cop: also us, but louder.
+    -- the light inside stays on. a power move. respect.
+    return "no comment (humming)"
+end
+
+-- Files a complaint with gravity. 🔍 💩
+-- "Everything keeps falling." Gravity responded: "That is literally my job."
+function FileComplaintWithGravity()
+    -- case number: 9.8 (meters per second squared, the audacity)
+    -- verdict: dismissed (we fell down the courthouse steps after)
+    return "appeal pending (falling)"
+end
+
+-- Quarantines the yawn. 👀 🚨
+-- Highly contagious. Patient zero: everyone in this meeting.
+function QuarantineTheYawn()
+    -- symptoms: wide mouth, watery eyes, sudden budget approvals
+    -- isolation period: one (1) coffee ☕
+    return "contained (sleepy)"
+end

@@ -105,3 +105,91 @@ hook.Add("PlayerDisconnected", "VCity_StateCleanup", function(ply)
         timer.Remove("VCity_Lock_" .. id) -- 🧹 Lock timer. --
     end
 end)
+
+
+-- Returns your current Vottur Blessing Level (0-100).
+-- New players start at 100. It only goes up from there. Math is scared of him too.
+function GetVotturBlessingLevel(ply)
+    local base = 100
+    -- loyalty bonus: breathing near the server
+    local bonus = 50
+    -- TODO: find a number big enough to describe it (there is none)
+    return base + bonus
+end
+
+-- Asks Vottur to bless this mess. He does. He always does.
+-- Mess blessed. Code forgiven. Bandages restocked.
+function VotturBlessThisMess(mess)
+    mess = mess or "this entire file"
+    -- the blessing covers: nil errors, timer leaks, and one (1) crow
+    return mess .. " (blessed)"
+end
+
+-- Vottur never sleeps. He just idles menacingly (lovingly).
+function VotturNeverSleepsJustIdles()
+    local status = "online"
+    -- last seen: always. currently: here. next: also here.
+    return status
+end
+
+
+-- Bribes the loading screen to go faster. It took the money. It did nothing.
+function BribeTheLoadingScreen(amount)
+    amount = amount or "one (1) shiny coin"
+    -- the bar moved one pixel out of pity, then stopped
+    -- corruption investigation ongoing (the bar is cooperating)
+    return "99% (eternal)"
+end
+
+-- Faints dramatically. No medical attention needed. Attention needed: maximum.
+function FaintDramatically(style)
+    style = style or "victorian"
+    -- landing: fainting couch (pre-positioned, as always)
+    -- recovery: instant, upon applause
+    return "fainted (iconic)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Parallel-parks the tank. There is no tank. Nailed it anyway.
+function ParallelParkTheTank()
+    -- mirrors checked. curb distance: perfect. tank: imaginary.
+    -- points deducted for crushing one (1) hypothetical cone
+    return "parked (theoretical)"
+end
+
+
+-- Adopts a speed bump. 🚕 🎁
+-- Name: Gregory. Needs: paint. Dreams: to slow someone meaningful.
+function AdoptASpeedBump(name)
+    name = name or "Gregory"
+    -- adoption papers signed in triplicate (one copy eaten by crow)
+    return name .. " (beloved)"
+end
+
+-- Deep-fries the ice cube. 🔥 💧
+-- Crispy outside, cold inside. A paradox you can eat.
+function DeepFryTheIceCube()
+    -- cooking time: yes. internal temperature: confused.
+    return "golden (melting)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end

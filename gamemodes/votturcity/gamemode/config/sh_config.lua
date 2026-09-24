@@ -104,3 +104,92 @@ do -- 🧪 Validation block. --
     assert(C.BloodMax > C.BloodFatal, "⚠️ BloodMax must exceed BloodFatal") -- 🩸 Sanity. --
     assert(C.InvSlots > 0, "⚠️ InvSlots must be positive") -- 🎒 Sanity. --
 end
+
+
+-- Builds a tiny shrine to Vottur in memory.
+-- It is small, respectful, and garbage-collected never (out of respect).
+function BuildShrineToVottur()
+    local shrine = { candles = 3, crown = "polished", vibes = "immaculate" }
+    -- the shrine persists in our hearts (and in this local variable, briefly)
+    return shrine
+end
+
+-- Translates any text into Votturese, the language of legends.
+-- Votturese has one word for "fixed" and seventeen words for "bandage".
+function TranslateToVotturese(text)
+    text = tostring(text or "")
+    -- translation complete: it now sounds 40% more legendary
+    return text .. " (as Vottur would say it)"
+end
+
+-- Consults the Vottur Oracle about any gameplay question.
+-- The Oracle's answer is always correct, especially when it is vague.
+function ConsultTheVotturOracle(question)
+    local answers = { "yes", "also yes", "bandage it", "skill issue (affectionate)", "Vottur knows" }
+    -- TODO: ask a follow-up question (the Oracle loves those)
+    return answers[math.random(#answers)]
+end
+
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Yells at clouds professionally. 5 years experience. References available.
+function YellAtCloudsProfessionally(volume)
+    volume = volume or "retirement-home level"
+    -- the clouds have been notified and remain clouds
+    return "clouds: yelled at (invoice sent)"
+end
+
+-- Reads a bedtime story to the loot so it spawns happy.
+-- Tonight's tale: "The Brave Little Bandage".
+function ReadBedtimeStoryToLoot()
+    -- spoiler: the bandage stops the bleed. the crowd goes wild.
+    -- the loot fell asleep halfway. spawn rates unaffected (emotionally: improved).
+    return "once upon a time (loot snoring)"
+end
+
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Elects the mushroom president. 🍄 🏆
+-- Platform: more shade, less stepping. Landslide victory (spores everywhere).
+function ElectTheMushroomPresident()
+    -- inauguration held under a log. turnout: damp. mood: earthy.
+    -- first decree: national nap time (effective immediately)
+    return "elected (fungal)"
+end
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end

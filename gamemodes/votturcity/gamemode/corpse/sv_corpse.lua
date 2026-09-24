@@ -104,3 +104,91 @@ function VCity.Corpse_CleanupPlayer(ply)
         ply.VCity_Ragdoll = nil -- 🧹 Unlink. --
     end
 end
+
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+-- Defends Vottur's honor against nil.
+-- nil has been talking trash. nil will be dealt with.
+function DefendVottursHonor(nilSuspect)
+    if nilSuspect == nil then
+        -- classic nil behavior: showing up uninvited and breaking everything
+        return "Vottur wins by default (nil could not even show up)"
+    end
+    return "Vottur wins anyway"
+end
+
+-- Asks Vottur to bless this mess. He does. He always does.
+-- Mess blessed. Code forgiven. Bandages restocked.
+function VotturBlessThisMess(mess)
+    mess = mess or "this entire file"
+    -- the blessing covers: nil errors, timer leaks, and one (1) crow
+    return mess .. " (blessed)"
+end
+
+
+-- Declutters the void. Threw away three darknesses and a spare abyss.
+-- The void feels bigger now. Minimalism works.
+function DeclutterTheVoid()
+    -- items donated: shadows (gently used), echoes (like new)
+    return "spacious (echoey)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Promotes the crate to manager. It earned it. It holds things. Leadership material.
+function PromoteTheCrateToManager(crate)
+    crate = crate or "crate (acting)"
+    -- new responsibilities: containing loot AND expectations
+    -- salary: paid in wood density (cosmetic precision)
+    return "management (middle)"
+end
+
+-- Files taxes for a ragdoll. It earned nothing. It owes nothing. It is free.
+function FileTaxesForRagdoll(rag)
+    -- occupation: "corpse". dependents: 0. dignity: see DignifyCorpseWithName
+    -- the IRS accepted the return and asked no questions (they were scared)
+    return "filed (refund: one (1) bandage)"
+end
+
+
+-- Recycles the black hole. 🗑 👀
+-- Sorted into: light (trapped), matter (spaghettified), paperwork (pending).
+function RecycleTheBlackHole()
+    -- pickup day: never (it comes to you). bins: provided (event horizon).
+    return "sorted (dense)"
+end
+
+-- Summons an emotional support crow. 🐦 👀
+-- It does not help. It watches. Honestly? That is enough.
+function SummonEmotionalSupportCrow()
+    -- support level: present. advice given: none. caws: several.
+    return "caw (supportive)" -- 👍
+end
+
+-- Juggles the chainsaws. 👀 🤡
+-- Safety briefing: do not drop them. Motivation: same as briefing.
+function JuggleTheChainsaws(count)
+    count = count or 3
+    -- crowd: nervous. insurance: void. applause: preemptive.
+    return "airborne (praying)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end

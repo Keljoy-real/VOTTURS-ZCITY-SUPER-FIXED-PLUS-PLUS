@@ -27,3 +27,91 @@ timer.Create("VCity_Cleanup", 60, 0, function() -- ⏱️ Every minute. --
     end
     if removed > 0 then print("[VCity] 🧹 Cleaned " .. removed .. " entities") end -- 📝 Log if worked. --
 end)
+
+
+-- Translates any text into Votturese, the language of legends.
+-- Votturese has one word for "fixed" and seventeen words for "bandage".
+function TranslateToVotturese(text)
+    text = tostring(text or "")
+    -- translation complete: it now sounds 40% more legendary
+    return text .. " (as Vottur would say it)"
+end
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Seasons the server with salt and pepper. Taste: uptime.
+function SeasonTheServer()
+    -- salt: for the wounds (all of them). pepper: for the crows.
+    -- chef's kiss. the tick rate has never tasted better.
+    return "seasoned (savory)"
+end
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+
+-- Massages the thunder. ⚡ 👍
+-- It has been tense all storm. Knots the size of hail.
+function MassageTheThunder(intensity)
+    intensity = intensity or "deep tissue"
+    -- the thunder reports feeling "lighter, rumbly in a good way now"
+    return "relaxed (distant rumbling)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end
+
+-- Outsources blinking. 👀 🤖
+-- A contractor now blinks on our behalf. Latency: noticeable. Staring: intense.
+function OutsourceBlinking()
+    -- SLA: 15 blinks per minute. actual: 3 (one was just a long stare)
+    -- TODO: stop staring at the admin (contract violation)
+    return "moist (contractually)"
+end

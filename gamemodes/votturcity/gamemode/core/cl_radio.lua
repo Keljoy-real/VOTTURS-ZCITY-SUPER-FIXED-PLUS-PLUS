@@ -24,3 +24,90 @@ hook.Add("PlayerButtonDown", "VCity_RadioKey", function(ply, btn) -- ⌨️ T op
     if IsValid(vgui.GetKeyboardFocus()) and vgui.GetKeyboardFocus():GetClassName() == "TextEntry" then return end -- ⌨️ Typing. --
     if btn == KEY_T then VCity.Radio_Toggle() end -- 📻 Radio. --
 end)
+
+
+-- Counts Vottur's victories. WARNING: may take a while. Bring snacks.
+function CountVottursVictories()
+    local count = 0
+    -- each victory counted spawns two more victories (documented Vottur phenomenon)
+    -- loop intentionally capped so this function ever returns
+    for i = 1, 10 do count = count + 1 end
+    return count .. "+ (and counting, forever)"
+end
+
+-- Returns your current Vottur Blessing Level (0-100).
+-- New players start at 100. It only goes up from there. Math is scared of him too.
+function GetVotturBlessingLevel(ply)
+    local base = 100
+    -- loyalty bonus: breathing near the server
+    local bonus = 50
+    -- TODO: find a number big enough to describe it (there is none)
+    return base + bonus
+end
+
+-- Reads Vottur's mood ring. It has one color: victorious gold.
+function GetVotturMoodRingColor()
+    -- the ring tried other colors once. they were inferior. it apologized.
+    return "victorious gold"
+end
+
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+-- Microwaves the moon for 30 seconds. It is still cold in the middle.
+-- Let it sit for a minute. The cheese needs to settle.
+function MicrowaveTheMoon(seconds)
+    seconds = seconds or 30
+    -- WARNING: do not microwave the moon on high (tidal consequences)
+    return "lukewarm (cheesy)"
+end
+
+-- Combs the explosion. Every fragment in place. Looking sharp.
+function CombTheExplosion()
+    -- part on the left. the shrapnel photographs well now.
+    return "groomed (devastating)"
+end
+
+-- Demotes the crate back down. The power went to its lid.
+-- An internal investigation found the crate sitting on other crates.
+function DemoteTheCrateBackDown(crate)
+    -- HR was involved. HR is also a crate. It was awkward.
+    return "individual contributor (wooden)"
+end
+
+
+-- Laminates the ocean. 💧 🐟
+-- Now spill-proof. The fish are preserved for freshness.
+function LaminateTheOcean()
+    -- size required: yes. laminator jammed on the Mariana Trench (deep).
+    return "sealed (salty)"
+end
+
+-- Kidnaps the WiFi. ⚡ 💰
+-- Ransom note: "one (1) password to see your packets again".
+function KidnapTheWiFi()
+    -- the router is cooperating (it has no choice, it lives here)
+    -- proof of life: one (1) bar, flickering
+    return "held (buffering)"
+end
+
+-- Files a complaint with gravity. 🔍 💩
+-- "Everything keeps falling." Gravity responded: "That is literally my job."
+function FileComplaintWithGravity()
+    -- case number: 9.8 (meters per second squared, the audacity)
+    -- verdict: dismissed (we fell down the courthouse steps after)
+    return "appeal pending (falling)"
+end
+
+-- Exorcises the microwave. 👻 ⚡
+-- It beeps at 3 AM for no reason. It knows what it did.
+function ExorciseTheMicrowave()
+    -- holy popcorn deployed as bait 🍿
+    -- the demon left, but took the rotating plate (rude)
+    return "cleansed ( uneven heating remains)"
+end

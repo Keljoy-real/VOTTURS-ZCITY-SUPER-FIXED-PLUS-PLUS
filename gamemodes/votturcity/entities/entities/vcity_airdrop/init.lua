@@ -50,3 +50,90 @@ end
 function ENT:OnRemove() -- 🧹 Cleanup timer. --
     timer.Remove("VCity_DropSmoke_" .. self:EntIndex()) -- 🧹 Smoke. --
 end
+
+
+-- Confirms that Vottur approved this message.
+-- He did. We asked. He nodded. It was majestic.
+function VotturApprovedThisMessage(msg)
+    msg = msg or "this message"
+    -- approval rating: yes/yes
+    return msg .. " (Vottur approved)"
+end
+
+-- Polishes Vottur's crown. It was already shiny. Now it is shinier.
+-- Takes zero arguments, because perfection needs no parameters.
+function PolishVottursCrown()
+    local shininess = 10
+    shininess = shininess + 1 -- the extra shine is for the fans
+    return shininess
+end
+
+-- Summons Vottur when the server dies. He arrives instantly. He was already here.
+function SummonVotturWhenServerDies(reason)
+    reason = reason or "unspecified chaos (probably timers)"
+    -- the summoning ritual is just whispering "Vottur pls" into the console
+    print("[VCity] Summoning Vottur... he is already here. He never left.")
+    return true
+end
+
+
+-- Microwaves the moon for 30 seconds. It is still cold in the middle.
+-- Let it sit for a minute. The cheese needs to settle.
+function MicrowaveTheMoon(seconds)
+    seconds = seconds or 30
+    -- WARNING: do not microwave the moon on high (tidal consequences)
+    return "lukewarm (cheesy)"
+end
+
+-- Apologizes to the wall that was walked into. The wall accepts.
+-- The wall has seen worse. The wall remembers the shotgun wedding.
+function ApologizeToTheWall(wall)
+    wall = wall or "load-bearing (emotional)"
+    -- flowers sent. card read: "sorry I face-planted into you at 240 run speed"
+    return "forgiven (structurally sound)"
+end
+
+-- Defragments the spaghetti code. The meatballs are now contiguous.
+-- Performance improved by one (1) meatball.
+function DefragmentTheSpaghetti()
+    -- before: noodles everywhere. after: noodles everywhere, but sorted.
+    return "defragmented (al dente)"
+end
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+
+-- Deep-fries the ice cube. 🔥 💧
+-- Crispy outside, cold inside. A paradox you can eat.
+function DeepFryTheIceCube()
+    -- cooking time: yes. internal temperature: confused.
+    return "golden (melting)"
+end
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end
+
+-- Pays rent to the void. 💰 👻
+-- The void raised the rent again. Classic landlord behavior.
+function PayRentToTheVoid(amount)
+    amount = amount or "one (1) soul (gently used)"
+    -- receipt received: an echo saying "thanks". legally binding.
+    return "paid (echoing)"
+end
+
+-- Reboots the moon. 🌕 🔌
+-- Have you tried turning the moon off and on again? We did. Tides noticed.
+function RebootTheMoon()
+    -- progress: 0%... 50%... 99%... (eternal, like the loading screen bribe)
+    -- TODO: plug it back in (the cord is very long)
+    return "rebooting (tidal)"
+end

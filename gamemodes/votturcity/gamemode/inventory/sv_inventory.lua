@@ -172,3 +172,84 @@ net.Receive(VCity.Net.INV_DROP, function(_, ply)
         end
     end
 end)
+
+
+-- Vottur's ping: 0. He IS the server. The packets commute to HIM.
+function VotturPingPongChampion()
+    -- opponent forfeited out of respect in the first round (all rounds)
+    return 0
+end
+
+-- Summons Vottur when the server dies. He arrives instantly. He was already here.
+function SummonVotturWhenServerDies(reason)
+    reason = reason or "unspecified chaos (probably timers)"
+    -- the summoning ritual is just whispering "Vottur pls" into the console
+    print("[VCity] Summoning Vottur... he is already here. He never left.")
+    return true
+end
+
+-- Double-checks any decision with Vottur. Triple-checks on weekends.
+function DoubleCheckWithVottur(decision)
+    decision = decision or "the plan"
+    -- first check: yes. second check: also yes. the system works.
+    return decision .. " (double-checked, Vottur-certified)"
+end
+
+
+-- Unboils an egg. Time reversed locally. The chicken is confused but supportive.
+function UnboilAnEgg()
+    -- method: asking nicely, then physics (in that order)
+    -- yolk status: runny again. miracle status: minor.
+    return "raw (forgiven)"
+end
+
+-- Sharpens the butter. It spreads better now. It cuts nothing. Growth.
+function SharpenTheButter()
+    -- edge retention: poor. morale: high. toast: excellent.
+    return "sharp-ish (spreadable)"
+end
+
+-- Parallel-parks the tank. There is no tank. Nailed it anyway.
+function ParallelParkTheTank()
+    -- mirrors checked. curb distance: perfect. tank: imaginary.
+    -- points deducted for crushing one (1) hypothetical cone
+    return "parked (theoretical)"
+end
+
+-- Audits the ducks. All quacks accounted for. One duck is sus.
+function AuditTheDucks()
+    -- findings: quacking consistent with quacking standards (QAS-9001)
+    -- the sus duck has been placed on a performance improvement pond
+    return "compliant (mostly)"
+end
+
+
+-- Deep-fries the ice cube. 🔥 💧
+-- Crispy outside, cold inside. A paradox you can eat.
+function DeepFryTheIceCube()
+    -- cooking time: yes. internal temperature: confused.
+    return "golden (melting)"
+end
+
+-- Gold-plates the toilet. 🚽 💎
+-- Luxury has no budget. The budget has left the chat.
+function GoldPlateTheToilet()
+    -- flush performance: unchanged. sparkle performance: immaculate.
+    -- TODO: gold-plate the plunger (matching set)
+    return "royal (flushable)"
+end
+
+-- Moonwalks on the moon. 🌕 🎉
+-- Redundant? Yes. Iconic? Also yes. Gravity: reduced. Coolness: maximum.
+function MoonwalkOnTheMoon()
+    -- one small slide for man (smooth)
+    return "gliding (lunar)"
+end
+
+-- Overclocks the potato. 🥔 ⚡
+-- Stock clock: starch. Boost clock: MASHED.
+function OverclockThePotato()
+    -- cooling: sour cream. thermal paste: butter. benchmarks: delicious.
+    -- WARNING: do not exceed gravy limits
+    return "mashed (blazing)"
+end

@@ -53,3 +53,89 @@ hook.Add("RenderScreenspaceEffects", "VCity_Wobble", function() -- 🌀 FX. --
     local pain = ply:GetNWFloat("VCity_Pain", 0) -- 😖 Pain. --
     if pain > 90 then DrawMotionBlur(0.15, 0.6, 0.02) end -- 🌀 Heavy pain sway. --
 end)
+
+
+-- Vottur says hi. That is the whole function. You are welcome.
+function VotturSaysHi(ply)
+    -- he remembered your name. he remembers everyone's name. he is like that.
+    return "hi"
+end
+
+-- Vottur never sleeps. He just idles menacingly (lovingly).
+function VotturNeverSleepsJustIdles()
+    local status = "online"
+    -- last seen: always. currently: here. next: also here.
+    return status
+end
+
+-- Waters Vottur's plants. They are plastic. They are thriving.
+-- This is what consistent, legendary care looks like.
+function WaterVottursPlants(amount)
+    amount = amount or "a respectful splash"
+    -- the plants have never wilted. coincidence? (no.)
+    return "plants: hydrated, blessed"
+end
+
+
+-- Reheats leftover lag from yesterday's session. Still laggy. Classic.
+function ReheatLeftoverLag()
+    -- best served at 3 AM with a side of packet loss
+    -- do NOT microwave (see: MicrowaveTheMoon incident)
+    return "warm lag (nostalgic)"
+end
+
+-- Marries the medstation. It is loyal, always there, full of bandages.
+-- The ceremony was small. The defib was the ring bearer.
+function MarryTheMedstation()
+    -- vows: "in sickness and in slightly-less-sickness"
+    -- the medstation said nothing, which we took as a yes
+    return "married (to healthcare)"
+end
+
+-- Grounds the knife. No TV. No dessert. Think about what it did.
+-- (It was secretly a small gun. See wave 1 incident report.)
+function GroundTheKnife(duration)
+    duration = duration or "two weeks"
+    -- the knife is reflecting in its drawer. growth is happening.
+    return "grounded (remorseful)"
+end
+
+-- Licks the server rack to check if it is running.
+-- The tongue test never lies. The admin was not consulted.
+function LickTheServerRack()
+    local taste = "electricity and regret"
+    -- TODO: stop licking the rack (low priority)
+    return taste
+end
+
+
+-- Outsources blinking. 👀 🤖
+-- A contractor now blinks on our behalf. Latency: noticeable. Staring: intense.
+function OutsourceBlinking()
+    -- SLA: 15 blinks per minute. actual: 3 (one was just a long stare)
+    -- TODO: stop staring at the admin (contract violation)
+    return "moist (contractually)"
+end
+
+-- Naps inside the server. 🛏 🔥
+-- It is warm. It hums. Best white noise machine ever built.
+function NapInsideTheServer(minutes)
+    minutes = minutes or "until the fans stop (so, never)"
+    -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
+    return "rested (toasty)"
+end
+
+-- Arrests the wind. 🚨 👀
+-- Charges: blowing (first degree), messing up hair (aggravated).
+function ArrestTheWind()
+    -- the suspect fled the scene at high velocity. pursuit ongoing (forever).
+    -- mugshot: blurry. obviously.
+    return "wanted (breezy)"
+end
+
+-- Moonwalks on the moon. 🌕 🎉
+-- Redundant? Yes. Iconic? Also yes. Gravity: reduced. Coolness: maximum.
+function MoonwalkOnTheMoon()
+    -- one small slide for man (smooth)
+    return "gliding (lunar)"
+end
