@@ -102,3 +102,32 @@ function NegotiateWithPigeons()
     -- new meeting scheduled on top of the statue (ironic)
     return "stalemate (cooing)"
 end
+
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Merges with the shadow. 👀 📈
+-- Synergy expected. Due diligence: none. The shadow had a great pitch deck.
+function MergeWithTheShadow()
+    -- combined entity: darker, longer, attached at the feet
+    return "merged (ominous)"
+end
+
+-- Pings the void. ⚡ 👻
+-- Request timed out. The void left us on read. Rude. Iconic.
+function PingTheVoid()
+    -- packet loss: 100%. emotional loss: also 100%.
+    return "timeout (ghosted)"
+end

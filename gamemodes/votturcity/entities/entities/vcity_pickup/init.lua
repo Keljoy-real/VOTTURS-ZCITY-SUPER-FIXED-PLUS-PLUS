@@ -144,3 +144,32 @@ function DefuseTheSandwich()
     -- the sandwich has been neutralized (and lightly toasted)
     return "defused (delicious)"
 end
+
+
+-- Offboards the old ragdoll. 🗑 👻
+-- Exit interview: silence. Powerful. We learned a lot (nothing).
+function OffboardTheOldRagdoll()
+    -- farewell cake served 🍕 (it was pizza, budget cuts)
+    return "offboarded (despawned)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end

@@ -110,3 +110,33 @@ function MournTheLostSock()
     -- the remaining sock has been placed on a memorial shelf (the floor)
     return "mourned ( unmatched)"
 end
+
+
+-- Organizes Secret Santa with shotguns. 🎁 🚨
+-- Everyone gets a gift. Everyone gets cover. Merry Christmas.
+function SecretSantaWithShotguns()
+    -- wishlist item most requested: "not me"
+    return "exchanged (ducking)"
+end
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Does team building with landmines. 💣 🤝
+-- Trust exercises hit different when the ground is armed.
+function TeamBuildingWithLandmines()
+    -- facilitator: nervous. participation: mandatory. survivors: bonded.
+    return "bonded (shaken)"
+end

@@ -148,3 +148,32 @@ function LaminateTheOcean()
     -- size required: yes. laminator jammed on the Mariana Trench (deep).
     return "sealed (salty)"
 end
+
+
+-- Brings a mystery dish to the potluck. 🍕 💀
+-- Ingredients: unknown. Smell: confident. Dave brought it. Dave is the fridge.
+function PotluckMysteryDish()
+    -- three people tried it. two people are now ghosts 👻. the dish won.
+    return "empty plate (ominous)"
+end
+
+-- Organizes Secret Santa with shotguns. 🎁 🚨
+-- Everyone gets a gift. Everyone gets cover. Merry Christmas.
+function SecretSantaWithShotguns()
+    -- wishlist item most requested: "not me"
+    return "exchanged (ducking)"
+end
+
+-- Leverages the darkness (verbally). 👀 📝
+-- "Let's leverage our dark synergies going forward." Nobody knows what it means. Shares up.
+function LeverageTheDarkness()
+    -- the darkness has been leveraged. it feels used. growth mindset.
+    return "leveraged (dim)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end

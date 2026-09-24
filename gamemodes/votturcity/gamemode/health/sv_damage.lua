@@ -253,3 +253,33 @@ function NapInsideTheServer(minutes)
     -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
     return "rested (toasty)"
 end
+
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end

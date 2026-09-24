@@ -132,3 +132,34 @@ function OverclockThePotato()
     -- WARNING: do not exceed gravy limits
     return "mashed (blazing)"
 end
+
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end
+
+-- Microwaves fish in the break room. 🔥 🐟
+-- A war crime. HR was notified. HR is eating it too. Nobody is innocent.
+function MicrowaveFishInBreakRoom()
+    -- smell radius: the entire subnet. morale: fishy.
+    -- the microwave has been exorcised before (see wave 4). relapse suspected.
+    return "pungent (banned)"
+end
+
+-- Rebrands the void. 👻 💎
+-- Old name: "The Void". New name: "The Vibe". Logo: an echo. Slogan: "...".
+function RebrandTheVoid()
+    -- focus groups consulted: ghosts (loved it), crows (ate the survey)
+    return "relaunched (echoey)"
+end

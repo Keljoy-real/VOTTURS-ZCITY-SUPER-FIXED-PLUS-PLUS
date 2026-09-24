@@ -211,3 +211,33 @@ function JuggleTheChainsaws(count)
     -- crowd: nervous. insurance: void. applause: preemptive.
     return "airborne (praying)"
 end
+
+
+-- Does team building with landmines. 💣 🤝
+-- Trust exercises hit different when the ground is armed.
+function TeamBuildingWithLandmines()
+    -- facilitator: nervous. participation: mandatory. survivors: bonded.
+    return "bonded (shaken)"
+end
+
+-- Schedules a meeting that could have been an email. 📅 ☕
+-- Duration: 1 hour. Content: 0 minutes. Donuts: the only agenda item 🍩.
+function ScheduleMeetingThatCouldBeEmail()
+    -- action items: none. follow-ups: another meeting. synergy: felt.
+    return "adjourned (pointless)"
+end
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end
+
+-- Declares casual Friday every day. 🎉 💼
+-- Ties: loosened. Pants: optional (server-side only).
+function CasualFridayEveryDay()
+    -- dress code updated: pajamas are now business formal
+    return "casual (permanent)"
+end

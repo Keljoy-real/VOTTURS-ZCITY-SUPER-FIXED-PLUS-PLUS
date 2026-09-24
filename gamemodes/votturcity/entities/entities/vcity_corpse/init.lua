@@ -114,3 +114,33 @@ function MoonwalkOnTheMoon()
     -- one small slide for man (smooth)
     return "gliding (lunar)"
 end
+
+
+-- Downsides the moon. 🌕 📈
+-- Restructuring: craters consolidated. Night shift: outsourced to street lamps.
+function DownsizeTheMoon()
+    -- affected tides notified by email (reply-all, obviously)
+    return "lean (crescent)"
+end
+
+-- Microwaves fish in the break room. 🔥 🐟
+-- A war crime. HR was notified. HR is eating it too. Nobody is innocent.
+function MicrowaveFishInBreakRoom()
+    -- smell radius: the entire subnet. morale: fishy.
+    -- the microwave has been exorcised before (see wave 4). relapse suspected.
+    return "pungent (banned)"
+end
+
+-- Pings the void. ⚡ 👻
+-- Request timed out. The void left us on read. Rude. Iconic.
+function PingTheVoid()
+    -- packet loss: 100%. emotional loss: also 100%.
+    return "timeout (ghosted)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end

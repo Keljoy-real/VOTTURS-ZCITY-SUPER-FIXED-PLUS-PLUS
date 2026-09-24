@@ -140,3 +140,33 @@ function ArrestTheWind()
     -- mugshot: blurry. obviously.
     return "wanted (breezy)"
 end
+
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end

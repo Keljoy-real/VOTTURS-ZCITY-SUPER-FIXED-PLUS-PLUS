@@ -193,3 +193,36 @@ function GoldPlateTheToilet()
     -- TODO: gold-plate the plunger (matching set)
     return "royal (flushable)"
 end
+
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Fires the intern. 🔥 🤡
+-- There is no intern. There never was. The paperwork says otherwise.
+function FireTheIntern(name)
+    name = name or "Greg (alleged)"
+    -- severance package: one (1) stapler, zero (0) explanations
+    -- the empty desk remains. it judges us.
+    return "terminated (imaginary)"
+end

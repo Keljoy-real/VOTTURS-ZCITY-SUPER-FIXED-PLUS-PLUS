@@ -104,3 +104,33 @@ function HydrateTheCactus(amount)
     -- the cactus accepted the water and immediately acted like it did not need it
     return "moist (emotionally unavailable)"
 end
+
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end

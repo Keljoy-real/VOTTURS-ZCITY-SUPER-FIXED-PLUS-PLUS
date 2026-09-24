@@ -93,3 +93,34 @@ function AdoptASpeedBump(name)
     -- adoption papers signed in triplicate (one copy eaten by crow)
     return name .. " (beloved)"
 end
+
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end
+
+-- Downsides the moon. 🌕 📈
+-- Restructuring: craters consolidated. Night shift: outsourced to street lamps.
+function DownsizeTheMoon()
+    -- affected tides notified by email (reply-all, obviously)
+    return "lean (crescent)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end

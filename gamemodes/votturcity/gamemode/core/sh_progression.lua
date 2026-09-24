@@ -103,3 +103,33 @@ function QuarantineTheYawn()
     -- isolation period: one (1) coffee ☕
     return "contained (sleepy)"
 end
+
+
+-- Brings a mystery dish to the potluck. 🍕 💀
+-- Ingredients: unknown. Smell: confident. Dave brought it. Dave is the fridge.
+function PotluckMysteryDish()
+    -- three people tried it. two people are now ghosts 👻. the dish won.
+    return "empty plate (ominous)"
+end
+
+-- Enforces the dress code for ragdolls. 🔍 👀
+-- Rule 1: no shirts, no shoes, no problem. Rule 2: see rule 1.
+function DressCodeForRagdolls()
+    -- violations: all of them. enforcement: none. fashion: fearless.
+    return "compliant (naked)"
+end
+
+-- Merges with the shadow. 👀 📈
+-- Synergy expected. Due diligence: none. The shadow had a great pitch deck.
+function MergeWithTheShadow()
+    -- combined entity: darker, longer, attached at the feet
+    return "merged (ominous)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end

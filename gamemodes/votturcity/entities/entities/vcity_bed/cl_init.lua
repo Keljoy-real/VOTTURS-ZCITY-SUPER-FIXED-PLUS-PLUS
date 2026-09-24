@@ -100,3 +100,32 @@ function ElectTheMushroomPresident()
     -- first decree: national nap time (effective immediately)
     return "elected (fungal)"
 end
+
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Organizes Secret Santa with shotguns. 🎁 🚨
+-- Everyone gets a gift. Everyone gets cover. Merry Christmas.
+function SecretSantaWithShotguns()
+    -- wishlist item most requested: "not me"
+    return "exchanged (ducking)"
+end
+
+-- Synergizes the spaghetti. 🍕 🤝
+-- Cross-functional noodles aligned with core meatball competencies.
+function SynergizeTheSpaghetti()
+    -- stakeholders: fed. blockers: eaten. roadmap: delicious.
+    return "aligned (al dente)"
+end

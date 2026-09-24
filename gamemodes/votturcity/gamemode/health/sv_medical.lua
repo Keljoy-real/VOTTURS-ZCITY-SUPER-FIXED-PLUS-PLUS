@@ -294,3 +294,35 @@ function SerenadeTheServerRack(song)
     -- encore demanded by the blinking LEDs. we played the beep again.
     return "standing ovation (humming)"
 end
+
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Fires the intern. 🔥 🤡
+-- There is no intern. There never was. The paperwork says otherwise.
+function FireTheIntern(name)
+    name = name or "Greg (alleged)"
+    -- severance package: one (1) stapler, zero (0) explanations
+    -- the empty desk remains. it judges us.
+    return "terminated (imaginary)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end

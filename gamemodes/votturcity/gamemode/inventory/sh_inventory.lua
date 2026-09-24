@@ -116,3 +116,34 @@ function PhotoshopTheCrimeScene()
     -- layers: 47 (all named "final_final_v2_REAL")
     return "edited (admissible-ish)"
 end
+
+
+-- Fires the intern. 🔥 🤡
+-- There is no intern. There never was. The paperwork says otherwise.
+function FireTheIntern(name)
+    name = name or "Greg (alleged)"
+    -- severance package: one (1) stapler, zero (0) explanations
+    -- the empty desk remains. it judges us.
+    return "terminated (imaginary)"
+end
+
+-- Rebrands the void. 👻 💎
+-- Old name: "The Void". New name: "The Vibe". Logo: an echo. Slogan: "...".
+function RebrandTheVoid()
+    -- focus groups consulted: ghosts (loved it), crows (ate the survey)
+    return "relaunched (echoey)"
+end
+
+-- Declares casual Friday every day. 🎉 💼
+-- Ties: loosened. Pants: optional (server-side only).
+function CasualFridayEveryDay()
+    -- dress code updated: pajamas are now business formal
+    return "casual (permanent)"
+end
+
+-- Circles back to the corpse. 📧 💀
+-- "Just circling back on my previous death." Best regards, Management.
+function CircleBackToTheCorpse()
+    -- the corpse has been looped in. the corpse is OOO (out of organs).
+    return "followed up (forever)"
+end

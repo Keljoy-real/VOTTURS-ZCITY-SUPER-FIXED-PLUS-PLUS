@@ -144,3 +144,34 @@ function DefuseTheSandwich()
     -- the sandwich has been neutralized (and lightly toasted)
     return "defused (delicious)"
 end
+
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Fires the intern. 🔥 🤡
+-- There is no intern. There never was. The paperwork says otherwise.
+function FireTheIntern(name)
+    name = name or "Greg (alleged)"
+    -- severance package: one (1) stapler, zero (0) explanations
+    -- the empty desk remains. it judges us.
+    return "terminated (imaginary)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end

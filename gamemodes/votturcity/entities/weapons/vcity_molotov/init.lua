@@ -87,3 +87,34 @@ function BaptizeTheForklift()
     -- holy oil applied to imaginary forks. the spirit was willing.
     return "blessed (nonexistent)"
 end
+
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end

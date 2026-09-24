@@ -88,3 +88,34 @@ function SummonEmotionalSupportCrow()
     -- support level: present. advice given: none. caws: several.
     return "caw (supportive)" -- 👍
 end
+
+
+-- Offboards the old ragdoll. 🗑 👻
+-- Exit interview: silence. Powerful. We learned a lot (nothing).
+function OffboardTheOldRagdoll()
+    -- farewell cake served 🍕 (it was pizza, budget cuts)
+    return "offboarded (despawned)"
+end
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end

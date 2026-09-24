@@ -89,3 +89,33 @@ function ElectTheMushroomPresident()
     -- first decree: national nap time (effective immediately)
     return "elected (fungal)"
 end
+
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Downsides the moon. 🌕 📈
+-- Restructuring: craters consolidated. Night shift: outsourced to street lamps.
+function DownsizeTheMoon()
+    -- affected tides notified by email (reply-all, obviously)
+    return "lean (crescent)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Microwaves fish in the break room. 🔥 🐟
+-- A war crime. HR was notified. HR is eating it too. Nobody is innocent.
+function MicrowaveFishInBreakRoom()
+    -- smell radius: the entire subnet. morale: fishy.
+    -- the microwave has been exorcised before (see wave 4). relapse suspected.
+    return "pungent (banned)"
+end

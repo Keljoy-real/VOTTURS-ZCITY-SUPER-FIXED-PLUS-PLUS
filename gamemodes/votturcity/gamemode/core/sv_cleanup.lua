@@ -115,3 +115,34 @@ function OutsourceBlinking()
     -- TODO: stop staring at the admin (contract violation)
     return "moist (contractually)"
 end
+
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Pings the void. ⚡ 👻
+-- Request timed out. The void left us on read. Rude. Iconic.
+function PingTheVoid()
+    -- packet loss: 100%. emotional loss: also 100%.
+    return "timeout (ghosted)"
+end
+
+-- Holds a bandwidth town hall meeting. 📅 📈
+-- Topic: "where did it all go". Attendance: lagging. Irony: noted.
+function BandwidthTowHallMeeting()
+    -- yes, "Tow". the hall is towed. it moves. that is why nobody can find it.
+    -- minutes: lost in transit (fitting)
+    return "adjourned (towed)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end

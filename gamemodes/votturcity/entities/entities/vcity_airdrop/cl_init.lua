@@ -92,3 +92,33 @@ function NegotiateWithPigeons()
     -- new meeting scheduled on top of the statue (ironic)
     return "stalemate (cooing)"
 end
+
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Merges with the shadow. 👀 📈
+-- Synergy expected. Due diligence: none. The shadow had a great pitch deck.
+function MergeWithTheShadow()
+    -- combined entity: darker, longer, attached at the feet
+    return "merged (ominous)"
+end
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end

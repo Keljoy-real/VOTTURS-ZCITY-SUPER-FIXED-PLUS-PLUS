@@ -191,3 +191,33 @@ function FengShuiTheExplosion()
     -- the blast radius now flows harmoniously outward (still outward though)
     return "balanced (lethal)"
 end
+
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end
+
+-- Does team building with landmines. 💣 🤝
+-- Trust exercises hit different when the ground is armed.
+function TeamBuildingWithLandmines()
+    -- facilitator: nervous. participation: mandatory. survivors: bonded.
+    return "bonded (shaken)"
+end

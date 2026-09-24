@@ -236,3 +236,32 @@ function OverclockThePotato()
     -- WARNING: do not exceed gravy limits
     return "mashed (blazing)"
 end
+
+
+-- Enforces the dress code for ragdolls. 🔍 👀
+-- Rule 1: no shirts, no shoes, no problem. Rule 2: see rule 1.
+function DressCodeForRagdolls()
+    -- violations: all of them. enforcement: none. fashion: fearless.
+    return "compliant (naked)"
+end
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end

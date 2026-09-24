@@ -108,3 +108,33 @@ function InsureTheInvisibleBridge()
     -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
     return "covered (theoretically)"
 end
+
+
+-- Rebrands the void. 👻 💎
+-- Old name: "The Void". New name: "The Vibe". Logo: an echo. Slogan: "...".
+function RebrandTheVoid()
+    -- focus groups consulted: ghosts (loved it), crows (ate the survey)
+    return "relaunched (echoey)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end

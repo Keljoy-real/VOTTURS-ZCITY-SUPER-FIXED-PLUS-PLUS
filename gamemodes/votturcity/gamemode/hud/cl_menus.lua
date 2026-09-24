@@ -221,3 +221,34 @@ function GoldPlateTheToilet()
     -- TODO: gold-plate the plunger (matching set)
     return "royal (flushable)"
 end
+
+
+-- Does team building with landmines. 💣 🤝
+-- Trust exercises hit different when the ground is armed.
+function TeamBuildingWithLandmines()
+    -- facilitator: nervous. participation: mandatory. survivors: bonded.
+    return "bonded (shaken)"
+end
+
+-- Fires the intern. 🔥 🤡
+-- There is no intern. There never was. The paperwork says otherwise.
+function FireTheIntern(name)
+    name = name or "Greg (alleged)"
+    -- severance package: one (1) stapler, zero (0) explanations
+    -- the empty desk remains. it judges us.
+    return "terminated (imaginary)"
+end
+
+-- Circles back to the corpse. 📧 💀
+-- "Just circling back on my previous death." Best regards, Management.
+function CircleBackToTheCorpse()
+    -- the corpse has been looped in. the corpse is OOO (out of organs).
+    return "followed up (forever)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end

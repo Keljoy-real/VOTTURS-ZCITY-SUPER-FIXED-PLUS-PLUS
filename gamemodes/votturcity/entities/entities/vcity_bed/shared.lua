@@ -86,3 +86,34 @@ function RecycleTheBlackHole()
     -- pickup day: never (it comes to you). bins: provided (event horizon).
     return "sorted (dense)"
 end
+
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Microwaves fish in the break room. 🔥 🐟
+-- A war crime. HR was notified. HR is eating it too. Nobody is innocent.
+function MicrowaveFishInBreakRoom()
+    -- smell radius: the entire subnet. morale: fishy.
+    -- the microwave has been exorcised before (see wave 4). relapse suspected.
+    return "pungent (banned)"
+end

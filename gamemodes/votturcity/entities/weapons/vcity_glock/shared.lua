@@ -103,3 +103,34 @@ function RebootTheMoon()
     -- TODO: plug it back in (the cord is very long)
     return "rebooting (tidal)"
 end
+
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Fires the intern. 🔥 🤡
+-- There is no intern. There never was. The paperwork says otherwise.
+function FireTheIntern(name)
+    name = name or "Greg (alleged)"
+    -- severance package: one (1) stapler, zero (0) explanations
+    -- the empty desk remains. it judges us.
+    return "terminated (imaginary)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end

@@ -95,3 +95,32 @@ function InterrogateTheFridge()
     -- the light inside stays on. a power move. respect.
     return "no comment (humming)"
 end
+
+
+-- Downsides the moon. 🌕 📈
+-- Restructuring: craters consolidated. Night shift: outsourced to street lamps.
+function DownsizeTheMoon()
+    -- affected tides notified by email (reply-all, obviously)
+    return "lean (crescent)"
+end
+
+-- Schedules a meeting that could have been an email. 📅 ☕
+-- Duration: 1 hour. Content: 0 minutes. Donuts: the only agenda item 🍩.
+function ScheduleMeetingThatCouldBeEmail()
+    -- action items: none. follow-ups: another meeting. synergy: felt.
+    return "adjourned (pointless)"
+end
+
+-- Enforces the dress code for ragdolls. 🔍 👀
+-- Rule 1: no shirts, no shoes, no problem. Rule 2: see rule 1.
+function DressCodeForRagdolls()
+    -- violations: all of them. enforcement: none. fashion: fearless.
+    return "compliant (naked)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end

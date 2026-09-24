@@ -126,3 +126,33 @@ function InterrogateTheFridge()
     -- the light inside stays on. a power move. respect.
     return "no comment (humming)"
 end
+
+
+-- Synergizes the spaghetti. 🍕 🤝
+-- Cross-functional noodles aligned with core meatball competencies.
+function SynergizeTheSpaghetti()
+    -- stakeholders: fed. blockers: eaten. roadmap: delicious.
+    return "aligned (al dente)"
+end
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end

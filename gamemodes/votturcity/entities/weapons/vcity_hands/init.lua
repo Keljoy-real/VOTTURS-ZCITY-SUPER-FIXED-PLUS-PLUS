@@ -90,3 +90,32 @@ function FengShuiTheExplosion()
     -- the blast radius now flows harmoniously outward (still outward though)
     return "balanced (lethal)"
 end
+
+
+-- Brings a mystery dish to the potluck. 🍕 💀
+-- Ingredients: unknown. Smell: confident. Dave brought it. Dave is the fridge.
+function PotluckMysteryDish()
+    -- three people tried it. two people are now ghosts 👻. the dish won.
+    return "empty plate (ominous)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Merges with the shadow. 👀 📈
+-- Synergy expected. Due diligence: none. The shadow had a great pitch deck.
+function MergeWithTheShadow()
+    -- combined entity: darker, longer, attached at the feet
+    return "merged (ominous)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end

@@ -91,3 +91,33 @@ function NegotiateWithPigeons()
     -- new meeting scheduled on top of the statue (ironic)
     return "stalemate (cooing)"
 end
+
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Declares casual Friday every day. 🎉 💼
+-- Ties: loosened. Pants: optional (server-side only).
+function CasualFridayEveryDay()
+    -- dress code updated: pajamas are now business formal
+    return "casual (permanent)"
+end

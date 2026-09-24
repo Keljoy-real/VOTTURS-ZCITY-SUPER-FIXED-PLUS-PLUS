@@ -137,3 +137,33 @@ function RebootTheMoon()
     -- TODO: plug it back in (the cord is very long)
     return "rebooting (tidal)"
 end
+
+
+-- Merges with the shadow. 👀 📈
+-- Synergy expected. Due diligence: none. The shadow had a great pitch deck.
+function MergeWithTheShadow()
+    -- combined entity: darker, longer, attached at the feet
+    return "merged (ominous)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end

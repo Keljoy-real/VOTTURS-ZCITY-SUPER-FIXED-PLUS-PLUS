@@ -86,3 +86,33 @@ function FengShuiTheExplosion()
     -- the blast radius now flows harmoniously outward (still outward though)
     return "balanced (lethal)"
 end
+
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Offboards the old ragdoll. 🗑 👻
+-- Exit interview: silence. Powerful. We learned a lot (nothing).
+function OffboardTheOldRagdoll()
+    -- farewell cake served 🍕 (it was pizza, budget cuts)
+    return "offboarded (despawned)"
+end

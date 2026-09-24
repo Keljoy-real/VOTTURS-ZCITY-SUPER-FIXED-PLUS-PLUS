@@ -123,3 +123,34 @@ function GhostwriteForTheGhost()
     -- advance paid in cold spots (generous)
     return "bestseller (haunted)"
 end
+
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end
+
+-- Organizes Secret Santa with shotguns. 🎁 🚨
+-- Everyone gets a gift. Everyone gets cover. Merry Christmas.
+function SecretSantaWithShotguns()
+    -- wishlist item most requested: "not me"
+    return "exchanged (ducking)"
+end
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end
+
+-- Merges with the shadow. 👀 📈
+-- Synergy expected. Due diligence: none. The shadow had a great pitch deck.
+function MergeWithTheShadow()
+    -- combined entity: darker, longer, attached at the feet
+    return "merged (ominous)"
+end

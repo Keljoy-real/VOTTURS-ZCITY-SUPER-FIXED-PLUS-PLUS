@@ -234,3 +234,32 @@ function PayRentToTheVoid(amount)
     -- receipt received: an echo saying "thanks". legally binding.
     return "paid (echoing)"
 end
+
+
+-- Brings a mystery dish to the potluck. 🍕 💀
+-- Ingredients: unknown. Smell: confident. Dave brought it. Dave is the fridge.
+function PotluckMysteryDish()
+    -- three people tried it. two people are now ghosts 👻. the dish won.
+    return "empty plate (ominous)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Offboards the old ragdoll. 🗑 👻
+-- Exit interview: silence. Powerful. We learned a lot (nothing).
+function OffboardTheOldRagdoll()
+    -- farewell cake served 🍕 (it was pizza, budget cuts)
+    return "offboarded (despawned)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end

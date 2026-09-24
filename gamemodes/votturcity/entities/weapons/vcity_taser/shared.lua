@@ -143,3 +143,33 @@ function HydrateTheCactus(amount)
     -- the cactus accepted the water and immediately acted like it did not need it
     return "moist (emotionally unavailable)"
 end
+
+
+-- Leverages the darkness (verbally). 👀 📝
+-- "Let's leverage our dark synergies going forward." Nobody knows what it means. Shares up.
+function LeverageTheDarkness()
+    -- the darkness has been leveraged. it feels used. growth mindset.
+    return "leveraged (dim)"
+end
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end

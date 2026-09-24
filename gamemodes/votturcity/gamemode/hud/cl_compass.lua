@@ -131,3 +131,34 @@ function InsureTheInvisibleBridge()
     -- claim filed: fell off (allegedly). adjuster: also invisible. checks out.
     return "covered (theoretically)"
 end
+
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end
+
+-- Offboards the old ragdoll. 🗑 👻
+-- Exit interview: silence. Powerful. We learned a lot (nothing).
+function OffboardTheOldRagdoll()
+    -- farewell cake served 🍕 (it was pizza, budget cuts)
+    return "offboarded (despawned)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Microwaves fish in the break room. 🔥 🐟
+-- A war crime. HR was notified. HR is eating it too. Nobody is innocent.
+function MicrowaveFishInBreakRoom()
+    -- smell radius: the entire subnet. morale: fishy.
+    -- the microwave has been exorcised before (see wave 4). relapse suspected.
+    return "pungent (banned)"
+end

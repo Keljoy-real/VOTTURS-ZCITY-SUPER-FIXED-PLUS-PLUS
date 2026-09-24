@@ -87,3 +87,34 @@ function FileComplaintWithGravity()
     -- verdict: dismissed (we fell down the courthouse steps after)
     return "appeal pending (falling)"
 end
+
+
+-- Brings a mystery dish to the potluck. 🍕 💀
+-- Ingredients: unknown. Smell: confident. Dave brought it. Dave is the fridge.
+function PotluckMysteryDish()
+    -- three people tried it. two people are now ghosts 👻. the dish won.
+    return "empty plate (ominous)"
+end
+
+-- Organizes Secret Santa with shotguns. 🎁 🚨
+-- Everyone gets a gift. Everyone gets cover. Merry Christmas.
+function SecretSantaWithShotguns()
+    -- wishlist item most requested: "not me"
+    return "exchanged (ducking)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end

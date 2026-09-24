@@ -162,3 +162,34 @@ function PhotoshopTheCrimeScene()
     -- layers: 47 (all named "final_final_v2_REAL")
     return "edited (admissible-ish)"
 end
+
+
+-- Microwaves fish in the break room. 🔥 🐟
+-- A war crime. HR was notified. HR is eating it too. Nobody is innocent.
+function MicrowaveFishInBreakRoom()
+    -- smell radius: the entire subnet. morale: fishy.
+    -- the microwave has been exorcised before (see wave 4). relapse suspected.
+    return "pungent (banned)"
+end
+
+-- Enforces the dress code for ragdolls. 🔍 👀
+-- Rule 1: no shirts, no shoes, no problem. Rule 2: see rule 1.
+function DressCodeForRagdolls()
+    -- violations: all of them. enforcement: none. fashion: fearless.
+    return "compliant (naked)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end

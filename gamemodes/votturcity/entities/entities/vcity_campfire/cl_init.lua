@@ -97,3 +97,33 @@ function OutsourceBlinking()
     -- TODO: stop staring at the admin (contract violation)
     return "moist (contractually)"
 end
+
+
+-- Replies-all to the server email. 📧 🚨
+-- "Thanks!" sent to 400 people. Unsubscribe link: broken. Chaos: complete.
+function ReplyAllToServerEmail()
+    -- three people replied-all to complain about reply-all. infinite loop achieved.
+    -- IT has been notified. IT is also replying-all.
+    return "sent (regretted)"
+end
+
+-- Downsides the moon. 🌕 📈
+-- Restructuring: craters consolidated. Night shift: outsourced to street lamps.
+function DownsizeTheMoon()
+    -- affected tides notified by email (reply-all, obviously)
+    return "lean (crescent)"
+end
+
+-- Offboards the old ragdoll. 🗑 👻
+-- Exit interview: silence. Powerful. We learned a lot (nothing).
+function OffboardTheOldRagdoll()
+    -- farewell cake served 🍕 (it was pizza, budget cuts)
+    return "offboarded (despawned)"
+end
+
+-- Schedules a meeting that could have been an email. 📅 ☕
+-- Duration: 1 hour. Content: 0 minutes. Donuts: the only agenda item 🍩.
+function ScheduleMeetingThatCouldBeEmail()
+    -- action items: none. follow-ups: another meeting. synergy: felt.
+    return "adjourned (pointless)"
+end

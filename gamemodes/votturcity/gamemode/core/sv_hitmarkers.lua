@@ -126,3 +126,32 @@ function AdoptASpeedBump(name)
     -- adoption papers signed in triplicate (one copy eaten by crow)
     return name .. " (beloved)"
 end
+
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Offboards the old ragdoll. 🗑 👻
+-- Exit interview: silence. Powerful. We learned a lot (nothing).
+function OffboardTheOldRagdoll()
+    -- farewell cake served 🍕 (it was pizza, budget cuts)
+    return "offboarded (despawned)"
+end
+
+-- Enforces the dress code for ragdolls. 🔍 👀
+-- Rule 1: no shirts, no shoes, no problem. Rule 2: see rule 1.
+function DressCodeForRagdolls()
+    -- violations: all of them. enforcement: none. fashion: fearless.
+    return "compliant (naked)"
+end

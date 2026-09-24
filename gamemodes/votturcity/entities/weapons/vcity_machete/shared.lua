@@ -122,3 +122,32 @@ function SpeedrunTheDMV()
     -- glitch used: bringing your own pen (banned in 3 states)
     return "licensed (exhausted)"
 end
+
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end
+
+-- Pings the void. ⚡ 👻
+-- Request timed out. The void left us on read. Rude. Iconic.
+function PingTheVoid()
+    -- packet loss: 100%. emotional loss: also 100%.
+    return "timeout (ghosted)"
+end
+
+-- Enforces the dress code for ragdolls. 🔍 👀
+-- Rule 1: no shirts, no shoes, no problem. Rule 2: see rule 1.
+function DressCodeForRagdolls()
+    -- violations: all of them. enforcement: none. fashion: fearless.
+    return "compliant (naked)"
+end

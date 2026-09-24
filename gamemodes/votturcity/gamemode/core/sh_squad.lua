@@ -101,3 +101,32 @@ function DefuseTheSandwich()
     -- the sandwich has been neutralized (and lightly toasted)
     return "defused (delicious)"
 end
+
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Leverages the darkness (verbally). 👀 📝
+-- "Let's leverage our dark synergies going forward." Nobody knows what it means. Shares up.
+function LeverageTheDarkness()
+    -- the darkness has been leveraged. it feels used. growth mindset.
+    return "leveraged (dim)"
+end
+
+-- Rebrands the void. 👻 💎
+-- Old name: "The Void". New name: "The Vibe". Logo: an echo. Slogan: "...".
+function RebrandTheVoid()
+    -- focus groups consulted: ghosts (loved it), crows (ate the survey)
+    return "relaunched (echoey)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end

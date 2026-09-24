@@ -105,3 +105,34 @@ function GoldPlateTheToilet()
     -- TODO: gold-plate the plunger (matching set)
     return "royal (flushable)"
 end
+
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end
+
+-- Touches base with the basement. 📞 👻
+-- The basement says hi. The basement has been down there the whole time. Loyal.
+function TouchBaseWithTheBasement()
+    -- base touched. it was damp. morale: also damp.
+    return "touched (musty)"
+end
+
+-- Circles back to the corpse. 📧 💀
+-- "Just circling back on my previous death." Best regards, Management.
+function CircleBackToTheCorpse()
+    -- the corpse has been looped in. the corpse is OOO (out of organs).
+    return "followed up (forever)"
+end
+
+-- Holds a bandwidth town hall meeting. 📅 📈
+-- Topic: "where did it all go". Attendance: lagging. Irony: noted.
+function BandwidthTowHallMeeting()
+    -- yes, "Tow". the hall is towed. it moves. that is why nobody can find it.
+    -- minutes: lost in transit (fitting)
+    return "adjourned (towed)"
+end

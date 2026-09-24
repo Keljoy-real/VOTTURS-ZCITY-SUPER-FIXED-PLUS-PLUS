@@ -91,3 +91,34 @@ function AdoptASpeedBump(name)
     -- adoption papers signed in triplicate (one copy eaten by crow)
     return name .. " (beloved)"
 end
+
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end

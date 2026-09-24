@@ -125,3 +125,34 @@ function MoonwalkOnTheMoon()
     -- one small slide for man (smooth)
     return "gliding (lunar)"
 end
+
+
+-- Gossips with the router by the watercooler. 🥔 👀
+-- "Did you hear about the switch?" "Do not even get me STARTED."
+function WatercoolerGossipWithRouter(topic)
+    topic = topic or "the modem (allegedly buffering)"
+    -- the packets heard everything. packets cannot keep secrets (they broadcast).
+    return "spilled (encrypted)"
+end
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end

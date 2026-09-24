@@ -91,3 +91,32 @@ function NapInsideTheServer(minutes)
     -- dreams: packet-shaped. drool: on the RAM (wiped it, sorry)
     return "rested (toasty)"
 end
+
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Synergizes the spaghetti. 🍕 🤝
+-- Cross-functional noodles aligned with core meatball competencies.
+function SynergizeTheSpaghetti()
+    -- stakeholders: fed. blockers: eaten. roadmap: delicious.
+    return "aligned (al dente)"
+end
+
+-- Circles back to the corpse. 📧 💀
+-- "Just circling back on my previous death." Best regards, Management.
+function CircleBackToTheCorpse()
+    -- the corpse has been looped in. the corpse is OOO (out of organs).
+    return "followed up (forever)"
+end
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end

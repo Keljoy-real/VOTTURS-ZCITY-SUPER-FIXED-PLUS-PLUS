@@ -196,3 +196,33 @@ function JuggleTheChainsaws(count)
     -- crowd: nervous. insurance: void. applause: preemptive.
     return "airborne (praying)"
 end
+
+
+-- Leverages the darkness (verbally). 👀 📝
+-- "Let's leverage our dark synergies going forward." Nobody knows what it means. Shares up.
+function LeverageTheDarkness()
+    -- the darkness has been leveraged. it feels used. growth mindset.
+    return "leveraged (dim)"
+end
+
+-- Does team building with landmines. 💣 🤝
+-- Trust exercises hit different when the ground is armed.
+function TeamBuildingWithLandmines()
+    -- facilitator: nervous. participation: mandatory. survivors: bonded.
+    return "bonded (shaken)"
+end
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end

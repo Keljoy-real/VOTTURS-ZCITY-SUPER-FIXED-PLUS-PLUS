@@ -240,3 +240,32 @@ function LaminateTheOcean()
     -- size required: yes. laminator jammed on the Mariana Trench (deep).
     return "sealed (salty)"
 end
+
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Organizes Secret Santa with shotguns. 🎁 🚨
+-- Everyone gets a gift. Everyone gets cover. Merry Christmas.
+function SecretSantaWithShotguns()
+    -- wishlist item most requested: "not me"
+    return "exchanged (ducking)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end

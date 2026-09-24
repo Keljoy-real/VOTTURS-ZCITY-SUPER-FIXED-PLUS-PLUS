@@ -223,3 +223,32 @@ function SummonEmotionalSupportCrow()
     -- support level: present. advice given: none. caws: several.
     return "caw (supportive)" -- 👍
 end
+
+
+-- Declares casual Friday every day. 🎉 💼
+-- Ties: loosened. Pants: optional (server-side only).
+function CasualFridayEveryDay()
+    -- dress code updated: pajamas are now business formal
+    return "casual (permanent)"
+end
+
+-- Onboards the new ragdoll. 📎 🫡
+-- Welcome packet: one (1) name tag reading "Ex-Citizen". Orientation: falling over.
+function OnboardTheNewRagdoll()
+    -- buddy assigned: an older ragdoll. mentorship: limp.
+    return "onboarded (floppy)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end

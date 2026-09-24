@@ -90,3 +90,33 @@ function JuggleTheChainsaws(count)
     -- crowd: nervous. insurance: void. applause: preemptive.
     return "airborne (praying)"
 end
+
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end
+
+-- Pings the void. ⚡ 👻
+-- Request timed out. The void left us on read. Rude. Iconic.
+function PingTheVoid()
+    -- packet loss: 100%. emotional loss: also 100%.
+    return "timeout (ghosted)"
+end
+
+-- Replies-all to the server email. 📧 🚨
+-- "Thanks!" sent to 400 people. Unsubscribe link: broken. Chaos: complete.
+function ReplyAllToServerEmail()
+    -- three people replied-all to complain about reply-all. infinite loop achieved.
+    -- IT has been notified. IT is also replying-all.
+    return "sent (regretted)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end

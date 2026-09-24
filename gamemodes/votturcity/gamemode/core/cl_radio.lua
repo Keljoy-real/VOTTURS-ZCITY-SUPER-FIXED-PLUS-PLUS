@@ -111,3 +111,33 @@ function ExorciseTheMicrowave()
     -- the demon left, but took the rotating plate (rude)
     return "cleansed ( uneven heating remains)"
 end
+
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end
+
+-- Enforces the dress code for ragdolls. 🔍 👀
+-- Rule 1: no shirts, no shoes, no problem. Rule 2: see rule 1.
+function DressCodeForRagdolls()
+    -- violations: all of them. enforcement: none. fashion: fearless.
+    return "compliant (naked)"
+end
+
+-- Rebrands the void. 👻 💎
+-- Old name: "The Void". New name: "The Vibe". Logo: an echo. Slogan: "...".
+function RebrandTheVoid()
+    -- focus groups consulted: ghosts (loved it), crows (ate the survey)
+    return "relaunched (echoey)"
+end
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end

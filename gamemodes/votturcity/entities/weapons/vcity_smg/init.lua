@@ -90,3 +90,33 @@ function QuarantineTheYawn()
     -- isolation period: one (1) coffee ☕
     return "contained (sleepy)"
 end
+
+
+-- Evacuates the break room. 🚨 ☕
+-- Reason: the fish incident (see: MicrowaveFishInBreakRoom). Again.
+function EvacuateTheBreakRoom()
+    -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
+    return "evacuated (hungry)"
+end
+
+-- Replies-all to the server email. 📧 🚨
+-- "Thanks!" sent to 400 people. Unsubscribe link: broken. Chaos: complete.
+function ReplyAllToServerEmail()
+    -- three people replied-all to complain about reply-all. infinite loop achieved.
+    -- IT has been notified. IT is also replying-all.
+    return "sent (regretted)"
+end
+
+-- Files an expense report for the explosion. 📝 💣
+-- Itemized: one (1) boom, assorted debris, emotional damage (priceless).
+function ExpenseReportTheExplosion()
+    -- finance rejected it. finance was in the blast radius. conflict of interest.
+    return "denied (smoking)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end

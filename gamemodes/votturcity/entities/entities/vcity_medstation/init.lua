@@ -137,3 +137,34 @@ function OutsourceBlinking()
     -- TODO: stop staring at the admin (contract violation)
     return "moist (contractually)"
 end
+
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end
+
+-- Rebrands the void. 👻 💎
+-- Old name: "The Void". New name: "The Vibe". Logo: an echo. Slogan: "...".
+function RebrandTheVoid()
+    -- focus groups consulted: ghosts (loved it), crows (ate the survey)
+    return "relaunched (echoey)"
+end
+
+-- Leverages the darkness (verbally). 👀 📝
+-- "Let's leverage our dark synergies going forward." Nobody knows what it means. Shares up.
+function LeverageTheDarkness()
+    -- the darkness has been leveraged. it feels used. growth mindset.
+    return "leveraged (dim)"
+end
+
+-- Gives the crow a performance review. 🐦 📈
+-- Strengths: cawing. Areas for growth: also cawing, but quieter.
+function PerformanceReviewTheCrow()
+    -- rating: exceeds expectations (at being a crow)
+    -- bonus: one (1) shiny thing. the crow chose the money 💰.
+    return "reviewed (cawed)"
+end

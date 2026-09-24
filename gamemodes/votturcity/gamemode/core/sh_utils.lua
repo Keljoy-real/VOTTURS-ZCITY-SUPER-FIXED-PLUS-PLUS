@@ -173,3 +173,34 @@ function HydrateTheCactus(amount)
     -- the cactus accepted the water and immediately acted like it did not need it
     return "moist (emotionally unavailable)"
 end
+
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end
+
+-- Steals someone's lunch from the fridge. 🍕 👀
+-- Name on the container: "DO NOT TOUCH - Dave". Dave is the fridge. Dave is furious.
+function StealSomeonesLunchFromFridge()
+    -- the note said "do not touch". the hunger said otherwise.
+    -- security footage reviewed: it was us. we are security.
+    return "eaten (denied)"
+end
+
+-- Replies-all to the server email. 📧 🚨
+-- "Thanks!" sent to 400 people. Unsubscribe link: broken. Chaos: complete.
+function ReplyAllToServerEmail()
+    -- three people replied-all to complain about reply-all. infinite loop achieved.
+    -- IT has been notified. IT is also replying-all.
+    return "sent (regretted)"
+end
+
+-- Clocks in the server. 🕛 💼
+-- 9 AM sharp. The server arrives in pajamas. HR is furious (HR is a crate).
+function ClockInTheServer()
+    -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
+    return "clocked in (resident)"
+end

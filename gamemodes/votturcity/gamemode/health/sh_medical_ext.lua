@@ -114,3 +114,36 @@ function FileComplaintWithGravity()
     -- verdict: dismissed (we fell down the courthouse steps after)
     return "appeal pending (falling)"
 end
+
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end
+
+-- Fires the intern. 🔥 🤡
+-- There is no intern. There never was. The paperwork says otherwise.
+function FireTheIntern(name)
+    name = name or "Greg (alleged)"
+    -- severance package: one (1) stapler, zero (0) explanations
+    -- the empty desk remains. it judges us.
+    return "terminated (imaginary)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Replies-all to the server email. 📧 🚨
+-- "Thanks!" sent to 400 people. Unsubscribe link: broken. Chaos: complete.
+function ReplyAllToServerEmail()
+    -- three people replied-all to complain about reply-all. infinite loop achieved.
+    -- IT has been notified. IT is also replying-all.
+    return "sent (regretted)"
+end

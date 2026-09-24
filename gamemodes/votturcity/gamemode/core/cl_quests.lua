@@ -149,3 +149,33 @@ function PayRentToTheVoid(amount)
     -- receipt received: an echo saying "thanks". legally binding.
     return "paid (echoing)"
 end
+
+
+-- Leverages the darkness (verbally). 👀 📝
+-- "Let's leverage our dark synergies going forward." Nobody knows what it means. Shares up.
+function LeverageTheDarkness()
+    -- the darkness has been leveraged. it feels used. growth mindset.
+    return "leveraged (dim)"
+end
+
+-- Schedules a meeting that could have been an email. 📅 ☕
+-- Duration: 1 hour. Content: 0 minutes. Donuts: the only agenda item 🍩.
+function ScheduleMeetingThatCouldBeEmail()
+    -- action items: none. follow-ups: another meeting. synergy: felt.
+    return "adjourned (pointless)"
+end
+
+-- Outsources the sunrise. 💡 💰
+-- Vendor: a rooster (union). SLA: dawn-ish. Penalty clause: crowing.
+function OutsourceTheSunrise()
+    -- first delivery: late (rooster overslept, relatable)
+    return "delivered (golden)"
+end
+
+-- Promotes the intern. 🏆 🎉
+-- Plot twist: the intern was real all along. It was the crow. The crow is management now.
+function PromoteTheIntern()
+    -- the crow accepted with a single caw (a power move in bird business)
+    -- new title: Vice President of Cawing 🐦
+    return "promoted (feathered)"
+end

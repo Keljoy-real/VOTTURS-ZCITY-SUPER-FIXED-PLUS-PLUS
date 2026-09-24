@@ -107,3 +107,33 @@ function PhotoshopTheCrimeScene()
     -- layers: 47 (all named "final_final_v2_REAL")
     return "edited (admissible-ish)"
 end
+
+
+-- Organizes Secret Santa with shotguns. 🎁 🚨
+-- Everyone gets a gift. Everyone gets cover. Merry Christmas.
+function SecretSantaWithShotguns()
+    -- wishlist item most requested: "not me"
+    return "exchanged (ducking)"
+end
+
+-- Runs a fire drill during an actual fire. 🔥 🔥
+-- Realism: maximum. Preparedness: debatable. Marshmallows: brought.
+function FireDrillDuringFire()
+    -- meeting point: inside the fire (poor planning, great warmth)
+    return "drilled (toasty)"
+end
+
+-- Takes a sick day as the server. 💊 🛏
+-- Symptoms: 999 ping, headache (fan noise), loss of taste (ate a packet).
+function TakeSickDayAsServer()
+    -- doctor's note forged by the printer (it jammed halfway, suspicious)
+    -- the server will work from home (it is home)
+    return "out of office (in office)"
+end
+
+-- Schedules a meeting that could have been an email. 📅 ☕
+-- Duration: 1 hour. Content: 0 minutes. Donuts: the only agenda item 🍩.
+function ScheduleMeetingThatCouldBeEmail()
+    -- action items: none. follow-ups: another meeting. synergy: felt.
+    return "adjourned (pointless)"
+end

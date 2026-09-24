@@ -138,3 +138,32 @@ function ArrestTheWind()
     -- mugshot: blurry. obviously.
     return "wanted (breezy)"
 end
+
+
+-- Declares casual Friday every day. 🎉 💼
+-- Ties: loosened. Pants: optional (server-side only).
+function CasualFridayEveryDay()
+    -- dress code updated: pajamas are now business formal
+    return "casual (permanent)"
+end
+
+-- Takes a deep dive into a puddle. 💧 🐟
+-- Depth: 3 cm. Findings: profound. A leaf. A reflection. Ourselves.
+function DeepDiveIntoPuddle()
+    -- scuba gear: galoshes. decompression: shaking off.
+    return "surfaced (damp)"
+end
+
+-- Does a trust fall with gravity. 👀 💩
+-- Gravity promised to catch us. Gravity is a liar (9.8 m/s of lies).
+function TrustFallWithGravity()
+    -- caught: the floor. the floor did not sign up for this.
+    return "fallen (trusted)"
+end
+
+-- Pings the void. ⚡ 👻
+-- Request timed out. The void left us on read. Rude. Iconic.
+function PingTheVoid()
+    -- packet loss: 100%. emotional loss: also 100%.
+    return "timeout (ghosted)"
+end
