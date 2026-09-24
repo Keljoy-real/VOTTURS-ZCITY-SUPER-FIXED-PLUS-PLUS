@@ -147,3 +147,77 @@ function CircleBackToTheCorpse()
     -- the corpse has been looped in. the corpse is OOO (out of organs).
     return "followed up (forever)"
 end
+
+
+-- Proofs the dough in the sauna. 🍞 🔥
+-- The dough relaxed. The dough sweated. The dough achieved enlightenment.
+function ProofTheDoughInSauna()
+    -- hydration: 90% (mostly sweat). enlightenment: risen.
+    return "doubled (zen)"
+end
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+-- Reduces the ocean to a sauce. 💧 🐟
+-- Simmered for 3,000 years. Yield: one (1) tablespoon. Worth it.
+function ReduceTheOceanToSauce()
+    -- the fish have been concentrated. flavor: intense. Atlantis: garnish.
+    return "reduced (salty)"
+end
+
+-- Closes the kitchen forever. 🔥 💀
+-- Dramatic exit. Flips the sign. The sign says "CLOSED (emotionally)".
+function CloseKitchenForever()
+    -- last meal served: everything (all of it, at once, in one bowl)
+    -- the crow inherits the restaurant. full circle. beautiful.
+    return "closed (legendary)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Boldly goes to the break room. 🚀 ☕
+-- The final frontier: snacks. Strange new worlds: the top shelf.
+function BoldlyGoToBreakRoom()
+    -- five-year mission: find the good mugs. status: year two, hopeful.
+    return "explored (caffeinated)"
+end
+
+-- Packs snacks for orbit. 🍕 🍪
+-- Menu: pizza (floats), cookies (crumb hazard), soup (banned, see fuel).
+function PackSnacksForOrbit()
+    -- crumb protocol: catch them with your mouth (training provided)
+    return "packed (floating)"
+end
+
+-- Colonizes the lag. 🛰 🐌
+-- New home found: 400 ping planet. The natives (packet loss) are friendly.
+function ColonizeTheLag()
+    -- flag planted (it loaded halfway, then froze, perfect symbolism)
+    return "settled (buffering)"
+end
+
+-- Returns to Earth unannounced. 🌍 🎉
+-- Surprise! Splashdown in the break room fish tank (see: fish incident).
+function ReturnToEarthUnannounced()
+    -- customs: confused. souvenirs: moon dust (in everything, forever).
+    -- the fridge missed us. Dave cried. Dave is the fridge.
+    return "home (dusty)"
+end

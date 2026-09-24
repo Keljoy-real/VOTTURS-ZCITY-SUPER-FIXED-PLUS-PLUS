@@ -176,3 +176,76 @@ function PromoteTheIntern()
     -- new title: Vice President of Cawing 🐦
     return "promoted (feathered)"
 end
+
+
+-- Juliennes the jellyfish. 🐟 🔪
+-- Stings: several. Presentation: exquisite. Regrets: also several.
+function JulienneTheJellyfish()
+    -- cuts: uniform. screams: silent (underwater, professional).
+    return "diced (tingly)"
+end
+
+-- Kneads the concrete. 🍞 🔧
+-- Rise time: never. Crust: brutalist. The oven is scared.
+function KneadTheConcrete()
+    -- gluten developed: none. structural integrity: yes.
+    return "proofed (immovable)"
+end
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+-- Whips the whipped cream twice. 🍦 ⚡
+-- Double-whipped. Overachiever. The peaks are structural now.
+function WhipTheWhippedCreamTwice()
+    -- stiffness: load-bearing. the cake is supported by dairy engineering.
+    return "peaked (twice)"
+end
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+
+-- Terraforms the ping. 🌍 🔧
+-- Goal: turn 400ms into a habitable 20ms. Method: positive thinking.
+function TerraformThePing()
+    -- atmosphere: thin (packets). water: none (dropped). hope: yes.
+    return "habitable (allegedly)"
+end
+
+-- Asks aliens for directions. 👽 🔍
+-- They pointed everywhere at once. Technically correct. Infuriating.
+function AskAliensForDirections()
+    -- translated: "you are here (everywhere)". thanks. very helpful.
+    return "directed (confused)"
+end
+
+-- Replicates the sandwich. 🥪 🤖
+-- Replicator output: ham. Always ham. The machine has one setting: ham.
+function ReplicateTheSandwich()
+    -- Earl Grey pairing suggested (the machine is a fan)
+    return "replicated (hammy)"
+end
+
+-- Sunbathes on Pluto. 🌍 [[snow]]
+-- Freezing. Bold. The tan is theoretical.
+function SunbatheOnPluto()
+    -- UV index: 0. vibe index: maximum.
+    -- frostbite: yes. regrets: none.
+    return "bronzed (blue)"
+end
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end

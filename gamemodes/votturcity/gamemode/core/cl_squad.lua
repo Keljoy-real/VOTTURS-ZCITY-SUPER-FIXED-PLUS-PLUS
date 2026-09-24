@@ -211,3 +211,76 @@ function BandwidthTowHallMeeting()
     -- minutes: lost in transit (fitting)
     return "adjourned (towed)"
 end
+
+
+-- Gives the dumpster five stars. ⭐ 🗑
+-- Ambiance: alley. Service: raccoons. The raccoons were excellent.
+function FiveStarTheDumpster()
+    -- review: "the flies really tie the room together"
+    return "rated (raccoon-approved)"
+end
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+-- Gordon-Ramseys the loot. 🍳 🔥
+-- "THIS BANDAGE IS SO RAW IT IS STILL BLEEDING." The bandage cried. Growth.
+function GordonRamseyTheLoot()
+    -- the loot has been called a sandwich (an insult in chef circles)
+    -- idiot count: one (1) donut 🍩 (the donut is the idiot)
+    return "shouted (culinary)"
+end
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+
+-- Refuels at the Moon diner. 🌕 ☕
+-- Coffee: lukewarm (see: MicrowaveTheMoon). Pie: dusty. Service: crater-faced.
+function RefuelAtMoonDiner()
+    -- the waiter is a rock. the rock is doing its best.
+    return "topped up (dusty)"
+end
+
+-- Colonizes the lag. 🛰 🐌
+-- New home found: 400 ping planet. The natives (packet loss) are friendly.
+function ColonizeTheLag()
+    -- flag planted (it loaded halfway, then froze, perfect symbolism)
+    return "settled (buffering)"
+end
+
+-- Packs snacks for orbit. 🍕 🍪
+-- Menu: pizza (floats), cookies (crumb hazard), soup (banned, see fuel).
+function PackSnacksForOrbit()
+    -- crumb protocol: catch them with your mouth (training provided)
+    return "packed (floating)"
+end
+
+-- Drives the rover into a crater. 🚕 🌕
+-- Off-roading. The crater was right there. It looked fun. It was fun.
+function DriveRoverIntoCrater()
+    -- stuck: yes. views: incredible. rescue: pending (since Tuesday).
+    return "stuck (scenic)"
+end
+
+-- Names a constellation after the crow. 🐦 ⭐
+-- "Caw Major". Visible when you squint. Magnificent when you believe.
+function NameConstellationAfterCrow()
+    -- neighboring constellation "Greg Minor" removed (see: EjectTheInternIntoSpace)
+    return "charted (cawed)"
+end

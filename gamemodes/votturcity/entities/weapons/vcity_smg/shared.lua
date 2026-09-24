@@ -134,3 +134,80 @@ function PingTheVoid()
     -- packet loss: 100%. emotional loss: also 100%.
     return "timeout (ghosted)"
 end
+
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Tips the chef who is a crow. 🐦 💰
+-- 20%. The crow prefers shiny coins. The crow is always right.
+function TipTheChefWhoIsCrow(amount)
+    amount = amount or "shiny"
+    -- the tip was pocketed (beaked). service: impeccable. caw: five stars.
+    return "tipped (shiny)"
+end
+
+-- Whips the whipped cream twice. 🍦 ⚡
+-- Double-whipped. Overachiever. The peaks are structural now.
+function WhipTheWhippedCreamTwice()
+    -- stiffness: load-bearing. the cake is supported by dairy engineering.
+    return "peaked (twice)"
+end
+
+-- Taste-tests the bandage. 🩹 🍳
+-- Notes: sterile, chewy, hints of oak and regret.
+function TasteTestTheBandage()
+    -- palate cleansed with antiseptic (do not do this)
+    -- rating: 2/10, would bleed again
+    return "sampled (sterile)"
+end
+
+-- Gives the dumpster five stars. ⭐ 🗑
+-- Ambiance: alley. Service: raccoons. The raccoons were excellent.
+function FiveStarTheDumpster()
+    -- review: "the flies really tie the room together"
+    return "rated (raccoon-approved)"
+end
+
+
+-- Asks aliens for directions. 👽 🔍
+-- They pointed everywhere at once. Technically correct. Infuriating.
+function AskAliensForDirections()
+    -- translated: "you are here (everywhere)". thanks. very helpful.
+    return "directed (confused)"
+end
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end
+
+-- Lands on the sun at night. 🔥 🌕
+-- Classic maneuver. The sun is asleep. Sneak in, plant flag, leave before dawn.
+function LandOnTheSunAtNight()
+    -- surface temp: irrelevant (it is nighttime, trust the plan)
+    -- sunscreen factor: yes
+    return "landed (toasty)"
+end
+
+-- Beams up the pizza. 🍕 ⚡
+-- Priority cargo. The transporter seasoned it (salt bae protocol).
+function BeamUpThePizza()
+    -- toppings arrived before the crust (transporter lag, classic)
+    -- reassembled in orbit. still hot. technology is beautiful.
+    return "materialized (cheesy)"
+end

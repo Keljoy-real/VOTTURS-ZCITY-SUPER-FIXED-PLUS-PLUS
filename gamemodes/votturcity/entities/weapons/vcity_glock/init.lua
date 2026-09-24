@@ -120,3 +120,78 @@ function FireDrillDuringFire()
     -- meeting point: inside the fire (poor planning, great warmth)
     return "drilled (toasty)"
 end
+
+
+-- Juliennes the jellyfish. 🐟 🔪
+-- Stings: several. Presentation: exquisite. Regrets: also several.
+function JulienneTheJellyfish()
+    -- cuts: uniform. screams: silent (underwater, professional).
+    return "diced (tingly)"
+end
+
+-- Gives the dumpster five stars. ⭐ 🗑
+-- Ambiance: alley. Service: raccoons. The raccoons were excellent.
+function FiveStarTheDumpster()
+    -- review: "the flies really tie the room together"
+    return "rated (raccoon-approved)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Reduces the ocean to a sauce. 💧 🐟
+-- Simmered for 3,000 years. Yield: one (1) tablespoon. Worth it.
+function ReduceTheOceanToSauce()
+    -- the fish have been concentrated. flavor: intense. Atlantis: garnish.
+    return "reduced (salty)"
+end
+
+-- Bakes the AKM. Well done. 🔥 🍞
+-- Internal temp: 165 degrees of freedom. Rest before slicing.
+function BakeTheAKM()
+    -- pairs well with a side of fries 🍟 and poor decisions
+    return "baked (ballistic)"
+end
+
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Ejects the intern into space. 🔥 🚀
+-- Greg's arc continues. Severance: one (1) helmet (used, foggy).
+function EjectTheInternIntoSpace()
+    -- last words: "I was never real" (chilling, iconic, HR-approved)
+    -- the crow saluted. a single tear floated (zero-G, beautiful).
+    return "ejected (legendary)"
+end
+
+-- Holds breath for the entire orbit. 👀 🕛
+-- Record attempt. Current record: one (1) orbit. Challenger: everyone.
+function HoldBreathForOrbit()
+    -- cheeks: puffed. face: blue-ish. commitment: total.
+    return "blue (determined)"
+end
+
+-- Fuels the rocket with soup. 🚀 🍜
+-- Leftover reduction sauce (see: ReduceTheOceanToSauce). Thrust: savory.
+function FuelRocketWithSoup(gallons)
+    gallons = gallons or "all of it"
+    -- exhaust smells like lunch. nearby satellites are hungry.
+    return "fueled (brothy)"
+end

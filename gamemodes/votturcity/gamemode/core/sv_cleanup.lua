@@ -146,3 +146,79 @@ function PerformanceReviewTheCrow()
     -- bonus: one (1) shiny thing. the crow chose the money 💰.
     return "reviewed (cawed)"
 end
+
+
+-- Smokes the fog. 🔥 👻
+-- Double-smoked. The fog is now bacon-flavored. Visibility: delicious.
+function SmokeTheFog()
+    -- wood chips: mystery. flavor ring: visible for miles.
+    return "hazy (savory)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Garnishes the grenade. 💣 🌽
+-- A sprig of parsley. Now it is a PRESENTATION grenade. Etiquette matters.
+function GarnishTheGrenade()
+    -- pin: pulled (for plating purposes). parsley: fresh. countdown: garnished.
+    return "dressed (ticking)"
+end
+
+-- Sous-vides the swamp. 💧 🍳
+-- Low and slow for 72 hours. The alligators are now tender (emotionally).
+function SousVideTheSwamp()
+    -- vacuum sealed the entire wetland. the frogs filed a complaint.
+    return "tender (murky)"
+end
+
+-- Closes the kitchen forever. 🔥 💀
+-- Dramatic exit. Flips the sign. The sign says "CLOSED (emotionally)".
+function CloseKitchenForever()
+    -- last meal served: everything (all of it, at once, in one bowl)
+    -- the crow inherits the restaurant. full circle. beautiful.
+    return "closed (legendary)"
+end
+
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Returns to Earth unannounced. 🌍 🎉
+-- Surprise! Splashdown in the break room fish tank (see: fish incident).
+function ReturnToEarthUnannounced()
+    -- customs: confused. souvenirs: moon dust (in everything, forever).
+    -- the fridge missed us. Dave cried. Dave is the fridge.
+    return "home (dusty)"
+end
+
+-- Launches the server to space. 🚀 🌍
+-- Countdown proceeded. The server waved. The lag stayed behind (coward).
+function LaunchTheServerToSpace()
+    -- liftoff witnessed by one (1) crow (promoted to Mission Control)
+    -- Houston, we have uptime
+    return "launched (orbiting)"
+end
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end
+
+-- Packs snacks for orbit. 🍕 🍪
+-- Menu: pizza (floats), cookies (crumb hazard), soup (banned, see fuel).
+function PackSnacksForOrbit()
+    -- crumb protocol: catch them with your mouth (training provided)
+    return "packed (floating)"
+end

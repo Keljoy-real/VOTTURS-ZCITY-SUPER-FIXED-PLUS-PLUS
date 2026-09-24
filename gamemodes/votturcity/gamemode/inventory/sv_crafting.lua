@@ -181,3 +181,78 @@ function CasualFridayEveryDay()
     -- dress code updated: pajamas are now business formal
     return "casual (permanent)"
 end
+
+
+-- Smokes the fog. 🔥 👻
+-- Double-smoked. The fog is now bacon-flavored. Visibility: delicious.
+function SmokeTheFog()
+    -- wood chips: mystery. flavor ring: visible for miles.
+    return "hazy (savory)"
+end
+
+-- Microwaves the salad. 🔥 🌽
+-- Revenge for the fish incident. The lettuce never saw it coming.
+function MicrowaveTheSalad()
+    -- the salad is now soup 🍜. identity crisis in a bowl.
+    return "wilted (vengeful)"
+end
+
+-- Taste-tests the bandage. 🩹 🍳
+-- Notes: sterile, chewy, hints of oak and regret.
+function TasteTestTheBandage()
+    -- palate cleansed with antiseptic (do not do this)
+    -- rating: 2/10, would bleed again
+    return "sampled (sterile)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Chars the charcoal. 🔥 🔥
+-- Charcoal, but MORE. Blacker than the void (the void is now "The Vibe", lighter).
+function CharTheCharcoal()
+    -- carbon content: yes. grill status: intimidated.
+    return "blackened (meta)"
+end
+
+
+-- Beams up the pizza. 🍕 ⚡
+-- Priority cargo. The transporter seasoned it (salt bae protocol).
+function BeamUpThePizza()
+    -- toppings arrived before the crust (transporter lag, classic)
+    -- reassembled in orbit. still hot. technology is beautiful.
+    return "materialized (cheesy)"
+end
+
+-- Asks aliens for directions. 👽 🔍
+-- They pointed everywhere at once. Technically correct. Infuriating.
+function AskAliensForDirections()
+    -- translated: "you are here (everywhere)". thanks. very helpful.
+    return "directed (confused)"
+end
+
+-- Dodges space debris casually. ☄ 👀
+-- Did not even look. Sunglasses on. In space. At night. Iconic.
+function DodgeSpaceDebrisCasually()
+    -- near miss #47. the debris apologized. we accepted (coolly).
+    return "unscathed (smooth)"
+end
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end
+
+-- Holds breath for the entire orbit. 👀 🕛
+-- Record attempt. Current record: one (1) orbit. Challenger: everyone.
+function HoldBreathForOrbit()
+    -- cheeks: puffed. face: blue-ish. commitment: total.
+    return "blue (determined)"
+end

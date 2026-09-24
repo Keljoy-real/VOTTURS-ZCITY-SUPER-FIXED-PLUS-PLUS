@@ -194,3 +194,77 @@ function RebrandTheVoid()
     -- focus groups consulted: ghosts (loved it), crows (ate the survey)
     return "relaunched (echoey)"
 end
+
+
+-- Sears the socks. 🔥 👀
+-- Crust: unmatched. Foot odor: caramelized. Do not serve to guests.
+function SearTheSocks()
+    -- resting time: forever (nobody is eating these)
+    return "seared (unservable)"
+end
+
+-- Garnishes the grenade. 💣 🌽
+-- A sprig of parsley. Now it is a PRESENTATION grenade. Etiquette matters.
+function GarnishTheGrenade()
+    -- pin: pulled (for plating purposes). parsley: fresh. countdown: garnished.
+    return "dressed (ticking)"
+end
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Smokes the fog. 🔥 👻
+-- Double-smoked. The fog is now bacon-flavored. Visibility: delicious.
+function SmokeTheFog()
+    -- wood chips: mystery. flavor ring: visible for miles.
+    return "hazy (savory)"
+end
+
+-- Gordon-Ramseys the loot. 🍳 🔥
+-- "THIS BANDAGE IS SO RAW IT IS STILL BLEEDING." The bandage cried. Growth.
+function GordonRamseyTheLoot()
+    -- the loot has been called a sandwich (an insult in chef circles)
+    -- idiot count: one (1) donut 🍩 (the donut is the idiot)
+    return "shouted (culinary)"
+end
+
+
+-- Befriends the alien. 👽 🤝
+-- His name is also Dave. Everywhere we go: Dave. Dave is universal.
+function BefriendTheAlien()
+    -- common ground: both confused by humans. friendship: instant.
+    return "befriended (telepathically)"
+end
+
+-- Boldly goes to the break room. 🚀 ☕
+-- The final frontier: snacks. Strange new worlds: the top shelf.
+function BoldlyGoToBreakRoom()
+    -- five-year mission: find the good mugs. status: year two, hopeful.
+    return "explored (caffeinated)"
+end
+
+-- Returns to Earth unannounced. 🌍 🎉
+-- Surprise! Splashdown in the break room fish tank (see: fish incident).
+function ReturnToEarthUnannounced()
+    -- customs: confused. souvenirs: moon dust (in everything, forever).
+    -- the fridge missed us. Dave cried. Dave is the fridge.
+    return "home (dusty)"
+end
+
+-- Colonizes the lag. 🛰 🐌
+-- New home found: 400 ping planet. The natives (packet loss) are friendly.
+function ColonizeTheLag()
+    -- flag planted (it loaded halfway, then froze, perfect symbolism)
+    return "settled (buffering)"
+end
+
+-- Waves goodbye to gravity. 👀 🌍
+-- Again. We keep doing this. Gravity keeps taking us back. Toxic relationship.
+function WaveGoodbyeToGravity()
+    -- farewell tour: 9.8 m/s of emotion
+    return "weightless (temporarily)"
+end

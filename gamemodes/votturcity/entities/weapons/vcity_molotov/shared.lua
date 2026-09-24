@@ -176,3 +176,76 @@ function CircleBackToTheCorpse()
     -- the corpse has been looped in. the corpse is OOO (out of organs).
     return "followed up (forever)"
 end
+
+
+-- Sous-vides the swamp. 💧 🍳
+-- Low and slow for 72 hours. The alligators are now tender (emotionally).
+function SousVideTheSwamp()
+    -- vacuum sealed the entire wetland. the frogs filed a complaint.
+    return "tender (murky)"
+end
+
+-- Sears the socks. 🔥 👀
+-- Crust: unmatched. Foot odor: caramelized. Do not serve to guests.
+function SearTheSocks()
+    -- resting time: forever (nobody is eating these)
+    return "seared (unservable)"
+end
+
+-- Frosts the server rack. 🍦 ⚡
+-- Cooling solution: dairy-based. Efficiency: delicious. Warranty: void.
+function FrostTheServerRack()
+    -- the fans lick the frosting. morale: sweet. uptime: sticky.
+    return "chilled (sweet)"
+end
+
+-- Kneads the concrete. 🍞 🔧
+-- Rise time: never. Crust: brutalist. The oven is scared.
+function KneadTheConcrete()
+    -- gluten developed: none. structural integrity: yes.
+    return "proofed (immovable)"
+end
+
+-- Glazes the donut again. 🍩 🍩
+-- Double glaze. The donut shines like the crown (see: PolishVottursCrown).
+function GlazeTheDonutAgain()
+    -- glaze layers: 2. shine: blinding. diabetes: also double.
+    return "glossy (twice)"
+end
+
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end
+
+-- Drives the rover into a crater. 🚕 🌕
+-- Off-roading. The crater was right there. It looked fun. It was fun.
+function DriveRoverIntoCrater()
+    -- stuck: yes. views: incredible. rescue: pending (since Tuesday).
+    return "stuck (scenic)"
+end
+
+-- Trades with Martians. 👽 💰
+-- Currency: shiny things. Exchange rate: extremely in our favor (they love bottle caps).
+function TradeWithMartians()
+    -- acquired: one (1) moon rock (authentic-ish). gave away: soup (they will regret it).
+    return "profited (interplanetary)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Beams up the pizza. 🍕 ⚡
+-- Priority cargo. The transporter seasoned it (salt bae protocol).
+function BeamUpThePizza()
+    -- toppings arrived before the crust (transporter lag, classic)
+    -- reassembled in orbit. still hot. technology is beautiful.
+    return "materialized (cheesy)"
+end

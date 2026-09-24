@@ -142,3 +142,77 @@ function FireDrillDuringFire()
     -- meeting point: inside the fire (poor planning, great warmth)
     return "drilled (toasty)"
 end
+
+
+-- Brines the thunderstorm. ⚡ 🧂
+-- 24 hours in salt water. The lightning is now pickled and extra zappy.
+function BrineTheThunderstorm()
+    -- thunder: crunchier. rain: saltier. umbrella sales: soaring.
+    return "pickled (stormy)"
+end
+
+-- Frosts the server rack. 🍦 ⚡
+-- Cooling solution: dairy-based. Efficiency: delicious. Warranty: void.
+function FrostTheServerRack()
+    -- the fans lick the frosting. morale: sweet. uptime: sticky.
+    return "chilled (sweet)"
+end
+
+-- Gordon-Ramseys the loot. 🍳 🔥
+-- "THIS BANDAGE IS SO RAW IT IS STILL BLEEDING." The bandage cried. Growth.
+function GordonRamseyTheLoot()
+    -- the loot has been called a sandwich (an insult in chef circles)
+    -- idiot count: one (1) donut 🍩 (the donut is the idiot)
+    return "shouted (culinary)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Flambes the fridge. 🔥 🍕
+-- Dave is flammable. Dave did not disclose this. Dave is the fridge.
+function FlambeTheFridge()
+    -- flames: spectacular. leftovers: caramelized. Dave: toasted.
+    return "torched (tasty)"
+end
+
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Packs snacks for orbit. 🍕 🍪
+-- Menu: pizza (floats), cookies (crumb hazard), soup (banned, see fuel).
+function PackSnacksForOrbit()
+    -- crumb protocol: catch them with your mouth (training provided)
+    return "packed (floating)"
+end
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end
+
+-- Refuels at the Moon diner. 🌕 ☕
+-- Coffee: lukewarm (see: MicrowaveTheMoon). Pie: dusty. Service: crater-faced.
+function RefuelAtMoonDiner()
+    -- the waiter is a rock. the rock is doing its best.
+    return "topped up (dusty)"
+end
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end

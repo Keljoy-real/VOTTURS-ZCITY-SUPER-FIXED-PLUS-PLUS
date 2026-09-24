@@ -144,3 +144,77 @@ function OutsourceTheSunrise()
     -- first delivery: late (rooster overslept, relatable)
     return "delivered (golden)"
 end
+
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Flambes the fridge. 🔥 🍕
+-- Dave is flammable. Dave did not disclose this. Dave is the fridge.
+function FlambeTheFridge()
+    -- flames: spectacular. leftovers: caramelized. Dave: toasted.
+    return "torched (tasty)"
+end
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+-- Closes the kitchen forever. 🔥 💀
+-- Dramatic exit. Flips the sign. The sign says "CLOSED (emotionally)".
+function CloseKitchenForever()
+    -- last meal served: everything (all of it, at once, in one bowl)
+    -- the crow inherits the restaurant. full circle. beautiful.
+    return "closed (legendary)"
+end
+
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Mines an asteroid for bandages. 🩹 ☄
+-- The asteroid is rich in sterile gauze (geology is wild now).
+function MineAsteroidForBandages()
+    -- yield: 5000 mL of asteroid blood (sacred number holds in space)
+    return "extracted (sterile)"
+end
+
+-- Trades with Martians. 👽 💰
+-- Currency: shiny things. Exchange rate: extremely in our favor (they love bottle caps).
+function TradeWithMartians()
+    -- acquired: one (1) moon rock (authentic-ish). gave away: soup (they will regret it).
+    return "profited (interplanetary)"
+end
+
+-- Sunbathes on Pluto. 🌍 [[snow]]
+-- Freezing. Bold. The tan is theoretical.
+function SunbatheOnPluto()
+    -- UV index: 0. vibe index: maximum.
+    -- frostbite: yes. regrets: none.
+    return "bronzed (blue)"
+end

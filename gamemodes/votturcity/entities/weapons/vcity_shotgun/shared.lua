@@ -136,3 +136,77 @@ function PromoteTheIntern()
     -- new title: Vice President of Cawing 🐦
     return "promoted (feathered)"
 end
+
+
+-- Garnishes the grenade. 💣 🌽
+-- A sprig of parsley. Now it is a PRESENTATION grenade. Etiquette matters.
+function GarnishTheGrenade()
+    -- pin: pulled (for plating purposes). parsley: fresh. countdown: garnished.
+    return "dressed (ticking)"
+end
+
+-- Flambes the fridge. 🔥 🍕
+-- Dave is flammable. Dave did not disclose this. Dave is the fridge.
+function FlambeTheFridge()
+    -- flames: spectacular. leftovers: caramelized. Dave: toasted.
+    return "torched (tasty)"
+end
+
+-- Whips the whipped cream twice. 🍦 ⚡
+-- Double-whipped. Overachiever. The peaks are structural now.
+function WhipTheWhippedCreamTwice()
+    -- stiffness: load-bearing. the cake is supported by dairy engineering.
+    return "peaked (twice)"
+end
+
+-- Pickles the lightning. ⚡ 👀
+-- See: BrineTheThunderstorm. This is the sequel. It is crunchier.
+function PickleTheLightning()
+    -- jar size: storm-sized. lid: tight. gods: furious.
+    return "jarred (electric)"
+end
+
+-- Brines the thunderstorm. ⚡ 🧂
+-- 24 hours in salt water. The lightning is now pickled and extra zappy.
+function BrineTheThunderstorm()
+    -- thunder: crunchier. rain: saltier. umbrella sales: soaring.
+    return "pickled (stormy)"
+end
+
+
+-- Fuels the rocket with soup. 🚀 🍜
+-- Leftover reduction sauce (see: ReduceTheOceanToSauce). Thrust: savory.
+function FuelRocketWithSoup(gallons)
+    gallons = gallons or "all of it"
+    -- exhaust smells like lunch. nearby satellites are hungry.
+    return "fueled (brothy)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Colonizes the lag. 🛰 🐌
+-- New home found: 400 ping planet. The natives (packet loss) are friendly.
+function ColonizeTheLag()
+    -- flag planted (it loaded halfway, then froze, perfect symbolism)
+    return "settled (buffering)"
+end
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end
+
+-- Terraforms the ping. 🌍 🔧
+-- Goal: turn 400ms into a habitable 20ms. Method: positive thinking.
+function TerraformThePing()
+    -- atmosphere: thin (packets). water: none (dropped). hope: yes.
+    return "habitable (allegedly)"
+end

@@ -115,3 +115,77 @@ function MergeWithTheShadow()
     -- combined entity: darker, longer, attached at the feet
     return "merged (ominous)"
 end
+
+
+-- Grills the mystery meat. 🍖 👀
+-- Do not ask what animal. There was no animal. There was a crate.
+function GrillTheMysteryMeat()
+    -- grill marks: perfect. origin story: classified.
+    return "charred (enigmatic)"
+end
+
+-- Brines the thunderstorm. ⚡ 🧂
+-- 24 hours in salt water. The lightning is now pickled and extra zappy.
+function BrineTheThunderstorm()
+    -- thunder: crunchier. rain: saltier. umbrella sales: soaring.
+    return "pickled (stormy)"
+end
+
+-- Closes the kitchen forever. 🔥 💀
+-- Dramatic exit. Flips the sign. The sign says "CLOSED (emotionally)".
+function CloseKitchenForever()
+    -- last meal served: everything (all of it, at once, in one bowl)
+    -- the crow inherits the restaurant. full circle. beautiful.
+    return "closed (legendary)"
+end
+
+-- Chars the charcoal. 🔥 🔥
+-- Charcoal, but MORE. Blacker than the void (the void is now "The Vibe", lighter).
+function CharTheCharcoal()
+    -- carbon content: yes. grill status: intimidated.
+    return "blackened (meta)"
+end
+
+-- Smokes the fog. 🔥 👻
+-- Double-smoked. The fog is now bacon-flavored. Visibility: delicious.
+function SmokeTheFog()
+    -- wood chips: mystery. flavor ring: visible for miles.
+    return "hazy (savory)"
+end
+
+
+-- Spacewalks without a suit. 👀 💀
+-- Duration: brief. Views: incredible. Consequences: educational.
+function SpacewalkWithoutSuit()
+    -- do NOT do this (this function does not do this, it only describes it)
+    return "nope (documented)"
+end
+
+-- Terraforms the ping. 🌍 🔧
+-- Goal: turn 400ms into a habitable 20ms. Method: positive thinking.
+function TerraformThePing()
+    -- atmosphere: thin (packets). water: none (dropped). hope: yes.
+    return "habitable (allegedly)"
+end
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end
+
+-- Gets lost in space deliberately. 🌌 👀
+-- "Recalculating" for 40 years. The scenic route. All routes are scenic here.
+function GetLostInSpaceDeliberately()
+    -- GPS signal: one (1) bar (flickering, see: KidnapTheWiFi)
+    return "wandering (majestic)"
+end
+
+-- Launches the server to space. 🚀 🌍
+-- Countdown proceeded. The server waved. The lag stayed behind (coward).
+function LaunchTheServerToSpace()
+    -- liftoff witnessed by one (1) crow (promoted to Mission Control)
+    -- Houston, we have uptime
+    return "launched (orbiting)"
+end

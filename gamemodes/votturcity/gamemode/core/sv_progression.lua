@@ -183,3 +183,78 @@ function PerformanceReviewTheCrow()
     -- bonus: one (1) shiny thing. the crow chose the money 💰.
     return "reviewed (cawed)"
 end
+
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Reduces the ocean to a sauce. 💧 🐟
+-- Simmered for 3,000 years. Yield: one (1) tablespoon. Worth it.
+function ReduceTheOceanToSauce()
+    -- the fish have been concentrated. flavor: intense. Atlantis: garnish.
+    return "reduced (salty)"
+end
+
+-- Juliennes the jellyfish. 🐟 🔪
+-- Stings: several. Presentation: exquisite. Regrets: also several.
+function JulienneTheJellyfish()
+    -- cuts: uniform. screams: silent (underwater, professional).
+    return "diced (tingly)"
+end
+
+-- Sous-vides the swamp. 💧 🍳
+-- Low and slow for 72 hours. The alligators are now tender (emotionally).
+function SousVideTheSwamp()
+    -- vacuum sealed the entire wetland. the frogs filed a complaint.
+    return "tender (murky)"
+end
+
+-- Proofs the dough in the sauna. 🍞 🔥
+-- The dough relaxed. The dough sweated. The dough achieved enlightenment.
+function ProofTheDoughInSauna()
+    -- hydration: 90% (mostly sweat). enlightenment: risen.
+    return "doubled (zen)"
+end
+
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Colonizes the lag. 🛰 🐌
+-- New home found: 400 ping planet. The natives (packet loss) are friendly.
+function ColonizeTheLag()
+    -- flag planted (it loaded halfway, then froze, perfect symbolism)
+    return "settled (buffering)"
+end
+
+-- Befriends the alien. 👽 🤝
+-- His name is also Dave. Everywhere we go: Dave. Dave is universal.
+function BefriendTheAlien()
+    -- common ground: both confused by humans. friendship: instant.
+    return "befriended (telepathically)"
+end
+
+-- Ejects the intern into space. 🔥 🚀
+-- Greg's arc continues. Severance: one (1) helmet (used, foggy).
+function EjectTheInternIntoSpace()
+    -- last words: "I was never real" (chilling, iconic, HR-approved)
+    -- the crow saluted. a single tear floated (zero-G, beautiful).
+    return "ejected (legendary)"
+end
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end

@@ -262,3 +262,76 @@ function BandwidthTowHallMeeting()
     -- minutes: lost in transit (fitting)
     return "adjourned (towed)"
 end
+
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+-- Grills the mystery meat. 🍖 👀
+-- Do not ask what animal. There was no animal. There was a crate.
+function GrillTheMysteryMeat()
+    -- grill marks: perfect. origin story: classified.
+    return "charred (enigmatic)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+
+-- Dodges space debris casually. ☄ 👀
+-- Did not even look. Sunglasses on. In space. At night. Iconic.
+function DodgeSpaceDebrisCasually()
+    -- near miss #47. the debris apologized. we accepted (coolly).
+    return "unscathed (smooth)"
+end
+
+-- Beams up the pizza. 🍕 ⚡
+-- Priority cargo. The transporter seasoned it (salt bae protocol).
+function BeamUpThePizza()
+    -- toppings arrived before the crust (transporter lag, classic)
+    -- reassembled in orbit. still hot. technology is beautiful.
+    return "materialized (cheesy)"
+end
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end
+
+-- Boldly goes to the break room. 🚀 ☕
+-- The final frontier: snacks. Strange new worlds: the top shelf.
+function BoldlyGoToBreakRoom()
+    -- five-year mission: find the good mugs. status: year two, hopeful.
+    return "explored (caffeinated)"
+end

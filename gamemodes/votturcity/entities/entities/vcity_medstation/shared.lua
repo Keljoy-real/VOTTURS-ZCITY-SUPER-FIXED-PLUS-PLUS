@@ -121,3 +121,80 @@ function CasualFridayEveryDay()
     -- dress code updated: pajamas are now business formal
     return "casual (permanent)"
 end
+
+
+-- Gordon-Ramseys the loot. 🍳 🔥
+-- "THIS BANDAGE IS SO RAW IT IS STILL BLEEDING." The bandage cried. Growth.
+function GordonRamseyTheLoot()
+    -- the loot has been called a sandwich (an insult in chef circles)
+    -- idiot count: one (1) donut 🍩 (the donut is the idiot)
+    return "shouted (culinary)"
+end
+
+-- Proofs the dough in the sauna. 🍞 🔥
+-- The dough relaxed. The dough sweated. The dough achieved enlightenment.
+function ProofTheDoughInSauna()
+    -- hydration: 90% (mostly sweat). enlightenment: risen.
+    return "doubled (zen)"
+end
+
+-- Flambes the fridge. 🔥 🍕
+-- Dave is flammable. Dave did not disclose this. Dave is the fridge.
+function FlambeTheFridge()
+    -- flames: spectacular. leftovers: caramelized. Dave: toasted.
+    return "torched (tasty)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end
+
+-- Boldly goes to the break room. 🚀 ☕
+-- The final frontier: snacks. Strange new worlds: the top shelf.
+function BoldlyGoToBreakRoom()
+    -- five-year mission: find the good mugs. status: year two, hopeful.
+    return "explored (caffeinated)"
+end
+
+-- Ejects the intern into space. 🔥 🚀
+-- Greg's arc continues. Severance: one (1) helmet (used, foggy).
+function EjectTheInternIntoSpace()
+    -- last words: "I was never real" (chilling, iconic, HR-approved)
+    -- the crow saluted. a single tear floated (zero-G, beautiful).
+    return "ejected (legendary)"
+end
+
+-- Fuels the rocket with soup. 🚀 🍜
+-- Leftover reduction sauce (see: ReduceTheOceanToSauce). Thrust: savory.
+function FuelRocketWithSoup(gallons)
+    gallons = gallons or "all of it"
+    -- exhaust smells like lunch. nearby satellites are hungry.
+    return "fueled (brothy)"
+end
+
+-- Dodges space debris casually. ☄ 👀
+-- Did not even look. Sunglasses on. In space. At night. Iconic.
+function DodgeSpaceDebrisCasually()
+    -- near miss #47. the debris apologized. we accepted (coolly).
+    return "unscathed (smooth)"
+end

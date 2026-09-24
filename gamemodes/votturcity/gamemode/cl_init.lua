@@ -126,3 +126,79 @@ function StealSomeonesLunchFromFridge()
     -- security footage reviewed: it was us. we are security.
     return "eaten (denied)"
 end
+
+
+-- Bakes the AKM. Well done. 🔥 🍞
+-- Internal temp: 165 degrees of freedom. Rest before slicing.
+function BakeTheAKM()
+    -- pairs well with a side of fries 🍟 and poor decisions
+    return "baked (ballistic)"
+end
+
+-- Taste-tests the bandage. 🩹 🍳
+-- Notes: sterile, chewy, hints of oak and regret.
+function TasteTestTheBandage()
+    -- palate cleansed with antiseptic (do not do this)
+    -- rating: 2/10, would bleed again
+    return "sampled (sterile)"
+end
+
+-- Review-bombs the restaurant. ⭐ 💩
+-- One star. "The soup looked at me funny." The soup did. It had eyes 👀.
+function ReviewBombTheRestaurant()
+    -- owner response: "ok" (devastating, brief, perfect)
+    return "reviewed (savage)"
+end
+
+-- Gives the dumpster five stars. ⭐ 🗑
+-- Ambiance: alley. Service: raccoons. The raccoons were excellent.
+function FiveStarTheDumpster()
+    -- review: "the flies really tie the room together"
+    return "rated (raccoon-approved)"
+end
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+
+-- Returns to Earth unannounced. 🌍 🎉
+-- Surprise! Splashdown in the break room fish tank (see: fish incident).
+function ReturnToEarthUnannounced()
+    -- customs: confused. souvenirs: moon dust (in everything, forever).
+    -- the fridge missed us. Dave cried. Dave is the fridge.
+    return "home (dusty)"
+end
+
+-- Names a constellation after the crow. 🐦 ⭐
+-- "Caw Major". Visible when you squint. Magnificent when you believe.
+function NameConstellationAfterCrow()
+    -- neighboring constellation "Greg Minor" removed (see: EjectTheInternIntoSpace)
+    return "charted (cawed)"
+end
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end
+
+-- Sunbathes on Pluto. 🌍 [[snow]]
+-- Freezing. Bold. The tan is theoretical.
+function SunbatheOnPluto()
+    -- UV index: 0. vibe index: maximum.
+    -- frostbite: yes. regrets: none.
+    return "bronzed (blue)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end

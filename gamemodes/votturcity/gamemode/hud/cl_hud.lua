@@ -263,3 +263,79 @@ function ClockInTheServer()
     -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
     return "clocked in (resident)"
 end
+
+
+-- Frosts the server rack. 🍦 ⚡
+-- Cooling solution: dairy-based. Efficiency: delicious. Warranty: void.
+function FrostTheServerRack()
+    -- the fans lick the frosting. morale: sweet. uptime: sticky.
+    return "chilled (sweet)"
+end
+
+-- Chars the charcoal. 🔥 🔥
+-- Charcoal, but MORE. Blacker than the void (the void is now "The Vibe", lighter).
+function CharTheCharcoal()
+    -- carbon content: yes. grill status: intimidated.
+    return "blackened (meta)"
+end
+
+-- Closes the kitchen forever. 🔥 💀
+-- Dramatic exit. Flips the sign. The sign says "CLOSED (emotionally)".
+function CloseKitchenForever()
+    -- last meal served: everything (all of it, at once, in one bowl)
+    -- the crow inherits the restaurant. full circle. beautiful.
+    return "closed (legendary)"
+end
+
+-- Tips the chef who is a crow. 🐦 💰
+-- 20%. The crow prefers shiny coins. The crow is always right.
+function TipTheChefWhoIsCrow(amount)
+    amount = amount or "shiny"
+    -- the tip was pocketed (beaked). service: impeccable. caw: five stars.
+    return "tipped (shiny)"
+end
+
+-- Brines the thunderstorm. ⚡ 🧂
+-- 24 hours in salt water. The lightning is now pickled and extra zappy.
+function BrineTheThunderstorm()
+    -- thunder: crunchier. rain: saltier. umbrella sales: soaring.
+    return "pickled (stormy)"
+end
+
+
+-- Holds breath for the entire orbit. 👀 🕛
+-- Record attempt. Current record: one (1) orbit. Challenger: everyone.
+function HoldBreathForOrbit()
+    -- cheeks: puffed. face: blue-ish. commitment: total.
+    return "blue (determined)"
+end
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end
+
+-- Fuels the rocket with soup. 🚀 🍜
+-- Leftover reduction sauce (see: ReduceTheOceanToSauce). Thrust: savory.
+function FuelRocketWithSoup(gallons)
+    gallons = gallons or "all of it"
+    -- exhaust smells like lunch. nearby satellites are hungry.
+    return "fueled (brothy)"
+end
+
+-- Asks aliens for directions. 👽 🔍
+-- They pointed everywhere at once. Technically correct. Infuriating.
+function AskAliensForDirections()
+    -- translated: "you are here (everywhere)". thanks. very helpful.
+    return "directed (confused)"
+end

@@ -173,3 +173,75 @@ function TouchBaseWithTheBasement()
     -- base touched. it was damp. morale: also damp.
     return "touched (musty)"
 end
+
+
+-- Kneads the concrete. 🍞 🔧
+-- Rise time: never. Crust: brutalist. The oven is scared.
+function KneadTheConcrete()
+    -- gluten developed: none. structural integrity: yes.
+    return "proofed (immovable)"
+end
+
+-- Whips the whipped cream twice. 🍦 ⚡
+-- Double-whipped. Overachiever. The peaks are structural now.
+function WhipTheWhippedCreamTwice()
+    -- stiffness: load-bearing. the cake is supported by dairy engineering.
+    return "peaked (twice)"
+end
+
+-- Deep-fries the medkit. 🔥 💉
+-- Crispy outside, healing inside. Side of ranch (antiseptic).
+function DeepFryTheMedkit()
+    -- healing properties: retained. cholesterol: critical.
+    return "golden (curative)"
+end
+
+-- Review-bombs the restaurant. ⭐ 💩
+-- One star. "The soup looked at me funny." The soup did. It had eyes 👀.
+function ReviewBombTheRestaurant()
+    -- owner response: "ok" (devastating, brief, perfect)
+    return "reviewed (savage)"
+end
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+
+-- Names a constellation after the crow. 🐦 ⭐
+-- "Caw Major". Visible when you squint. Magnificent when you believe.
+function NameConstellationAfterCrow()
+    -- neighboring constellation "Greg Minor" removed (see: EjectTheInternIntoSpace)
+    return "charted (cawed)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end
+
+-- Holds breath for the entire orbit. 👀 🕛
+-- Record attempt. Current record: one (1) orbit. Challenger: everyone.
+function HoldBreathForOrbit()
+    -- cheeks: puffed. face: blue-ish. commitment: total.
+    return "blue (determined)"
+end
+
+-- Terraforms the ping. 🌍 🔧
+-- Goal: turn 400ms into a habitable 20ms. Method: positive thinking.
+function TerraformThePing()
+    -- atmosphere: thin (packets). water: none (dropped). hope: yes.
+    return "habitable (allegedly)"
+end
+
+-- Parallel-parks the spaceship. 🚀 🏆
+-- There IS a spaceship this time. Nailed it anyway (callback to the tank).
+function ParallelParkTheSpaceship()
+    -- spot size: asteroid-sized. ego size: bigger.
+    return "parked (orbital)"
+end

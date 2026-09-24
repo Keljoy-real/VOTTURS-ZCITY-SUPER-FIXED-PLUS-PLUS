@@ -155,3 +155,78 @@ function DressCodeForRagdolls()
     -- violations: all of them. enforcement: none. fashion: fearless.
     return "compliant (naked)"
 end
+
+
+-- Reduces the ocean to a sauce. 💧 🐟
+-- Simmered for 3,000 years. Yield: one (1) tablespoon. Worth it.
+function ReduceTheOceanToSauce()
+    -- the fish have been concentrated. flavor: intense. Atlantis: garnish.
+    return "reduced (salty)"
+end
+
+-- Chars the charcoal. 🔥 🔥
+-- Charcoal, but MORE. Blacker than the void (the void is now "The Vibe", lighter).
+function CharTheCharcoal()
+    -- carbon content: yes. grill status: intimidated.
+    return "blackened (meta)"
+end
+
+-- Flambes the fridge. 🔥 🍕
+-- Dave is flammable. Dave did not disclose this. Dave is the fridge.
+function FlambeTheFridge()
+    -- flames: spectacular. leftovers: caramelized. Dave: toasted.
+    return "torched (tasty)"
+end
+
+-- Tips the chef who is a crow. 🐦 💰
+-- 20%. The crow prefers shiny coins. The crow is always right.
+function TipTheChefWhoIsCrow(amount)
+    amount = amount or "shiny"
+    -- the tip was pocketed (beaked). service: impeccable. caw: five stars.
+    return "tipped (shiny)"
+end
+
+-- Pairs wine with warfare. 🍷 💣
+-- A bold red with the airstrike. A crisp white with the siege. Notes of smoke.
+function PairWineWithWarfare()
+    -- sommelier: shell-shocked. palate: scorched. pairing: perfect.
+    return "paired (vintage)"
+end
+
+
+-- Launches the server to space. 🚀 🌍
+-- Countdown proceeded. The server waved. The lag stayed behind (coward).
+function LaunchTheServerToSpace()
+    -- liftoff witnessed by one (1) crow (promoted to Mission Control)
+    -- Houston, we have uptime
+    return "launched (orbiting)"
+end
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Terraforms the ping. 🌍 🔧
+-- Goal: turn 400ms into a habitable 20ms. Method: positive thinking.
+function TerraformThePing()
+    -- atmosphere: thin (packets). water: none (dropped). hope: yes.
+    return "habitable (allegedly)"
+end
+
+-- Fuels the rocket with soup. 🚀 🍜
+-- Leftover reduction sauce (see: ReduceTheOceanToSauce). Thrust: savory.
+function FuelRocketWithSoup(gallons)
+    gallons = gallons or "all of it"
+    -- exhaust smells like lunch. nearby satellites are hungry.
+    return "fueled (brothy)"
+end
+
+-- Drives the rover into a crater. 🚕 🌕
+-- Off-roading. The crater was right there. It looked fun. It was fun.
+function DriveRoverIntoCrater()
+    -- stuck: yes. views: incredible. rescue: pending (since Tuesday).
+    return "stuck (scenic)"
+end

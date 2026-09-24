@@ -122,3 +122,77 @@ function FireDrillDuringFire()
     -- meeting point: inside the fire (poor planning, great warmth)
     return "drilled (toasty)"
 end
+
+
+-- Garnishes the grenade. 💣 🌽
+-- A sprig of parsley. Now it is a PRESENTATION grenade. Etiquette matters.
+function GarnishTheGrenade()
+    -- pin: pulled (for plating purposes). parsley: fresh. countdown: garnished.
+    return "dressed (ticking)"
+end
+
+-- Brines the thunderstorm. ⚡ 🧂
+-- 24 hours in salt water. The lightning is now pickled and extra zappy.
+function BrineTheThunderstorm()
+    -- thunder: crunchier. rain: saltier. umbrella sales: soaring.
+    return "pickled (stormy)"
+end
+
+-- Grills the mystery meat. 🍖 👀
+-- Do not ask what animal. There was no animal. There was a crate.
+function GrillTheMysteryMeat()
+    -- grill marks: perfect. origin story: classified.
+    return "charred (enigmatic)"
+end
+
+-- Pickles the lightning. ⚡ 👀
+-- See: BrineTheThunderstorm. This is the sequel. It is crunchier.
+function PickleTheLightning()
+    -- jar size: storm-sized. lid: tight. gods: furious.
+    return "jarred (electric)"
+end
+
+-- Juliennes the jellyfish. 🐟 🔪
+-- Stings: several. Presentation: exquisite. Regrets: also several.
+function JulienneTheJellyfish()
+    -- cuts: uniform. screams: silent (underwater, professional).
+    return "diced (tingly)"
+end
+
+
+-- Fuels the rocket with soup. 🚀 🍜
+-- Leftover reduction sauce (see: ReduceTheOceanToSauce). Thrust: savory.
+function FuelRocketWithSoup(gallons)
+    gallons = gallons or "all of it"
+    -- exhaust smells like lunch. nearby satellites are hungry.
+    return "fueled (brothy)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Gets lost in space deliberately. 🌌 👀
+-- "Recalculating" for 40 years. The scenic route. All routes are scenic here.
+function GetLostInSpaceDeliberately()
+    -- GPS signal: one (1) bar (flickering, see: KidnapTheWiFi)
+    return "wandering (majestic)"
+end
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end

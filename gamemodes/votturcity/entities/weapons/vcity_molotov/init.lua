@@ -118,3 +118,78 @@ function WatercoolerGossipWithRouter(topic)
     -- the packets heard everything. packets cannot keep secrets (they broadcast).
     return "spilled (encrypted)"
 end
+
+
+-- Closes the kitchen forever. 🔥 💀
+-- Dramatic exit. Flips the sign. The sign says "CLOSED (emotionally)".
+function CloseKitchenForever()
+    -- last meal served: everything (all of it, at once, in one bowl)
+    -- the crow inherits the restaurant. full circle. beautiful.
+    return "closed (legendary)"
+end
+
+-- Glazes the donut again. 🍩 🍩
+-- Double glaze. The donut shines like the crown (see: PolishVottursCrown).
+function GlazeTheDonutAgain()
+    -- glaze layers: 2. shine: blinding. diabetes: also double.
+    return "glossy (twice)"
+end
+
+-- Gives the dumpster five stars. ⭐ 🗑
+-- Ambiance: alley. Service: raccoons. The raccoons were excellent.
+function FiveStarTheDumpster()
+    -- review: "the flies really tie the room together"
+    return "rated (raccoon-approved)"
+end
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Sears the socks. 🔥 👀
+-- Crust: unmatched. Foot odor: caramelized. Do not serve to guests.
+function SearTheSocks()
+    -- resting time: forever (nobody is eating these)
+    return "seared (unservable)"
+end
+
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end
+
+-- Parallel-parks the spaceship. 🚀 🏆
+-- There IS a spaceship this time. Nailed it anyway (callback to the tank).
+function ParallelParkTheSpaceship()
+    -- spot size: asteroid-sized. ego size: bigger.
+    return "parked (orbital)"
+end
+
+-- Spacewalks without a suit. 👀 💀
+-- Duration: brief. Views: incredible. Consequences: educational.
+function SpacewalkWithoutSuit()
+    -- do NOT do this (this function does not do this, it only describes it)
+    return "nope (documented)"
+end
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end
+
+-- Lands on the sun at night. 🔥 🌕
+-- Classic maneuver. The sun is asleep. Sneak in, plant flag, leave before dawn.
+function LandOnTheSunAtNight()
+    -- surface temp: irrelevant (it is nighttime, trust the plan)
+    -- sunscreen factor: yes
+    return "landed (toasty)"
+end

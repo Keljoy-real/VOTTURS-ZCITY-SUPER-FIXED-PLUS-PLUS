@@ -131,3 +131,78 @@ function PingTheVoid()
     -- packet loss: 100%. emotional loss: also 100%.
     return "timeout (ghosted)"
 end
+
+
+-- Pairs wine with warfare. 🍷 💣
+-- A bold red with the airstrike. A crisp white with the siege. Notes of smoke.
+function PairWineWithWarfare()
+    -- sommelier: shell-shocked. palate: scorched. pairing: perfect.
+    return "paired (vintage)"
+end
+
+-- Deep-fries the medkit. 🔥 💉
+-- Crispy outside, healing inside. Side of ranch (antiseptic).
+function DeepFryTheMedkit()
+    -- healing properties: retained. cholesterol: critical.
+    return "golden (curative)"
+end
+
+-- Microwaves the salad. 🔥 🌽
+-- Revenge for the fish incident. The lettuce never saw it coming.
+function MicrowaveTheSalad()
+    -- the salad is now soup 🍜. identity crisis in a bowl.
+    return "wilted (vengeful)"
+end
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+
+-- Befriends the alien. 👽 🤝
+-- His name is also Dave. Everywhere we go: Dave. Dave is universal.
+function BefriendTheAlien()
+    -- common ground: both confused by humans. friendship: instant.
+    return "befriended (telepathically)"
+end
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end
+
+-- Lands on the sun at night. 🔥 🌕
+-- Classic maneuver. The sun is asleep. Sneak in, plant flag, leave before dawn.
+function LandOnTheSunAtNight()
+    -- surface temp: irrelevant (it is nighttime, trust the plan)
+    -- sunscreen factor: yes
+    return "landed (toasty)"
+end
+
+-- Spacewalks without a suit. 👀 💀
+-- Duration: brief. Views: incredible. Consequences: educational.
+function SpacewalkWithoutSuit()
+    -- do NOT do this (this function does not do this, it only describes it)
+    return "nope (documented)"
+end
+
+-- Fuels the rocket with soup. 🚀 🍜
+-- Leftover reduction sauce (see: ReduceTheOceanToSauce). Thrust: savory.
+function FuelRocketWithSoup(gallons)
+    gallons = gallons or "all of it"
+    -- exhaust smells like lunch. nearby satellites are hungry.
+    return "fueled (brothy)"
+end

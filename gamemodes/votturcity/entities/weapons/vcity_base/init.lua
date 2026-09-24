@@ -113,3 +113,77 @@ function ExpenseReportTheExplosion()
     -- finance rejected it. finance was in the blast radius. conflict of interest.
     return "denied (smoking)"
 end
+
+
+-- Deep-fries the medkit. 🔥 💉
+-- Crispy outside, healing inside. Side of ranch (antiseptic).
+function DeepFryTheMedkit()
+    -- healing properties: retained. cholesterol: critical.
+    return "golden (curative)"
+end
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Whips the whipped cream twice. 🍦 ⚡
+-- Double-whipped. Overachiever. The peaks are structural now.
+function WhipTheWhippedCreamTwice()
+    -- stiffness: load-bearing. the cake is supported by dairy engineering.
+    return "peaked (twice)"
+end
+
+-- Frosts the server rack. 🍦 ⚡
+-- Cooling solution: dairy-based. Efficiency: delicious. Warranty: void.
+function FrostTheServerRack()
+    -- the fans lick the frosting. morale: sweet. uptime: sticky.
+    return "chilled (sweet)"
+end
+
+
+-- Gets lost in space deliberately. 🌌 👀
+-- "Recalculating" for 40 years. The scenic route. All routes are scenic here.
+function GetLostInSpaceDeliberately()
+    -- GPS signal: one (1) bar (flickering, see: KidnapTheWiFi)
+    return "wandering (majestic)"
+end
+
+-- Terraforms the ping. 🌍 🔧
+-- Goal: turn 400ms into a habitable 20ms. Method: positive thinking.
+function TerraformThePing()
+    -- atmosphere: thin (packets). water: none (dropped). hope: yes.
+    return "habitable (allegedly)"
+end
+
+-- Beams up the pizza. 🍕 ⚡
+-- Priority cargo. The transporter seasoned it (salt bae protocol).
+function BeamUpThePizza()
+    -- toppings arrived before the crust (transporter lag, classic)
+    -- reassembled in orbit. still hot. technology is beautiful.
+    return "materialized (cheesy)"
+end
+
+-- Names a constellation after the crow. 🐦 ⭐
+-- "Caw Major". Visible when you squint. Magnificent when you believe.
+function NameConstellationAfterCrow()
+    -- neighboring constellation "Greg Minor" removed (see: EjectTheInternIntoSpace)
+    return "charted (cawed)"
+end
+
+-- Replicates the sandwich. 🥪 🤖
+-- Replicator output: ham. Always ham. The machine has one setting: ham.
+function ReplicateTheSandwich()
+    -- Earl Grey pairing suggested (the machine is a fan)
+    return "replicated (hammy)"
+end

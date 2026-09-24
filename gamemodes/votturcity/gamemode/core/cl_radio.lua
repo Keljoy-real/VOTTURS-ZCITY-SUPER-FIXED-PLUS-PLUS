@@ -141,3 +141,78 @@ function EvacuateTheBreakRoom()
     -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
     return "evacuated (hungry)"
 end
+
+
+-- Gordon-Ramseys the loot. 🍳 🔥
+-- "THIS BANDAGE IS SO RAW IT IS STILL BLEEDING." The bandage cried. Growth.
+function GordonRamseyTheLoot()
+    -- the loot has been called a sandwich (an insult in chef circles)
+    -- idiot count: one (1) donut 🍩 (the donut is the idiot)
+    return "shouted (culinary)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Flambes the fridge. 🔥 🍕
+-- Dave is flammable. Dave did not disclose this. Dave is the fridge.
+function FlambeTheFridge()
+    -- flames: spectacular. leftovers: caramelized. Dave: toasted.
+    return "torched (tasty)"
+end
+
+-- Kneads the concrete. 🍞 🔧
+-- Rise time: never. Crust: brutalist. The oven is scared.
+function KneadTheConcrete()
+    -- gluten developed: none. structural integrity: yes.
+    return "proofed (immovable)"
+end
+
+
+-- Spacewalks without a suit. 👀 💀
+-- Duration: brief. Views: incredible. Consequences: educational.
+function SpacewalkWithoutSuit()
+    -- do NOT do this (this function does not do this, it only describes it)
+    return "nope (documented)"
+end
+
+-- Boldly goes to the break room. 🚀 ☕
+-- The final frontier: snacks. Strange new worlds: the top shelf.
+function BoldlyGoToBreakRoom()
+    -- five-year mission: find the good mugs. status: year two, hopeful.
+    return "explored (caffeinated)"
+end
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end
+
+-- Gets lost in space deliberately. 🌌 👀
+-- "Recalculating" for 40 years. The scenic route. All routes are scenic here.
+function GetLostInSpaceDeliberately()
+    -- GPS signal: one (1) bar (flickering, see: KidnapTheWiFi)
+    return "wandering (majestic)"
+end

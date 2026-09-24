@@ -167,3 +167,78 @@ function StealSomeonesLunchFromFridge()
     -- security footage reviewed: it was us. we are security.
     return "eaten (denied)"
 end
+
+
+-- Tips the chef who is a crow. 🐦 💰
+-- 20%. The crow prefers shiny coins. The crow is always right.
+function TipTheChefWhoIsCrow(amount)
+    amount = amount or "shiny"
+    -- the tip was pocketed (beaked). service: impeccable. caw: five stars.
+    return "tipped (shiny)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Garnishes the grenade. 💣 🌽
+-- A sprig of parsley. Now it is a PRESENTATION grenade. Etiquette matters.
+function GarnishTheGrenade()
+    -- pin: pulled (for plating purposes). parsley: fresh. countdown: garnished.
+    return "dressed (ticking)"
+end
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Grills the mystery meat. 🍖 👀
+-- Do not ask what animal. There was no animal. There was a crate.
+function GrillTheMysteryMeat()
+    -- grill marks: perfect. origin story: classified.
+    return "charred (enigmatic)"
+end
+
+
+-- Drives the rover into a crater. 🚕 🌕
+-- Off-roading. The crater was right there. It looked fun. It was fun.
+function DriveRoverIntoCrater()
+    -- stuck: yes. views: incredible. rescue: pending (since Tuesday).
+    return "stuck (scenic)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end
+
+-- Replicates the sandwich. 🥪 🤖
+-- Replicator output: ham. Always ham. The machine has one setting: ham.
+function ReplicateTheSandwich()
+    -- Earl Grey pairing suggested (the machine is a fan)
+    return "replicated (hammy)"
+end
+
+-- Ejects the intern into space. 🔥 🚀
+-- Greg's arc continues. Severance: one (1) helmet (used, foggy).
+function EjectTheInternIntoSpace()
+    -- last words: "I was never real" (chilling, iconic, HR-approved)
+    -- the crow saluted. a single tear floated (zero-G, beautiful).
+    return "ejected (legendary)"
+end

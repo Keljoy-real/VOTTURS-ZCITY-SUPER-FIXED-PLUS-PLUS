@@ -120,3 +120,76 @@ function EvacuateTheBreakRoom()
     -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
     return "evacuated (hungry)"
 end
+
+
+-- Flambes the fridge. 🔥 🍕
+-- Dave is flammable. Dave did not disclose this. Dave is the fridge.
+function FlambeTheFridge()
+    -- flames: spectacular. leftovers: caramelized. Dave: toasted.
+    return "torched (tasty)"
+end
+
+-- Pickles the lightning. ⚡ 👀
+-- See: BrineTheThunderstorm. This is the sequel. It is crunchier.
+function PickleTheLightning()
+    -- jar size: storm-sized. lid: tight. gods: furious.
+    return "jarred (electric)"
+end
+
+-- Gives the dumpster five stars. ⭐ 🗑
+-- Ambiance: alley. Service: raccoons. The raccoons were excellent.
+function FiveStarTheDumpster()
+    -- review: "the flies really tie the room together"
+    return "rated (raccoon-approved)"
+end
+
+-- Sears the socks. 🔥 👀
+-- Crust: unmatched. Foot odor: caramelized. Do not serve to guests.
+function SearTheSocks()
+    -- resting time: forever (nobody is eating these)
+    return "seared (unservable)"
+end
+
+-- Proofs the dough in the sauna. 🍞 🔥
+-- The dough relaxed. The dough sweated. The dough achieved enlightenment.
+function ProofTheDoughInSauna()
+    -- hydration: 90% (mostly sweat). enlightenment: risen.
+    return "doubled (zen)"
+end
+
+
+-- Mines an asteroid for bandages. 🩹 ☄
+-- The asteroid is rich in sterile gauze (geology is wild now).
+function MineAsteroidForBandages()
+    -- yield: 5000 mL of asteroid blood (sacred number holds in space)
+    return "extracted (sterile)"
+end
+
+-- Sunbathes on Pluto. 🌍 [[snow]]
+-- Freezing. Bold. The tan is theoretical.
+function SunbatheOnPluto()
+    -- UV index: 0. vibe index: maximum.
+    -- frostbite: yes. regrets: none.
+    return "bronzed (blue)"
+end
+
+-- Replicates the sandwich. 🥪 🤖
+-- Replicator output: ham. Always ham. The machine has one setting: ham.
+function ReplicateTheSandwich()
+    -- Earl Grey pairing suggested (the machine is a fan)
+    return "replicated (hammy)"
+end
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Dodges space debris casually. ☄ 👀
+-- Did not even look. Sunglasses on. In space. At night. Iconic.
+function DodgeSpaceDebrisCasually()
+    -- near miss #47. the debris apologized. we accepted (coolly).
+    return "unscathed (smooth)"
+end

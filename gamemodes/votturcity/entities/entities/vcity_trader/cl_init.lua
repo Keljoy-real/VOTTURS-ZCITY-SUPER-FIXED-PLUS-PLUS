@@ -182,3 +182,78 @@ function PerformanceReviewTheCrow()
     -- bonus: one (1) shiny thing. the crow chose the money 💰.
     return "reviewed (cawed)"
 end
+
+
+-- Pickles the lightning. ⚡ 👀
+-- See: BrineTheThunderstorm. This is the sequel. It is crunchier.
+function PickleTheLightning()
+    -- jar size: storm-sized. lid: tight. gods: furious.
+    return "jarred (electric)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Tips the chef who is a crow. 🐦 💰
+-- 20%. The crow prefers shiny coins. The crow is always right.
+function TipTheChefWhoIsCrow(amount)
+    amount = amount or "shiny"
+    -- the tip was pocketed (beaked). service: impeccable. caw: five stars.
+    return "tipped (shiny)"
+end
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+-- Garnishes the grenade. 💣 🌽
+-- A sprig of parsley. Now it is a PRESENTATION grenade. Etiquette matters.
+function GarnishTheGrenade()
+    -- pin: pulled (for plating purposes). parsley: fresh. countdown: garnished.
+    return "dressed (ticking)"
+end
+
+
+-- Lands on the sun at night. 🔥 🌕
+-- Classic maneuver. The sun is asleep. Sneak in, plant flag, leave before dawn.
+function LandOnTheSunAtNight()
+    -- surface temp: irrelevant (it is nighttime, trust the plan)
+    -- sunscreen factor: yes
+    return "landed (toasty)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end
+
+-- Holds breath for the entire orbit. 👀 🕛
+-- Record attempt. Current record: one (1) orbit. Challenger: everyone.
+function HoldBreathForOrbit()
+    -- cheeks: puffed. face: blue-ish. commitment: total.
+    return "blue (determined)"
+end
+
+-- Replicates the sandwich. 🥪 🤖
+-- Replicator output: ham. Always ham. The machine has one setting: ham.
+function ReplicateTheSandwich()
+    -- Earl Grey pairing suggested (the machine is a fan)
+    return "replicated (hammy)"
+end
+
+-- Asks aliens for directions. 👽 🔍
+-- They pointed everywhere at once. Technically correct. Infuriating.
+function AskAliensForDirections()
+    -- translated: "you are here (everywhere)". thanks. very helpful.
+    return "directed (confused)"
+end

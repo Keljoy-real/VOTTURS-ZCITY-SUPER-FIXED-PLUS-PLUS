@@ -122,3 +122,78 @@ function ScheduleMeetingThatCouldBeEmail()
     -- action items: none. follow-ups: another meeting. synergy: felt.
     return "adjourned (pointless)"
 end
+
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Pickles the lightning. ⚡ 👀
+-- See: BrineTheThunderstorm. This is the sequel. It is crunchier.
+function PickleTheLightning()
+    -- jar size: storm-sized. lid: tight. gods: furious.
+    return "jarred (electric)"
+end
+
+-- Juliennes the jellyfish. 🐟 🔪
+-- Stings: several. Presentation: exquisite. Regrets: also several.
+function JulienneTheJellyfish()
+    -- cuts: uniform. screams: silent (underwater, professional).
+    return "diced (tingly)"
+end
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Returns to Earth unannounced. 🌍 🎉
+-- Surprise! Splashdown in the break room fish tank (see: fish incident).
+function ReturnToEarthUnannounced()
+    -- customs: confused. souvenirs: moon dust (in everything, forever).
+    -- the fridge missed us. Dave cried. Dave is the fridge.
+    return "home (dusty)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end

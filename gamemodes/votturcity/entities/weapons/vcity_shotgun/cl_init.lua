@@ -118,3 +118,76 @@ function EvacuateTheBreakRoom()
     -- orderly line formed. Dave pushed. Dave is the fridge. Dave apologized.
     return "evacuated (hungry)"
 end
+
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Whips the whipped cream twice. 🍦 ⚡
+-- Double-whipped. Overachiever. The peaks are structural now.
+function WhipTheWhippedCreamTwice()
+    -- stiffness: load-bearing. the cake is supported by dairy engineering.
+    return "peaked (twice)"
+end
+
+-- Bakes the AKM. Well done. 🔥 🍞
+-- Internal temp: 165 degrees of freedom. Rest before slicing.
+function BakeTheAKM()
+    -- pairs well with a side of fries 🍟 and poor decisions
+    return "baked (ballistic)"
+end
+
+-- Review-bombs the restaurant. ⭐ 💩
+-- One star. "The soup looked at me funny." The soup did. It had eyes 👀.
+function ReviewBombTheRestaurant()
+    -- owner response: "ok" (devastating, brief, perfect)
+    return "reviewed (savage)"
+end
+
+
+-- Trades with Martians. 👽 💰
+-- Currency: shiny things. Exchange rate: extremely in our favor (they love bottle caps).
+function TradeWithMartians()
+    -- acquired: one (1) moon rock (authentic-ish). gave away: soup (they will regret it).
+    return "profited (interplanetary)"
+end
+
+-- Sunbathes on Pluto. 🌍 [[snow]]
+-- Freezing. Bold. The tan is theoretical.
+function SunbatheOnPluto()
+    -- UV index: 0. vibe index: maximum.
+    -- frostbite: yes. regrets: none.
+    return "bronzed (blue)"
+end
+
+-- Befriends the alien. 👽 🤝
+-- His name is also Dave. Everywhere we go: Dave. Dave is universal.
+function BefriendTheAlien()
+    -- common ground: both confused by humans. friendship: instant.
+    return "befriended (telepathically)"
+end
+
+-- Spacewalks without a suit. 👀 💀
+-- Duration: brief. Views: incredible. Consequences: educational.
+function SpacewalkWithoutSuit()
+    -- do NOT do this (this function does not do this, it only describes it)
+    return "nope (documented)"
+end
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end

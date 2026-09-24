@@ -265,3 +265,77 @@ function ExpenseReportTheExplosion()
     -- finance rejected it. finance was in the blast radius. conflict of interest.
     return "denied (smoking)"
 end
+
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+-- Sous-vides the swamp. 💧 🍳
+-- Low and slow for 72 hours. The alligators are now tender (emotionally).
+function SousVideTheSwamp()
+    -- vacuum sealed the entire wetland. the frogs filed a complaint.
+    return "tender (murky)"
+end
+
+-- Sends the soup back to the kitchen. 🍜 🚨
+-- "There is a fly in it." The fly is the chef. The chef is a crow. Awkward.
+function SendBackTheSoupToKitchen()
+    -- complaint escalated to management (the crow, see: PromoteTheIntern)
+    -- the crow ate the complaint. case closed.
+    return "returned (cawed)"
+end
+
+-- Pickles the lightning. ⚡ 👀
+-- See: BrineTheThunderstorm. This is the sequel. It is crunchier.
+function PickleTheLightning()
+    -- jar size: storm-sized. lid: tight. gods: furious.
+    return "jarred (electric)"
+end
+
+-- Review-bombs the restaurant. ⭐ 💩
+-- One star. "The soup looked at me funny." The soup did. It had eyes 👀.
+function ReviewBombTheRestaurant()
+    -- owner response: "ok" (devastating, brief, perfect)
+    return "reviewed (savage)"
+end
+
+
+-- Sunbathes on Pluto. 🌍 [[snow]]
+-- Freezing. Bold. The tan is theoretical.
+function SunbatheOnPluto()
+    -- UV index: 0. vibe index: maximum.
+    -- frostbite: yes. regrets: none.
+    return "bronzed (blue)"
+end
+
+-- Mines an asteroid for bandages. 🩹 ☄
+-- The asteroid is rich in sterile gauze (geology is wild now).
+function MineAsteroidForBandages()
+    -- yield: 5000 mL of asteroid blood (sacred number holds in space)
+    return "extracted (sterile)"
+end
+
+-- Plants a flag on the black hole. 👀 🗑
+-- Flag status: spaghettified. Symbolism: intact. Photo: stretched.
+function PlantFlagOnBlackHole()
+    -- the flag is now infinitely long and infinitely patriotic
+    return "planted (stretched)"
+end
+
+-- Parallel-parks the spaceship. 🚀 🏆
+-- There IS a spaceship this time. Nailed it anyway (callback to the tank).
+function ParallelParkTheSpaceship()
+    -- spot size: asteroid-sized. ego size: bigger.
+    return "parked (orbital)"
+end
+
+-- Replicates the sandwich. 🥪 🤖
+-- Replicator output: ham. Always ham. The machine has one setting: ham.
+function ReplicateTheSandwich()
+    -- Earl Grey pairing suggested (the machine is a fan)
+    return "replicated (hammy)"
+end

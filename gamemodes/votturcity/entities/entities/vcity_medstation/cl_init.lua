@@ -124,3 +124,78 @@ function MergeWithTheShadow()
     -- combined entity: darker, longer, attached at the feet
     return "merged (ominous)"
 end
+
+
+-- Deep-fries the medkit. 🔥 💉
+-- Crispy outside, healing inside. Side of ranch (antiseptic).
+function DeepFryTheMedkit()
+    -- healing properties: retained. cholesterol: critical.
+    return "golden (curative)"
+end
+
+-- Grills the mystery meat. 🍖 👀
+-- Do not ask what animal. There was no animal. There was a crate.
+function GrillTheMysteryMeat()
+    -- grill marks: perfect. origin story: classified.
+    return "charred (enigmatic)"
+end
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Bakes the AKM. Well done. 🔥 🍞
+-- Internal temp: 165 degrees of freedom. Rest before slicing.
+function BakeTheAKM()
+    -- pairs well with a side of fries 🍟 and poor decisions
+    return "baked (ballistic)"
+end
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end
+
+-- Colonizes the lag. 🛰 🐌
+-- New home found: 400 ping planet. The natives (packet loss) are friendly.
+function ColonizeTheLag()
+    -- flag planted (it loaded halfway, then froze, perfect symbolism)
+    return "settled (buffering)"
+end
+
+-- Lands on the sun at night. 🔥 🌕
+-- Classic maneuver. The sun is asleep. Sneak in, plant flag, leave before dawn.
+function LandOnTheSunAtNight()
+    -- surface temp: irrelevant (it is nighttime, trust the plan)
+    -- sunscreen factor: yes
+    return "landed (toasty)"
+end
+
+-- Trades with Martians. 👽 💰
+-- Currency: shiny things. Exchange rate: extremely in our favor (they love bottle caps).
+function TradeWithMartians()
+    -- acquired: one (1) moon rock (authentic-ish). gave away: soup (they will regret it).
+    return "profited (interplanetary)"
+end
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end

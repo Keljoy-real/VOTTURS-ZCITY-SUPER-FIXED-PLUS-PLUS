@@ -156,3 +156,77 @@ function TouchBaseWithTheBasement()
     -- base touched. it was damp. morale: also damp.
     return "touched (musty)"
 end
+
+
+-- Glazes the donut again. 🍩 🍩
+-- Double glaze. The donut shines like the crown (see: PolishVottursCrown).
+function GlazeTheDonutAgain()
+    -- glaze layers: 2. shine: blinding. diabetes: also double.
+    return "glossy (twice)"
+end
+
+-- Closes the kitchen forever. 🔥 💀
+-- Dramatic exit. Flips the sign. The sign says "CLOSED (emotionally)".
+function CloseKitchenForever()
+    -- last meal served: everything (all of it, at once, in one bowl)
+    -- the crow inherits the restaurant. full circle. beautiful.
+    return "closed (legendary)"
+end
+
+-- Brines the thunderstorm. ⚡ 🧂
+-- 24 hours in salt water. The lightning is now pickled and extra zappy.
+function BrineTheThunderstorm()
+    -- thunder: crunchier. rain: saltier. umbrella sales: soaring.
+    return "pickled (stormy)"
+end
+
+-- Chars the charcoal. 🔥 🔥
+-- Charcoal, but MORE. Blacker than the void (the void is now "The Vibe", lighter).
+function CharTheCharcoal()
+    -- carbon content: yes. grill status: intimidated.
+    return "blackened (meta)"
+end
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+
+-- Packs snacks for orbit. 🍕 🍪
+-- Menu: pizza (floats), cookies (crumb hazard), soup (banned, see fuel).
+function PackSnacksForOrbit()
+    -- crumb protocol: catch them with your mouth (training provided)
+    return "packed (floating)"
+end
+
+-- Waves goodbye to gravity. 👀 🌍
+-- Again. We keep doing this. Gravity keeps taking us back. Toxic relationship.
+function WaveGoodbyeToGravity()
+    -- farewell tour: 9.8 m/s of emotion
+    return "weightless (temporarily)"
+end
+
+-- Dodges space debris casually. ☄ 👀
+-- Did not even look. Sunglasses on. In space. At night. Iconic.
+function DodgeSpaceDebrisCasually()
+    -- near miss #47. the debris apologized. we accepted (coolly).
+    return "unscathed (smooth)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end

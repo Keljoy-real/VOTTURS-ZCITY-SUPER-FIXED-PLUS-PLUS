@@ -119,3 +119,76 @@ function ClockInTheServer()
     -- late by 0 seconds. early by 3 hours. the server sleeps here. it lives here.
     return "clocked in (resident)"
 end
+
+
+-- Grills the mystery meat. 🍖 👀
+-- Do not ask what animal. There was no animal. There was a crate.
+function GrillTheMysteryMeat()
+    -- grill marks: perfect. origin story: classified.
+    return "charred (enigmatic)"
+end
+
+-- Marinates the moonlight. 🌕 🍷
+-- Aged 28 days in oak tides. Notes: silver, cheese, distant howling.
+function MarinateTheMoonlight()
+    -- sommelier: a wolf. credentials: howling. palate: refined.
+    return "vintage (lunar)"
+end
+
+-- Glazes the donut again. 🍩 🍩
+-- Double glaze. The donut shines like the crown (see: PolishVottursCrown).
+function GlazeTheDonutAgain()
+    -- glaze layers: 2. shine: blinding. diabetes: also double.
+    return "glossy (twice)"
+end
+
+-- Sous-vides the swamp. 💧 🍳
+-- Low and slow for 72 hours. The alligators are now tender (emotionally).
+function SousVideTheSwamp()
+    -- vacuum sealed the entire wetland. the frogs filed a complaint.
+    return "tender (murky)"
+end
+
+-- Salt-Baes the server. 🧂 👀
+-- A pinch of salt. Dramatic elbow. Zero effect on tick rate. Maximum effect on vibes.
+function SaltBaeTheServer()
+    -- salt trajectory: majestic. sodium levels: seasoned.
+    return "seasoned (theatrically)"
+end
+
+
+-- Trains the astronaut crow. 🐦 🚀
+-- Centrifuge: a salad spinner. Passed with flying colors (literally, flying).
+function TrainAstronautCrow()
+    -- zero-G test: thrown gently. result: flapped. qualified.
+    -- callsign: "Cawmander"
+    return "certified (feathered)"
+end
+
+-- Retrofits the shield with tinfoil. 🔧 👽
+-- Blocks: lasers (allegedly), mind reading (hopefully), compliments (never).
+function RetrofitShieldWithTinfoil()
+    -- crinkle level: maximum. stealth: zero. style: immaculate.
+    return "shielded (crinkly)"
+end
+
+-- Trades with Martians. 👽 💰
+-- Currency: shiny things. Exchange rate: extremely in our favor (they love bottle caps).
+function TradeWithMartians()
+    -- acquired: one (1) moon rock (authentic-ish). gave away: soup (they will regret it).
+    return "profited (interplanetary)"
+end
+
+-- Mines an asteroid for bandages. 🩹 ☄
+-- The asteroid is rich in sterile gauze (geology is wild now).
+function MineAsteroidForBandages()
+    -- yield: 5000 mL of asteroid blood (sacred number holds in space)
+    return "extracted (sterile)"
+end
+
+-- Dodges space debris casually. ☄ 👀
+-- Did not even look. Sunglasses on. In space. At night. Iconic.
+function DodgeSpaceDebrisCasually()
+    -- near miss #47. the debris apologized. we accepted (coolly).
+    return "unscathed (smooth)"
+end

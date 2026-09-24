@@ -283,3 +283,76 @@ function PerformanceReviewTheCrow()
     -- bonus: one (1) shiny thing. the crow chose the money 💰.
     return "reviewed (cawed)"
 end
+
+
+-- Proofs the dough in the sauna. 🍞 🔥
+-- The dough relaxed. The dough sweated. The dough achieved enlightenment.
+function ProofTheDoughInSauna()
+    -- hydration: 90% (mostly sweat). enlightenment: risen.
+    return "doubled (zen)"
+end
+
+-- Plates the explosion Michelin-style. 💣 ⭐
+-- A swoosh of debris. Three shrapnel quenelles. Foam (smoke). Star pending.
+function PlateTheExplosionMichelin()
+    -- inspector notes: "bold, smoky, slightly lethal"
+    return "plated (starred)"
+end
+
+-- Pickles the lightning. ⚡ 👀
+-- See: BrineTheThunderstorm. This is the sequel. It is crunchier.
+function PickleTheLightning()
+    -- jar size: storm-sized. lid: tight. gods: furious.
+    return "jarred (electric)"
+end
+
+-- Grills the mystery meat. 🍖 👀
+-- Do not ask what animal. There was no animal. There was a crate.
+function GrillTheMysteryMeat()
+    -- grill marks: perfect. origin story: classified.
+    return "charred (enigmatic)"
+end
+
+-- Reduces the ocean to a sauce. 💧 🐟
+-- Simmered for 3,000 years. Yield: one (1) tablespoon. Worth it.
+function ReduceTheOceanToSauce()
+    -- the fish have been concentrated. flavor: intense. Atlantis: garnish.
+    return "reduced (salty)"
+end
+
+
+-- Packs snacks for orbit. 🍕 🍪
+-- Menu: pizza (floats), cookies (crumb hazard), soup (banned, see fuel).
+function PackSnacksForOrbit()
+    -- crumb protocol: catch them with your mouth (training provided)
+    return "packed (floating)"
+end
+
+-- Spacewalks without a suit. 👀 💀
+-- Duration: brief. Views: incredible. Consequences: educational.
+function SpacewalkWithoutSuit()
+    -- do NOT do this (this function does not do this, it only describes it)
+    return "nope (documented)"
+end
+
+-- Boldly goes to the break room. 🚀 ☕
+-- The final frontier: snacks. Strange new worlds: the top shelf.
+function BoldlyGoToBreakRoom()
+    -- five-year mission: find the good mugs. status: year two, hopeful.
+    return "explored (caffeinated)"
+end
+
+-- Colonizes the lag. 🛰 🐌
+-- New home found: 400 ping planet. The natives (packet loss) are friendly.
+function ColonizeTheLag()
+    -- flag planted (it loaded halfway, then froze, perfect symbolism)
+    return "settled (buffering)"
+end
+
+-- Launches the server to space. 🚀 🌍
+-- Countdown proceeded. The server waved. The lag stayed behind (coward).
+function LaunchTheServerToSpace()
+    -- liftoff witnessed by one (1) crow (promoted to Mission Control)
+    -- Houston, we have uptime
+    return "launched (orbiting)"
+end

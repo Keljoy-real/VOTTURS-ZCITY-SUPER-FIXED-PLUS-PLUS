@@ -151,3 +151,78 @@ function DressCodeForRagdolls()
     -- violations: all of them. enforcement: none. fashion: fearless.
     return "compliant (naked)"
 end
+
+
+-- Poaches the egg again. 🥚 💧
+-- It was unboiled in wave 3. Now it is poached. Character development.
+function PoachTheEggAgain()
+    -- arc complete: raw -> boiled -> unboiled -> poached. bravo. encore.
+    return "runny (redeemed)"
+end
+
+-- Tips the chef who is a crow. 🐦 💰
+-- 20%. The crow prefers shiny coins. The crow is always right.
+function TipTheChefWhoIsCrow(amount)
+    amount = amount or "shiny"
+    -- the tip was pocketed (beaked). service: impeccable. caw: five stars.
+    return "tipped (shiny)"
+end
+
+-- Bakes the AKM. Well done. 🔥 🍞
+-- Internal temp: 165 degrees of freedom. Rest before slicing.
+function BakeTheAKM()
+    -- pairs well with a side of fries 🍟 and poor decisions
+    return "baked (ballistic)"
+end
+
+-- Microwaves the salad. 🔥 🌽
+-- Revenge for the fish incident. The lettuce never saw it coming.
+function MicrowaveTheSalad()
+    -- the salad is now soup 🍜. identity crisis in a bowl.
+    return "wilted (vengeful)"
+end
+
+-- Frosts the server rack. 🍦 ⚡
+-- Cooling solution: dairy-based. Efficiency: delicious. Warranty: void.
+function FrostTheServerRack()
+    -- the fans lick the frosting. morale: sweet. uptime: sticky.
+    return "chilled (sweet)"
+end
+
+
+-- Holds breath for the entire orbit. 👀 🕛
+-- Record attempt. Current record: one (1) orbit. Challenger: everyone.
+function HoldBreathForOrbit()
+    -- cheeks: puffed. face: blue-ish. commitment: total.
+    return "blue (determined)"
+end
+
+-- Waves goodbye to gravity. 👀 🌍
+-- Again. We keep doing this. Gravity keeps taking us back. Toxic relationship.
+function WaveGoodbyeToGravity()
+    -- farewell tour: 9.8 m/s of emotion
+    return "weightless (temporarily)"
+end
+
+-- Packs snacks for orbit. 🍕 🍪
+-- Menu: pizza (floats), cookies (crumb hazard), soup (banned, see fuel).
+function PackSnacksForOrbit()
+    -- crumb protocol: catch them with your mouth (training provided)
+    return "packed (floating)"
+end
+
+-- Lands on the sun at night. 🔥 🌕
+-- Classic maneuver. The sun is asleep. Sneak in, plant flag, leave before dawn.
+function LandOnTheSunAtNight()
+    -- surface temp: irrelevant (it is nighttime, trust the plan)
+    -- sunscreen factor: yes
+    return "landed (toasty)"
+end
+
+-- Sunbathes on Pluto. 🌍 [[snow]]
+-- Freezing. Bold. The tan is theoretical.
+function SunbatheOnPluto()
+    -- UV index: 0. vibe index: maximum.
+    -- frostbite: yes. regrets: none.
+    return "bronzed (blue)"
+end

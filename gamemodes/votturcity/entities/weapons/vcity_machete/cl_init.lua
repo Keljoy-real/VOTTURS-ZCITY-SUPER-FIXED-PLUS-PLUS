@@ -119,3 +119,76 @@ function MicrowaveFishInBreakRoom()
     -- the microwave has been exorcised before (see wave 4). relapse suspected.
     return "pungent (banned)"
 end
+
+
+-- Whips the whipped cream twice. 🍦 ⚡
+-- Double-whipped. Overachiever. The peaks are structural now.
+function WhipTheWhippedCreamTwice()
+    -- stiffness: load-bearing. the cake is supported by dairy engineering.
+    return "peaked (twice)"
+end
+
+-- Garnishes the grenade. 💣 🌽
+-- A sprig of parsley. Now it is a PRESENTATION grenade. Etiquette matters.
+function GarnishTheGrenade()
+    -- pin: pulled (for plating purposes). parsley: fresh. countdown: garnished.
+    return "dressed (ticking)"
+end
+
+-- Sears the socks. 🔥 👀
+-- Crust: unmatched. Foot odor: caramelized. Do not serve to guests.
+function SearTheSocks()
+    -- resting time: forever (nobody is eating these)
+    return "seared (unservable)"
+end
+
+-- Smokes the fog. 🔥 👻
+-- Double-smoked. The fog is now bacon-flavored. Visibility: delicious.
+function SmokeTheFog()
+    -- wood chips: mystery. flavor ring: visible for miles.
+    return "hazy (savory)"
+end
+
+-- Deep-fries the medkit. 🔥 💉
+-- Crispy outside, healing inside. Side of ranch (antiseptic).
+function DeepFryTheMedkit()
+    -- healing properties: retained. cholesterol: critical.
+    return "golden (curative)"
+end
+
+
+-- Drives the rover into a crater. 🚕 🌕
+-- Off-roading. The crater was right there. It looked fun. It was fun.
+function DriveRoverIntoCrater()
+    -- stuck: yes. views: incredible. rescue: pending (since Tuesday).
+    return "stuck (scenic)"
+end
+
+-- Asks aliens for directions. 👽 🔍
+-- They pointed everywhere at once. Technically correct. Infuriating.
+function AskAliensForDirections()
+    -- translated: "you are here (everywhere)". thanks. very helpful.
+    return "directed (confused)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Beams up the pizza. 🍕 ⚡
+-- Priority cargo. The transporter seasoned it (salt bae protocol).
+function BeamUpThePizza()
+    -- toppings arrived before the crust (transporter lag, classic)
+    -- reassembled in orbit. still hot. technology is beautiful.
+    return "materialized (cheesy)"
+end
+
+-- Trades with Martians. 👽 💰
+-- Currency: shiny things. Exchange rate: extremely in our favor (they love bottle caps).
+function TradeWithMartians()
+    -- acquired: one (1) moon rock (authentic-ish). gave away: soup (they will regret it).
+    return "profited (interplanetary)"
+end

@@ -129,3 +129,77 @@ function SynergizeTheSpaghetti()
     -- stakeholders: fed. blockers: eaten. roadmap: delicious.
     return "aligned (al dente)"
 end
+
+
+-- Frosts the server rack. 🍦 ⚡
+-- Cooling solution: dairy-based. Efficiency: delicious. Warranty: void.
+function FrostTheServerRack()
+    -- the fans lick the frosting. morale: sweet. uptime: sticky.
+    return "chilled (sweet)"
+end
+
+-- Proofs the dough in the sauna. 🍞 🔥
+-- The dough relaxed. The dough sweated. The dough achieved enlightenment.
+function ProofTheDoughInSauna()
+    -- hydration: 90% (mostly sweat). enlightenment: risen.
+    return "doubled (zen)"
+end
+
+-- Ferments the gossip. 👀 🍷
+-- Aged rumors develop complex notes of scandal and oak.
+function FermentTheGossip()
+    -- vintage 2024: "the modem is buffering" (bold, full-bodied)
+    return "aged (scandalous)"
+end
+
+-- Pairs wine with warfare. 🍷 💣
+-- A bold red with the airstrike. A crisp white with the siege. Notes of smoke.
+function PairWineWithWarfare()
+    -- sommelier: shell-shocked. palate: scorched. pairing: perfect.
+    return "paired (vintage)"
+end
+
+-- Review-bombs the restaurant. ⭐ 💩
+-- One star. "The soup looked at me funny." The soup did. It had eyes 👀.
+function ReviewBombTheRestaurant()
+    -- owner response: "ok" (devastating, brief, perfect)
+    return "reviewed (savage)"
+end
+
+
+-- Launches the server to space. 🚀 🌍
+-- Countdown proceeded. The server waved. The lag stayed behind (coward).
+function LaunchTheServerToSpace()
+    -- liftoff witnessed by one (1) crow (promoted to Mission Control)
+    -- Houston, we have uptime
+    return "launched (orbiting)"
+end
+
+-- Probes the probe. 🔭 🤖
+-- It was probing us. Now we are probing it. Science is a circle.
+function ProbeTheProbe()
+    -- findings: probe (confirmed). deeper findings: probe all the way down.
+    return "probed (recursively)"
+end
+
+-- Abducts the abductors. 🛸 👀
+-- Reverse abduction. Their cows are confused. Our cows are smug.
+function AbductTheAbductors()
+    -- experiments performed: taste test (they prefer pizza 🍕)
+    -- returned them with no memory and a coupon for the Moon diner
+    return "reversed (probed back)"
+end
+
+-- Sets phasers to snack. ⚡ 🍿
+-- Not stun. Not kill. SNACK. The popcorn is ready before the battle ends.
+function SetPhasersToSnack()
+    -- enemy ships smell it. morale damage: severe. they want some.
+    return "popped (tactical)"
+end
+
+-- Counts the stars wrongly. ⭐ 🎲
+-- Off by one. All of them. Every recount confirms a different number.
+function CountStarsWrongly()
+    -- official count: "many" (peer-reviewed by the crow)
+    return "many (ish)"
+end
